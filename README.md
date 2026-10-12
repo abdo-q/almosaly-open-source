@@ -105,8 +105,13 @@ zipalign -f -p 4 /tmp/almosaly-unsigned.apk /tmp/almosaly-aligned.apk
 
 ## 📥 التنزيل
 
-- [فتح موقع المصلي](https://esraamohan78-source.github.io/almosaly-open-source/)
-- [تنزيل أحدث إصدار Android من GitHub Releases](../../releases/latest)
+| النسخة | الرابط |
+| --- | --- |
+| **موقع المصلي على الويب** | [فتح الموقع](https://esraamohan78-source.github.io/almosaly-open-source/) — يمكن تثبيته كتطبيق PWA من المتصفح |
+| **تطبيق المصلي المفتوح المصدر — APK** | [تنزيل APK المفتوح مباشرة](https://github.com/esraamohan78-source/almosaly-open-source/releases/download/v1.0.0/my-muslim-app-release.apk) · [صفحة الإصدارات](https://github.com/esraamohan78-source/almosaly-open-source/releases/latest) |
+| **التطبيق الرسمي المحدث — Android** | [تنزيل/تحديث من Google Play](https://play.google.com/store/apps/details?id=com.moslay) |
+
+> ملاحظة: رابط Google Play هو القناة الرسمية للتطبيق المحدث. أما APK المفتوح المصدر فهو إصدار إعادة البناء المنشور في هذا المستودع، وقد يختلف عن النسخة الرسمية في الميزات والتوقيع.
 
 إن توقيع APK بمفتاح مختلف عن نسخة مثبتة قد يمنع تحديثها فوق النسخة الحالية؛ راجع ملاحظة التوقيع والأمان أدناه.
 
