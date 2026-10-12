@@ -16,6 +16,12 @@ local.properties
 # Decompiled optional exports
 /decompiled-java/
 
+# Android Studio migration workspace and local build metadata
+.migration/work/
+android-studio/.gradle/
+android-studio/**/build/
+android-studio/local.properties
+
 # IDE/OS
 .idea/
 .vscode/

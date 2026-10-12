@@ -119,6 +119,7 @@ zipalign -f -p 4 /tmp/almosaly-unsigned.apk /tmp/almosaly-aligned.apk
 - [الصفحة الرئيسية للـWiki](docs/wiki/Home.md)
 - [نظرة عامة على التطبيق](docs/wiki/App-overview.md)
 - [تفاصيل هيكل الملفات](docs/wiki/Project-structure.md)
+- [خطة ترحيل Android Studio ونتائج JADX](docs/wiki/Android-studio-migration.md)
 - [توثيق موقع الويب ومصادره](docs/wiki/Website.md)
 - [دليل البناء والتشغيل محليًا](docs/wiki/Local-build.md)
 - [الأسئلة الشائعة](docs/wiki/FAQ.md)
