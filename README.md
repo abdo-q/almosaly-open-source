@@ -1,6 +1,8 @@
-# My Muslim App — Open Reconstruction
+# تطبيق المصلي مفتوح المصدر | AlMosally Open Source
 
-نسخة مفتوحة المصدر قابلة لإعادة البناء من تطبيق Android المخصص المملوك لفريق المشروع.
+نسخة مفتوحة المصدر قابلة لإعادة البناء من تطبيق المصلي المخصص المملوك لفريق المشروع.
+
+An open-source, rebuildable reconstruction of the custom AlMosally Android app owned by the project team.
 
 > **مهم:** هذه النسخة مُعاد بناؤها من ملف APK باستخدام Apktool. ليست ملفات المصدر الأصلية (Kotlin/Java)؛ بل تحتوي على Smali والموارد المفكوكة. لذلك يمكن إعادة إنتاج APK يعمل، لكن بنية الكود أقل قابلية للقراءة من المشروع الأصلي.
 
