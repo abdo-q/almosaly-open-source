@@ -4,7 +4,7 @@
 
   # تطبيق المصلي | AlMosally Open Source
 
-  **إعادة بناء مفتوحة المصدر لتطبيق المصلي على Android، مع تجربة ويب ثابتة مرافقة.**
+  **تطبيق المصلي مفتوح المصدر: إعادة بناء Android مع تطبيق مصلي ويب عربي مستقل، لمواقيت الصلاة والقرآن والأذكار والقبلة والتقويم الهجري، مع اهتمام بالخصوصية.**
 
   [![Android APK build](https://img.shields.io/github/actions/workflow/status/esraamohan78-source/almosaly-open-source/android-build.yml?branch=main&label=APK%20rebuild)](../../actions/workflows/android-build.yml)
   [![GitHub Pages](https://img.shields.io/github/actions/workflow/status/esraamohan78-source/almosaly-open-source/deploy-website.yml?branch=main&label=GitHub%20Pages)](../../actions/workflows/deploy-website.yml)
@@ -15,6 +15,8 @@
   **موقع المصلي:** [افتح تجربة الويب](https://esraamohan78-source.github.io/almosaly-open-source/) · [تنزيل تطبيق Android](../../releases/latest)
 
 </div>
+
+> [Read this README in English](README.en.md)
 
 > ⚠️ **تنويه عن نسخة Android:** هذا المستودع يتضمن إعادة بناء من APK بواسطة Apktool، وليس ملفات المصدر الأصلية Kotlin/Java. يحتوي على Smali وموارد مفككة؛ لذلك تكون صيانته وقراءته أصعب من مشروع Android أصلي. نجاح إعادة البناء لا يثبت أن كل ميزات التطبيق اختُبرت على جميع الأجهزة.
 
@@ -117,7 +119,13 @@ zipalign -f -p 4 /tmp/almosaly-unsigned.apk /tmp/almosaly-aligned.apk
 
 ## <img src="assets/icons/people.svg" width="18" height="18" alt="" /> المساهمة وطلب الدعم
 
-يسعدنا استقبال التوثيق والتصحيحات والتحسينات. ابدأ بقراءة [CONTRIBUTING.md](CONTRIBUTING.md)، ثم استخدم [قالب الإبلاغ عن خطأ](../../issues/new?template=bug_report.yml) أو [قالب اقتراح ميزة](../../issues/new?template=feature_request.yml). لا ترفق أسرارًا أو بيانات شخصية أو مواد لا تملك حق نشرها.
+يسعدنا استقبال المطورين والمصممين ومختبري الوصولية والمترجمين وكتّاب التوثيق. يمكن للمساهمين إصلاح الأخطاء عبر [Issues](../../issues)، وتحسين تصميم واجهة الويب وتجربة الهاتف، وإضافة اختبارات لمواقيت الصلاة والقبلة، وتحسين PWA مع الحفاظ على RTL والخصوصية.
+
+ابدأ بقراءة [دليل المساهمة](CONTRIBUTING.md)، ثم استخدم [قالب الإبلاغ عن خطأ](../../issues/new?template=bug_report.yml) أو [قالب اقتراح ميزة](../../issues/new?template=feature_request.yml). لا ترفق أسرارًا أو بيانات شخصية أو مواد لا تملك حق نشرها.
+
+## كلمات البحث والموضوعات ذات الصلة
+
+يخدم المشروع الباحثين عن: **تطبيق المصلي**، **تطبيق المصلي مفتوح المصدر**، **تطبيق إسلامي مفتوح المصدر**، **تطبيق أذان ومواقيت صلاة بدون إنترنت**، **مواقيت الصلاة مفتوح المصدر**، **تطبيق مصلي ويب**، **القرآن الكريم والأذكار PWA**، **تطبيق إسلامي يحترم الخصوصية**، **AlMosaly open source**، **Android APK source code GitHub**، **Apktool Android reverse engineering**، **Smali code open source project**، **Islamic PWA GitHub**، **Vite React Islamic app**، و**prayer times Quran azkar web app**.
 
 ## <img src="assets/icons/book.svg" width="18" height="18" alt="" /> Wiki والأسئلة الشائعة
 
@@ -125,6 +133,7 @@ zipalign -f -p 4 /tmp/almosaly-unsigned.apk /tmp/almosaly-aligned.apk
 - [نظرة عامة على التطبيق](docs/wiki/App-overview.md)
 - [تفاصيل هيكل الملفات](docs/wiki/Project-structure.md)
 - [خطة ترحيل Android Studio ونتائج JADX](docs/wiki/Android-studio-migration.md)
+- [SEO والاكتشاف والكلمات المفتاحية](docs/wiki/SEO-and-discoverability.md)
 - [توثيق موقع الويب ومصادره](docs/wiki/Website.md)
 - [دليل البناء والتشغيل محليًا](docs/wiki/Local-build.md)
 - [الأسئلة الشائعة](docs/wiki/FAQ.md)

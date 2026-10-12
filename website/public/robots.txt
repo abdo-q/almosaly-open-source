@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://esraamohan78-source.github.io/almosaly-open-source/sitemap.xml
