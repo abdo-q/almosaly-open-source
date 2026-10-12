@@ -18,6 +18,7 @@ local.properties
 
 # Android Studio migration workspace and local build metadata
 .migration/work/
+.migration/*.md
 android-studio/.gradle/
 android-studio/**/build/
 android-studio/local.properties
