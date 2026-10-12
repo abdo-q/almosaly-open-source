@@ -4,134 +4,101 @@
 
   # 🕌 تطبيق المصلي | AlMosally Open Source
 
-  **نسخة مفتوحة المصدر قابلة لإعادة البناء من تطبيق المصلي المخصص**
+  **إعادة بناء مفتوحة المصدر لتطبيق المصلي على Android**
 
-  *An open-source, rebuildable reconstruction of the custom AlMosally Android app.*
+  *An open-source, rebuildable reconstruction of AlMosally for Android.*
 
-  ---
-
-  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+  [![Build](https://img.shields.io/github/actions/workflow/status/esraamohan78-source/almosaly-open-source/android-build.yml?branch=main&label=APK%20rebuild)](../../actions/workflows/android-build.yml)
+  [![License](https://img.shields.io/github/license/esraamohan78-source/almosaly-open-source)](LICENSE)
+  [![Latest release](https://img.shields.io/github/v/release/esraamohan78-source/almosaly-open-source)](../../releases/latest)
   [![Android](https://img.shields.io/badge/Platform-Android-3DDC84.svg?style=flat&logo=android&logoColor=white)](https://www.android.com)
-  [![Build](https://img.shields.io/badge/Build-Apktool-orange.svg)](https://github.com/iBotPeaches/Apktool)
-  [![Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg)](../../releases/latest)
 
 </div>
 
-<br/>
+> ⚠️ **تنويه:** هذا المستودع نسخة مُعاد بناؤها من APK بواسطة Apktool، وليس ملفات المصدر الأصلية Kotlin/Java. يحتوي على Smali وموارد مفككة، ولذلك تكون صيانته وقراءته أصعب من مشروع Android أصلي. نجاح إعادة البناء لا يثبت أن كل ميزات التطبيق اختُبرت على جميع الأجهزة.
 
-> ⚠️ **ملاحظة هامة:** هذه النسخة مُعاد بناؤها من ملف APK باستخدام **Apktool**. ليست ملفات المصدر الأصلية (Kotlin/Java)؛ بل تحتوي على Smali والموارد المفكوكة. لذلك يمكن إعادة إنتاج ملف APK، لكن بنية الكود أقل قابلية للقراءة من المشروع الأصلي.
-
----
-
-## 📱 واجهات التطبيق | App Screenshots
+## 📱 لقطات من التطبيق
 
 <div align="center">
-  <table border="0">
-    <tr>
-      <td align="center"><b>مواقيت الصلاة والأذان</b></td>
-      <td align="center"><b>الأدعية والأذكار</b></td>
-    </tr>
-    <tr>
-      <td align="center"><img src="assets/images/screen_salah.jpg" width="280" alt="مواقيت الصلاة" /></td>
-      <td align="center"><img src="assets/images/screen_duaa.jpg" width="280" alt="الأدعية" /></td>
-    </tr>
-  </table>
+<table>
+  <tr>
+    <td align="center"><img src="assets/images/screen_salah.jpg" width="185" alt="واجهة المصلي ومواقيت الصلاة" /></td>
+    <td align="center"><img src="assets/images/screen_duaa.jpg" width="185" alt="واجهة الأدعية في المصلي" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>مواقيت الصلاة والأذان</b><br/>عرض الواجهة الرئيسية ومواقيت الصلاة.</td>
+    <td align="center"><b>الأدعية</b><br/>مثال على شاشة الأدعية من التطبيق.</td>
+  </tr>
+</table>
 </div>
 
----
+*صور الواجهات لأغراض التعريف بالمشروع. مصدر الصور وحقوق استخدامها موضّحان في [قسم الترخيص ومصادر الصور](#الترخيص-ومصادر-الصور).*
 
-## ✨ المميزات | Key Features
+## ✨ ما يتضمنه التطبيق
 
-- 🕋 **مواقيت الصلاة والتنبيهات:** تحديد دقيق لمواقيت الصلاة بحسب موقعك الجغرافي مع تنبيهات الأذان.
-- 📖 **القرآن الكريم:** عرض المصحف الشريف والتلاوات الصوتية.
-- 🤲 **الأذكار والأدعية:** مجموعة شاملة من حصن المسلم والأدعية والأذكار اليومية.
-- 🧭 **اتجاه القبلة:** بوصلة دقيقة لتحديد اتجاه القبلة في أي مكان.
-- 📅 **التقويم الهجري:** عرض التقويم الهجري والمناسبات الإسلامية.
-- 👥 **الختمات والمجتمع:** إمكانية متابعة الختمات والمشاركة مع المجتمع.
-- 📱 **دعم المعماريات المتعددة:** متوافق مع مختلف أجهزة ومعماريات Android.
+موارد وواجهات مرتبطة بمواقيت الصلاة والتنبيهات والقرآن والتلاوات والأذكار والأدعية واتجاه القبلة والتقويم الهجري. تتضمن النسخة كذلك مكتبات Android ومكونات وموارد إضافية. **وجود موارد تحمل اسم ميزة لا يضمن أن تلك الميزة تعمل حاليًا**؛ تحقق منها على جهاز اختبار قبل الاعتماد عليها.
 
----
+## 🗂️ هيكل المستودع
 
-## 🛠️ المتطلبات | Prerequisites
+| المسار | المحتوى |
+| --- | --- |
+| `app/AndroidManifest.xml` | تعريف حزمة Android ومكوناتها وأذوناتها |
+| `app/smali/` و`app/smali_classes*/` | شيفرة Smali المفككة |
+| `app/res/` | الموارد المفككة، مثل صور وواجهات ونصوص |
+| `app/assets/` و`app/lib/` | أصول ومكتبات إضافية مضمنة في APK |
+| `scripts/build-release.sh` | إعادة البناء والمحاذاة والتوقيع بمفتاحك |
+| `docs/wiki/` | Wiki المشروع: الهيكل والتطبيق والبناء والأسئلة الشائعة |
+| `.github/` | فحص بناء APK وقوالب بلاغات GitHub |
 
-لإعادة بناء التطبيق من المصدر، يجب توفر الأدوات التالية:
+## 🛠️ البناء والتشغيل محليًا
 
-* **Java Development Kit (JDK):** الإصدار 17 أو أحدث.
-* **Apktool:** [Apktool v2.10.0](https://github.com/iBotPeaches/Apktool/releases/tag/v2.10.0) أو أحدث.
-* **Android Build Tools:** تحتوي على أدوات `zipalign` و `apksigner`.
-* **مفتاح توقيع (Keystore):** مفتاح خاص بك لتوقيع التطبيق *(تنبيه: لا تقم برفع المفتاح على GitHub)*.
+### المتطلبات
 
----
+- Java 17 أو أحدث.
+- Apktool 2.10.0 أو أحدث.
+- Android SDK Build Tools، وتتضمن `zipalign` و`apksigner`.
+- جهاز Android أو محاكي للتثبيت والاختبار.
 
-## 🚀 كيفية إعادة البناء | Build Instructions
+### إعادة البناء
 
-المشروع الموجود داخل مجلد `app/` هو مشروع مفكوك باستخدام Apktool:
-
-### 1️⃣ تجميع ملف الـ APK:
 ```bash
-apktool b app -o reconstructed-unsigned.apk
+git clone https://github.com/esraamohan78-source/almosaly-open-source.git
+cd almosaly-open-source
+apktool b app -o /tmp/almosaly-unsigned.apk
+zipalign -f -p 4 /tmp/almosaly-unsigned.apk /tmp/almosaly-aligned.apk
 ```
 
-### 2️⃣ محاذاة الملف (Zipalign):
-```bash
-zipalign -f -p 4 reconstructed-unsigned.apk reconstructed-aligned.apk
-```
+الناتج في هذه الخطوة APK غير موقّع؛ وقّعه بمفتاح تملكه قبل تثبيته. لإنتاج نسخة موقّعة، عرّف `KEYSTORE_FILE` و`KEY_ALIAS` و`KEYSTORE_PASSWORD` و`KEY_PASSWORD` محليًا، ثم شغّل:
 
-### 3️⃣ توقيع التطبيق (Signing):
 ```bash
-apksigner sign \
-  --ks "$KEYSTORE_FILE" \
-  --ks-key-alias "$KEY_ALIAS" \
-  --ks-pass env:KEYSTORE_PASSWORD \
-  --key-pass env:KEY_PASSWORD \
-  --out my-muslim-app-release.apk \
-  reconstructed-aligned.apk
-```
-
-### 4️⃣ التحقق من التوقيع:
-```bash
-apksigner verify --verbose my-muslim-app-release.apk
-```
-
-💡 **ملاحظة:** يمكنك أيضاً استخدام السكربت الجاهز المرفق في المشروع:
-```bash
-export KEYSTORE_FILE=/path/to/my-release.jks
-export KEY_ALIAS=my-muslim-app
-export KEYSTORE_PASSWORD='كلمة-المرور-الخاصة-بكب'
-export KEY_PASSWORD='كلمة-المرور-الخاصة-بكب'
-
 ./scripts/build-release.sh
 ```
 
----
+بعد التوقيع والتحقق، يمكن تثبيته على جهاز متصل عبر `adb install -r dist/my-muslim-app-release.apk`. استخدم [دليل البناء المحلي](docs/wiki/Local-build.md) للتفاصيل والتنبيهات الأمنية. لا تضع مفتاح التوقيع أو كلمات مروره في المستودع.
 
-## 🔑 التوقيع والتحديثات | Signing & Updates
+## 🤝 المساهمة وطلب الدعم
 
-- يجب استخدام **نفس مفتاح التوقيع** لكل الإصدارات القادمة لضمان إمكانية التحديث فوق النسخة المثبتة لدى المستخدمين.
-- احتفظ بنسخة احتياطية مشفرة وآمنة من مفتاح التوقيع خارج المستودع.
-- هذه النسخة موقّعة بمفتاح جديد خاص بهذا المشروع.
+يسعدنا استقبال التوثيق والتصحيحات والتحسينات. ابدأ بقراءة [CONTRIBUTING.md](CONTRIBUTING.md)، ثم استخدم [قالب الإبلاغ عن خطأ](../../issues/new?template=bug_report.yml) أو [قالب اقتراح ميزة](../../issues/new?template=feature_request.yml). لا ترفق أسرارًا أو بيانات شخصية أو مواد لا تملك حق نشرها.
 
----
+## 📚 Wiki والأسئلة الشائعة
 
-## 📥 التنزيل | Download
+- [الصفحة الرئيسية للـWiki](docs/wiki/Home.md)
+- [نظرة عامة على التطبيق](docs/wiki/App-overview.md)
+- [تفاصيل هيكل الملفات](docs/wiki/Project-structure.md)
+- [دليل البناء والتشغيل محليًا](docs/wiki/Local-build.md)
+- [الأسئلة الشائعة](docs/wiki/FAQ.md)
+- [القيود والمشكلات المعروفة](docs/wiki/Known-issues.md)
 
-يمكنك تحميل أحدث نسخة جاهزة للثبيت مباشرة من قسم الإصدارات:
+## 📥 التنزيل
 
-👉 **[تنزيل أحدث إصدار | Download Latest Release](../../releases/latest)**
+راجع [أحدث إصدار منشور](../../releases/latest). لا تعتبر كل نسخة مبنية محليًا إصدارًا رسميًا؛ وتذكّر أن APK الذي يوقّع بمفتاح مختلف لا يحدّث تثبيتًا موقّعًا بمفتاح آخر.
 
----
+## 🔐 التوقيع والأمان
 
-## 🛡️ ملاحظات أمنية | Security Notes
+كل تحديث قابل للتثبيت فوق نسخة سابقة يحتاج إلى **مفتاح التوقيع نفسه**. مفتاح الإصدار الرسمي غير موجود في هذا المستودع، ولا تُرفع ملفات `.jks` أو `.keystore` أو `key.properties` أو كلمات المرور أو مفاتيح API إلى GitHub. راجع الأذونات والمكتبات والخدمات الخارجية قبل توزيع أي APK.
 
-- ❌ **لا تُرفع أبداً** ملفات المفاتيح `.jks` أو `.keystore` أو كلمات المرور داخل المستودع.
-- 🔍 يرجى مراجعة الأذونات والمكتبات المضمنة قبل توزيع النسخ للعامة.
+## 📄 الترخيص ومصادر الصور
 
----
+المستودع منشور تحت [MIT License](LICENSE)، وفق تأكيد مالك المشروع أن الكود والموارد المضمنة مملوكة له أو مصرح له بنشرها. مسؤولية التحقق من تراخيص مكتبات وموارد الأطراف الثالثة تقع على المساهم/الموزع؛ أزل أي مادة لا تملك حق نشرها أو أرفق ترخيصها المناسب.
 
-## 📄 الترخيص | License
-
-المشروع منشور تحت رخصة **[MIT License](LICENSE)**، وفق تأكيد مالك المشروع أن الكود والموارد المضمنة مملوكة له أو مصرح له بنشرها. إذا كانت أي مادة خارجية لا تملكها، أزلها أو أضف ترخيصها المناسب قبل إعادة التوزيع.
-
-### مصادر الصور
-
-صور واجهات التطبيق وأيقونته في هذا الملف مأخوذة من صفحة [المصلي على Google Play](https://play.google.com/store/apps/details?id=com.moslay). تُعرض هنا لأغراض التعريف بالمشروع؛ يُرجى مراجعة حقوق استخدامها قبل إعادة نشرها خارج هذا المستودع.
+صور واجهات التطبيق وأيقونته في هذا الملف مأخوذة من صفحة [المصلي على Google Play](https://play.google.com/store/apps/details?id=com.moslay). تُعرض للتعريف بالمشروع؛ يُرجى مراجعة حقوق إعادة استخدامها قبل نشرها في سياقات أخرى.

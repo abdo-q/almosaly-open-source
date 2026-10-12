@@ -1,0 +1,52 @@
+name: الإبلاغ عن خطأ
+description: الإبلاغ عن مشكلة قابلة لإعادة الإنتاج في المستودع أو APK المعاد بناؤه
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        لا ترفق كلمات مرور أو مفاتيح توقيع أو بيانات شخصية أو إحداثيات دقيقة.
+  - type: input
+    id: version
+    attributes:
+      label: إصدار التطبيق أو الالتزام
+      description: اذكر وسم الإصدار أو رابط الالتزام/البناء الذي اختبرته.
+      placeholder: v1.0.0 أو commit SHA
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: الجهاز وإصدار Android
+      placeholder: طراز الجهاز وإصدار Android
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: خطوات إعادة المشكلة
+      description: خطوات واضحة ومتسلسلة لإعادة ظهورها.
+      placeholder: |
+        1. افتح...
+        2. اختر...
+        3. تظهر المشكلة...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: السلوك المتوقع
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: السلوك الفعلي
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: سجل أو صورة (اختياري)
+      description: احذف أي بيانات شخصية أو أسرار قبل المشاركة.

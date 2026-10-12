@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: دليل المساهمة
+    url: https://github.com/esraamohan78-source/almosaly-open-source/blob/main/CONTRIBUTING.md
+    about: راجع الإرشادات قبل فتح طلبات التغيير الكبيرة.
+  - name: دليل البناء وWiki
+    url: https://github.com/esraamohan78-source/almosaly-open-source/tree/main/docs/wiki
+    about: قد تجد إجابة عن إعادة البناء أو القيود المعروفة هنا.

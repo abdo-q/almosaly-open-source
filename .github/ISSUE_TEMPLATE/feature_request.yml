@@ -1,0 +1,33 @@
+name: اقتراح ميزة
+description: اقتراح تحسين موثق للمستودع أو لعملية إعادة البناء
+title: "[Feature]: "
+labels: [enhancement, triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: المشكلة أو الحاجة
+      description: ما الذي تريد إنجازه؟
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: الحل المقترح
+      description: صف التغيير الذي تقترحه، إن كان لديك حل محدد.
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: البدائل أو السياق
+      description: أي حلول بديلة أو معلومات إضافية مفيدة.
+    validations:
+      required: false
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: الحقوق والخصوصية
+      options:
+        - label: لن أرفق مفاتيح أو أسرارًا أو بيانات شخصية، وأوضح مصدر وترخيص أي مادة خارجية أقترح إضافتها.
+          required: true
