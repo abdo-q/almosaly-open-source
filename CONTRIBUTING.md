@@ -22,6 +22,20 @@ zipalign -f -p 4 /tmp/almosaly-unsigned.apk /tmp/almosaly-aligned.apk
 
 هذه الخطوات تعيد بناء APK غير موقّع ومحاذاته؛ لا تثبته قبل توقيعه بمفتاح تملكه. لإنتاج نسخة موقعة، راجع قسم البناء في [README](README.md). لا ترفع مفاتيح التوقيع أو كلمات المرور إلى Git، حتى في Pull Request خاص.
 
+## تطوير موقع الويب
+
+الموقع مصدره داخل `website/` ويُنشر كموقع ثابت على GitHub Pages. لا تضف إليه قاعدة بيانات أو تسجيل دخول أو مزامنة/مجتمعًا مشتركًا؛ هذه حدود الاستضافة التي اختارها المشروع. المتطلبات Node.js 22 وpnpm 10:
+
+```bash
+cd website
+pnpm install --frozen-lockfile
+pnpm dev
+pnpm typecheck
+VITE_BASE_PATH=/almosaly-open-source/ pnpm build
+```
+
+استخدم `pnpm build` دون `VITE_BASE_PATH` إذا كنت تبني إلى جذر نطاق محلي. حافظ على RTL وتجربة الهاتف، وأضف أي مسارات جديدة إلى `public/manus-routes.json`. سجّل مصادر/تراخيص المحتوى في `SOURCES.md`. بيانات الحساب والختمة والمفضلات محلية؛ وضّح أي حدّ جديد للخصوصية أو الإشعارات. يكتشف GitHub Actions تعديلات `website/` ويبنيها وينشرها.
+
 ## سير العمل
 
 1. أنشئ فرعًا قصير الاسم انطلاقًا من `main`، مثل `docs/improve-build-guide` أو `fix/resource-name`.

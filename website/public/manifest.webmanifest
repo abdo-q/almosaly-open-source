@@ -1,0 +1,15 @@
+{
+  "name": "المصلي — صلاتك ووردك في مكان واحد",
+  "short_name": "المصلي",
+  "description": "مواقيت الصلاة والقرآن والأذكار والقبلة والتقويم الهجري.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f4",
+  "theme_color": "#075a52",
+  "icons": [
+    { "src": "./images/almosaly-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "almosaly-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.18.0",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "adhan": "4.4.6",
+    "lucide-react": "0.453.0",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
+    "wouter": "3.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.12.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "5.0.4",
+    "typescript": "5.9.3",
+    "vite": "7.1.9"
+  }
+}
