@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|right" android:layout_gravity="center|right" android:orientation="vertical" android:background="@color/white" android:layout_width="320.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:orientation="vertical" android:background="@color/white" android:layout_width="320.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:id="@id/salawat_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="16.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="16.0dip" app:cardElevation="10.0dip">
+                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/img_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView android:id="@id/img_container" android:layout_width="fill_parent" android:layout_height="157.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="16.0dip">
+                            <ImageView android:id="@id/article_img" android:layout_width="fill_parent" android:layout_height="157.0dip" android:src="@drawable/no_img_placeholder" android:scaleType="fitXY" android:adjustViewBounds="true" />
+                        </androidx.cardview.widget.CardView>
+                        <RelativeLayout android:id="@id/frame_fragment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <FrameLayout android:id="@id/frame_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/youtube_thumbnail_RL" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.google.android.youtube.player.YouTubeThumbnailView android:id="@id/youtube_thumbnail" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerCrop" />
+                            <ImageView android:id="@id/video_play_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/survey_video_play" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <com.moslay.view.FontTextView android:textSize="@dimen/sixteen_sp" android:textColor="@color/white" android:gravity="center" android:id="@id/category_txt" android:background="@drawable/bg_historical_img" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="16.0dip" android:text="@string/historical" android:layout_alignBottom="@id/img_holder" app:textview_type="1" />
+                    <Button android:gravity="center" android:id="@id/fav_button" android:background="@drawable/add_to_favorite" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="4.0dip" android:layout_alignParentTop="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" />
+                    <ImageView android:gravity="center" android:id="@id/answeredQuesImage" android:background="@drawable/ramadan_comp_right" android:visibility="gone" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginBottom="-15.0dip" android:layout_alignBottom="@id/img_holder" android:layout_marginEnd="65.0dip" android:layout_alignParentEnd="true" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/views_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:weightSum="3.0" android:layout_below="@id/img_holder">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/views_count_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/views_count_layout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <com.moslay.view.NewFontTextView android:textSize="11.0sp" android:textColor="@color/main_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/views" />
+                                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:textColorHighlight="@color/black" android:id="@id/views_txt" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12/22" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/views_count_layout2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <com.moslay.view.NewFontTextView android:textSize="11.0sp" android:textColor="@color/main_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/benefits_read_text" />
+                                <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:textColorHighlight="@color/black" android:id="@id/txtview_min_reading" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="12.0sp" android:textColor="@color/labany_calendar_first_bar" android:id="@id/article_date_user_text" android:paddingLeft="5.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12/22" />
+                                <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/time_icon" android:layout_centerVertical="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:minHeight="48.0dip" android:layout_below="@id/views_layout">
+                        <RelativeLayout android:id="@id/user_data" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/views_layout1" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+                            <de.hdodenhof.circleimageview.CircleImageView android:id="@id/profile_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/default_profile_image" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/profile_image">
+                                <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="right" android:id="@id/title_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="احمد صلاح الدين" android:maxLines="1" android:lines="1" android:layout_toLeftOf="@id/profile_image" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+                                <RelativeLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_toLeftOf="@id/profile_image" android:layout_below="@id/title_txt" android:layoutDirection="rtl">
+                                    <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="written by name" android:lines="1" android:layout_toLeftOf="@id/txtview_written" android:layout_centerVertical="true" />
+                                    <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/black" android:layout_gravity="center|right" android:id="@id/txtview_written" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/txt_written" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <com.moslay.view.NewFontTextView android:textSize="16.0dip" android:textColor="@color/black" android:ellipsize="end" android:gravity="center|right" android:id="@id/txtview_news_details" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/five_dp" android:maxLines="2" android:lines="2" android:textAlignment="gravity" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                        <com.moslay.view.FontTextView android:textColor="@color/black" android:ellipsize="marquee" android:gravity="right" android:id="@id/news_newsApprevText" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" app:textview_type="4" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reacts_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_layout">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/news_share" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0" android:layout_alignParentLeft="true">
+                            <com.moslay.view.FontTextView android:textSize="13.0sp" android:textColor="@color/app_text_color" android:gravity="right" android:id="@id/news_share_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="0 نشر" app:textview_type="4" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_news" android:contentDescription="@string/share_it" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/news_comment" android:padding="4.0dip" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0" android:layout_centerInParent="true">
+                            <com.moslay.view.FontTextView android:textSize="13.0sp" android:textColor="@color/app_text_color" android:gravity="right" android:id="@id/news_comment_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="0 تعليق" app:textview_type="4" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/commeny_news" android:contentDescription="@string/commenters" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/news_like" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true">
+                            <com.moslay.view.FontTextView android:textSize="13.0sp" android:textColor="@color/app_text_color" android:gravity="right" android:id="@id/news_likes_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:minWidth="50.0dip" android:text="0 معجب" android:maxLines="1" app:textview_type="4" />
+                            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:id="@id/like_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/like_news" />
+                                <ProgressBar android:id="@id/like_loading" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_centerInParent="true" style="@android:style/Widget.DeviceDefault.ProgressBar.Small" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout android:id="@id/adsContainerWithDefualtAdImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center" android:id="@id/ads_Container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/ad_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_ad" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/header_ly" android:background="@drawable/user_benefit_header" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.moslay.view.FontTextView android:textSize="17.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/users_search" android:layout_marginEnd="@dimen/ten_dp" android:layout_alignParentEnd="true" />
+            <Button android:id="@id/add_btn" android:background="@drawable/round_white_bg" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="أضف مشاركة" android:paddingStart="@dimen/ten_dp" android:paddingEnd="@dimen/ten_dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

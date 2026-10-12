@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="default1_text_size_for_moshaf">35</integer>
+    <integer name="default1_text_size_for_old_moshaf">29</integer>
+    <integer name="default2_text_size_for_moshaf">40</integer>
+    <integer name="default2_text_size_for_old_moshaf">31</integer>
+    <integer name="max_text_size_for_moshaf">90</integer>
+    <integer name="min_text_size_for_moshaf">23</integer>
+    <integer name="soura_header_height">140</integer>
+    <integer name="soura_header_width">600</integer>
+    <integer name="step_for_moshaf">2</integer>
+</resources>

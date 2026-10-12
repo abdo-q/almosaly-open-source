@@ -1,0 +1,16 @@
+<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hybrid / usa_CO_01">
+<g id="usa_CO_base">
+<g id="stretchable-items">
+<rect id="shape04" x="1.5" y="1.5" width="16" height="17" fill="white" stroke="#555759" stroke-linejoin="round"/>
+<rect id="shape03" x="2" y="2" width="15" height="2" fill="#4278BF"/>
+<rect id="shape02" x="2" y="4" width="15" height="2" fill="white"/>
+<rect id="shape01" x="2" y="6" width="15" height="2" fill="#4278BF"/>
+</g>
+<g id="non-stretchable-items">
+<path id="symbol02" d="M8.06083 3.9784L5.50684 5L8.06083 6.0216C7.65529 7.03452 6.66462 7.75 5.50684 7.75C3.98805 7.75 2.75684 6.51878 2.75684 5C2.75684 3.48122 3.98805 2.25 5.50684 2.25C6.66462 2.25 7.65529 2.96548 8.06083 3.9784Z" fill="#CC5252"/>
+<circle id="symbol01" cx="5.50684" cy="5" r="1.375" fill="#F2EDB1"/>
+</g>
+</g>
+</g>
+</svg>

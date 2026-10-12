@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.FontTextView android:textSize="15.0sp" android:textColor="#ff505050" android:gravity="left" android:id="@id/time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11:30" android:singleLine="true" android:layout_marginEnd="@dimen/five_dp" />
+    <com.moslay.view.FontTextView android:textSize="15.0sp" android:textColor="#ff505050" android:gravity="left" android:id="@id/am_pm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_marginEnd="@dimen/five_dp" />
+    <ImageView android:id="@id/dot_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp" android:src="@drawable/orange_dot" android:layout_marginEnd="@dimen/five_dp" android:layout_alignParentEnd="true" />
+</LinearLayout>

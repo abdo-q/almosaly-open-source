@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/news_fragment" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/news_swipeContainer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+                          xmlns:android="http://schemas.android.com/apk/res/android">
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/news_myMosques_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/news_noMyNews" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_news" android:layout_centerInParent="true" />
+                            <com.moslay.view.FontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_news" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.moslay.control_2015.LoadingControl android:id="@id/news_bottom_loading" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <com.moslay.view.NoInternetView android:id="@id/news_noIntenert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.moslay.control_2015.LoadingControl android:id="@id/news_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <GridView android:gravity="center" android:id="@id/categories_grid_view" android:background="@drawable/categories_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="135.0dip" android:horizontalSpacing="8.0dip" android:verticalSpacing="8.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:layout_alignParentTop="true" android:elevation="8.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/banner_container_news" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ad_hight_banner" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:theme="@style/MyMaterialTheme" android:textColor="@color/white" android:layout_gravity="right" android:id="@id/fab_write_benefit" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="22.0dip" android:text="@string/txt_write_benefit" android:fontFamily="@font/ge_ss_two_medium" android:backgroundTint="#ff039bcc" text_apply_fonts:icon="@drawable/add_khatma_icon" text_apply_fonts:iconGravity="textEnd" text_apply_fonts:iconTint="@color/white" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="right" android:id="@id/fab_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="22.0dip" android:tint="@color/white" android:backgroundTint="#ff039bcc" text_apply_fonts:srcCompat="@drawable/add_khatma_icon" />
+    </LinearLayout>
+</RelativeLayout>

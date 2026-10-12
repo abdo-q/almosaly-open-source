@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mbridge.msdk.config.dynamic.baseview.cusview.XMLView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mbridge_choice_frl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            app:mbridge_data="data=$g0.showModel.currentAdModel.ads[0].creative_info.image_url|effect=blur"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="1"
+            app:mbridge_data="data=$g0.showModel.currentAdModel.ads[1].creative_info.image_url|effect=blur"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mbridge_reward_video_time_count_num_bg"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="11sp"
+        android:tag="countdownView"
+        app:mbridge_data="data=$context.state.current201CountDownMsg"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/mbridge_reward_end_pager_logo" />
+
+    <ImageView
+        android:id="@+id/mbridge_reward_choice_one_like_iv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mbridge_reward_two_title_en_land" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/mbridge_reward_choice_one_like_iv"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="0"
+        android:tag="offerCard0"
+        app:mbridge_data="clickable=true">
+
+        <ImageView
+            android:id="@+id/mbridge_top_iv"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="fitXY"
+            app:mbridge_data="data=$g0.showModel.currentAdModel.ads[0].creative_info.image_url" />
+
+        <!--Indicate-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_alignTop="@+id/mbridge_top_iv">
+
+            <ImageView
+                android:id="@+id/mbridge_top_play_bg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mbridge_icon_play_bg" />
+
+            <ImageView
+                android:id="@+id/mbridge_top_finger_bg"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:layout_alignStart="@+id/mbridge_top_play_bg"
+                android:layout_alignLeft="@+id/mbridge_top_play_bg"
+                android:layout_alignTop="@+id/mbridge_top_play_bg"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/mbridge_finger_media_control" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/mbridge_bottom_media_control" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mbridge_top_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/mbridge_top_iv"
+            android:background="@drawable/mbridge_reward_shape_choice"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingStart="55dp"
+            android:paddingLeft="55dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:mbridge_data="data=$g0.showModel.currentAdModel.ads[0].creative_info.title" />
+
+        <ImageView
+            android:id="@+id/mbridge_top_icon_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/mbridge_top_iv"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:mbridge_data="data=$g0.showModel.currentAdModel.ads[0].creative_info.icon_url" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/mbridge_reward_choice_one_like_iv"
+        android:layout_marginTop="50dp"
+        android:contentDescription="1"
+        android:tag="offerCard1"
+        app:mbridge_data="clickable=true">
+
+        <ImageView
+            android:id="@+id/mbridge_top_iv2"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="fitXY"
+            app:mbridge_data="data=$g0.showModel.currentAdModel.ads[1].creative_info.image_url" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_alignTop="@+id/mbridge_top_iv2">
+
+            <ImageView
+                android:id="@+id/mbridge_top_play_bg2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/mbridge_icon_play_bg" />
+
+            <ImageView
+                android:id="@+id/mbridge_top_finger_bg2"
+                android:layout_width="60dp"
+                android:layout_height="75dp"
+                android:layout_alignStart="@+id/mbridge_top_play_bg2"
+                android:layout_alignLeft="@+id/mbridge_top_play_bg2"
+                android:layout_alignTop="@+id/mbridge_top_play_bg2"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/mbridge_finger_media_control" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/mbridge_bottom_media_control" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mbridge_top_title_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/mbridge_top_iv2"
+            android:background="@drawable/mbridge_reward_shape_choice"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingStart="55dp"
+            android:paddingLeft="55dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:mbridge_data="data=$g0.showModel.currentAdModel.ads[1].creative_info.title" />
+
+        <ImageView
+            android:id="@+id/mbridge_top_icon_iv2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/mbridge_top_iv2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:mbridge_data="data=$g0.showModel.currentAdModel.ads[1].creative_info.icon_url" />
+    </RelativeLayout>
+</com.mbridge.msdk.config.dynamic.baseview.cusview.XMLView>

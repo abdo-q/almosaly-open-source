@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/pob_cta_overlay_mrec_background" />
+    <corners android:radius="@dimen/pob_cta_overlay_mrec_radius" />
+</shape>

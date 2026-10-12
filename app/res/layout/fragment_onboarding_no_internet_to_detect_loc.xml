@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_onboarding_no_internet_to_detect_loc_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+        <ImageView android:id="@id/back" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onboarding_back_icon" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="18.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_internet_image" />
+            <com.moslay.view.NewFontTextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/txt_onboarding_no_internet_text" android:includeFontPadding="false" android:lineSpacingExtra="5.0dip" app:textview_type="2" />
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/onboarding_next_button_text_color" android:gravity="center" android:id="@id/txtOfflineSearch" android:background="@drawable/onboarding_button_background" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="6.0dip" android:text="@string/search_location_offline" android:includeFontPadding="false" android:layout_marginHorizontal="6.0dip" app:textview_type="2" />
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txtAddCity" android:background="@drawable/onboarding_button_blue_border" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip" android:text="@string/add_city_name_to_your_location" android:includeFontPadding="false" android:layout_marginHorizontal="6.0dip" app:textview_type="2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

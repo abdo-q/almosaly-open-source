@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/ramadan_reminder_card_layout_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/background_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="@dimen/_15sdp" android:src="@drawable/new_ramadan_theme_close" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.935" />
+    <com.moslay.view.NewButtonView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:id="@id/share_btn" android:background="@drawable/green_dollar_bill_rectangle_radius_by_7" android:layout_width="@dimen/_128sdp" android:layout_height="@dimen/_28sdp" android:text="@string/post" app:layout_constraintBottom_toTopOf="@id/guideline" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:textview_type="2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

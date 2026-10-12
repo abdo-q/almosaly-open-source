@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.FontTextView android:textAppearance="?android:textAppearanceLargeInverse" android:gravity="center" android:layout_gravity="center" android:id="@id/lang_txt_chooseLanguage" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/choose_language" android:layout_weight="4.0" android:elevation="5.0dip" text_apply_fonts:textview_type="1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lang_txt_chooseLanguage">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_lang_list" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

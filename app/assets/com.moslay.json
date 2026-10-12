@@ -1,0 +1,390 @@
+{
+  "appGeneralInfo":{
+    "debug":0,
+    "expirationPeriodInseconds":60,
+    "instreamAdsRepeating":10,
+    "instreamAdsStartPosition":1,
+    "instreamCacheSize":0,
+    "elephantEnabled":0,
+    "huqEnabled":0,
+    "uxCamEnabled":0,
+    "cleverTapEnabled":0,
+    "smartLockEnabled":0,
+    "teragenceEnabled":0,
+    "tutelaEnabled":0,
+    "quadrantEnabled":0,
+    "cellrebelEnabled":1,
+    "singularEnabled":0,
+    "adJustEnabled":1,
+    "indonisiaAdsStartDays":1,
+    "removeFacebookAdsFromOtherStores":1,
+    "noOfDaysToDisplyingExpiredIfNotFromPlay":-1,
+    "periodBetweenAppearingPurchaseInHours":-1,
+    "noOfSecondsToRequestAdWhileReturningFromBg":20,
+    "adsTimeOutSettings":{
+      "enabled":1,
+      "noOfHoursToStartAdsSplash":48,
+      "noOfHoursToStartAdsBanner":0,
+      "noOfHoursToStartAdsNative":0
+
+
+    },
+    "adsNetworks":[
+
+
+
+      {
+        "contentType":30,
+        "apiKey":"8133992",
+        "adNetworkEnabled":0
+      }
+    ,
+
+      {
+        "contentType":2,
+        "apiKey":"",
+        "adNetworkEnabled":1,
+        "returnedAdsEnabled":0
+      }
+    ],
+    "targetData":{
+      "enabled":0,
+      "gender":{
+        "enabled":0,
+        "type":"female"
+      },
+      "age":{
+        "enabled":0,
+        "age":30
+      },
+      "family":{
+        "enabled":0
+      }
+    }
+  },
+
+  "ads":[
+
+
+    {
+      "adId":"90",
+      "adType":1,
+      "adURL":"",
+      "allowAd":1,
+      "androidMaxAppVersion":5,
+      "androidPackage":"com.madarsoft2",
+      "durationBetweenTwoApperence":24,
+      "durationInSeconds":10,
+      "iphoneAdID":2,
+      "iphoneSchema":"queen",
+      "isToDisplayAdAutomatically":"false",
+      "screenId":"main",
+      "timeBeforeFirstDisplayingInSeconds":0,
+      "backupAdunitInfo":[
+        {
+          "adUnit":"ca-app-pub-4264562862176288/2602081453",
+          "contentType":2
+        },
+
+
+        {
+          "adUnit":"ca-app-pub-4264562862176288/5769701078",
+          "contentType":23
+        }
+
+      ],
+      "screens":[
+        {
+          "screenName":"Ramadan_Competition"
+
+        }
+      ]
+    },
+    {
+      "adId":"9",
+      "adType":1,
+      "adURL":"",
+      "allowAd":1,
+      "androidMaxAppVersion":5,
+      "androidPackage":"com.madarsoft2",
+      "durationBetweenTwoApperence":5,
+      "durationInSeconds":10,
+      "iphoneAdID":2,
+      "iphoneSchema":"queen",
+      "isToDisplayAdAutomatically":"false",
+      "screenId":"main",
+      "timeBeforeFirstDisplayingInSeconds":0,
+      "backupAdunitInfo":[
+
+        {
+          "adUnit":"ca-app-pub-4264562862176288/2602081453",
+          "contentType":2
+        },
+
+
+        {
+          "adUnit":"ca-app-pub-4264562862176288/5769701078",
+          "contentType":23
+        },
+
+        {
+          "adUnit":"ca-app-pub-4264562862176288/7563925093",
+          "contentType":2
+        }
+
+
+
+      ],
+      "screens":[
+        {
+          "screenName":"main"
+
+        },
+        {
+          "screenName":"azkar"}
+
+      ,
+        {
+          "screenName":"doaa_req_notifi"}
+
+      ,
+        {
+          "screenName":"doaa_req_add"}
+
+      ,
+        {
+          "screenName":"doaa_req_reminder"}
+
+      ,
+        {
+          "screenName":"doaa_req_main"}
+
+      ,
+        {
+          "screenName":"doaa_req_society"}
+
+      ,
+        {
+          "screenName":"main_prayers_on_flight_screen"}
+
+
+      ]
+    },
+
+
+
+
+
+
+
+
+
+    {
+      "adId":"1",
+      "adType":2,
+      "adURL":"",
+      "allowAd":1,
+      "androidMaxAppVersion":5,
+      "androidPackage":"com.madarsoft2",
+      "durationBetweenTwoApperence":0,
+      "durationInSeconds":10,
+      "iphoneAdID":2,
+      "iphoneSchema":"queen",
+      "isToDisplayAdAutomatically":"false",
+      "screenId":"main",
+      "timeBeforeFirstDisplayingInSeconds":10,
+      "backupAdunitInfo":[
+
+        {
+          "adUnit":"ca-app-pub-4264562862176288/4078814650",
+          "contentType":2
+        },
+
+        {
+          "adUnit":"ca-app-pub-4264562862176288/2330220573",
+          "contentType":2
+        }
+      ],
+      "screens":[
+        {
+          "screenName":"rewardsByShare"
+        },
+        {
+          "screenName":"azkar"
+        },
+        {
+          "screenName":"qibla"
+        },
+        {
+          "screenName":"calendar"
+        },
+        {
+          "screenName":"benefits"
+        },
+
+        {
+          "screenName":"masjid"
+        },
+        {
+          "screenName":"werdMohasba"
+        },
+        {
+          "screenName":"azan_2"
+        },
+        {
+          "screenName":"azan_3"
+        },
+        {
+          "screenName":"azan_4"
+        },
+        {
+          "screenName":"azan_5"
+        },
+        {
+          "screenName":"azkarMenu"
+        },
+        {
+          "screenName":"more_azan"
+        },
+        {
+          "screenName":"azan_thems"
+        },
+        {
+          "screenName":"main"
+        }
+
+      ,
+        {
+          "screenName":"doaa_req_notifi"}
+
+      ,
+        {
+          "screenName":"doaa_req_add"}
+
+      ,
+        {
+          "screenName":"doaa_req_reminder"}
+
+      ,
+        {
+          "screenName":"doaa_req_main"}
+
+      ,
+        {
+          "screenName":"doaa_req_society"}
+
+      ,
+        {
+          "screenName":"ramdan_comm_post_det"}
+
+      ,
+        {
+          "screenName":"doaa_req_details"}
+      ,
+        {
+          "screenName":"main_prayers_on_flight_screen"}
+
+      ]
+    },
+    {
+      "adId":"155",
+      "adType":3,
+      "adURL":"",
+      "allowAd":1,
+      "androidMaxAppVersion":5,
+      "androidPackage":"com.madarsoft2",
+      "durationBetweenTwoApperence":0,
+      "durationInSeconds":10,
+      "iphoneAdID":2,
+      "iphoneSchema":"queen",
+      "isToDisplayAdAutomatically":"false",
+      "screenId":"main",
+      "timeBeforeFirstDisplayingInSeconds":10,
+      "backupAdunitInfo":[
+
+
+        {
+          "adUnit": "ca-app-pub-4264562862176288/4696997870",
+          "contentType": 17
+        },
+
+        {
+          "adUnit": "ca-app-pub-4264562862176288/5593757397",
+          "contentType": 2
+        }
+
+
+
+      ],
+      "screens":[
+        {
+          "screenName":"mainScreen_afterRewardsByShareView"
+        }
+      ,
+        {
+          "screenName":"mainScreen_afterPrayersTimesView"
+        }
+      ,
+        {
+          "screenName":"mainScreen_afterQuranWerdView"
+        }
+      ]
+    }
+  ,
+
+    {
+      "adId":"1505",
+      "adType":4,
+      "adURL":"",
+      "allowAd":1,
+      "androidMaxAppVersion":5,
+      "androidPackage":"com.madarsoft2",
+      "durationBetweenTwoApperence":0,
+      "durationInSeconds":10,
+      "iphoneAdID":2,
+      "iphoneSchema":"queen",
+      "isToDisplayAdAutomatically":"false",
+      "screenId":"main",
+      "timeBeforeFirstDisplayingInSeconds":10,
+      "backupAdunitInfo":[
+
+        {
+          "adUnit": "ca-app-pub-4264562862176288/1108602039",
+          "contentType": 2
+        }
+
+      ],
+      "screens":[
+        {
+          "screenName":"main"
+        },
+        {
+          "screenName":"rewards"
+        }
+      ]
+    }
+
+  ],
+  "AdsRanks":{
+
+    "defaultCountry":{
+      "defaultCity":{
+        "splashAdId":[
+          9,90]
+      ,
+        "bannerAdId":
+        [1]
+      ,
+        "nativeAdId":
+        [155],
+
+        "rewardedAdId":
+        [1505]
+      }
+    }
+
+
+
+  }
+
+}

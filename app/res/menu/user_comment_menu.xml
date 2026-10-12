@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/gp1">
+        <item android:icon="@drawable/reply_to_comment" android:id="@id/reply" android:title="@string/reply_txt" />
+    </group>
+    <group android:id="@id/gp2">
+        <item android:icon="@drawable/like_icon" android:id="@id/like" android:title="@string/like_txt" />
+    </group>
+    <group android:id="@id/gp3">
+        <item android:icon="@drawable/report_icon" android:id="@id/report" android:title="@string/report_txt" />
+    </group>
+</menu>

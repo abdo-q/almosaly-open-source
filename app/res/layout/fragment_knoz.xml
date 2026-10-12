@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_knoz_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1.0" android:layout_weight="1.0">
+        <RelativeLayout android:background="@drawable/knoz_animation_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/knoz_icon_animation_bg" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:background="@color/transparent_100" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <ImageView android:id="@id/back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:scaleType="fitCenter" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_centerVertical="true" android:contentDescription="@string/back" android:layout_marginStart="@dimen/twenty_dp" />
+                    <com.moslay.view.FontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/azkar_menu_knoz" android:layout_centerInParent="true" app:textview_type="1" style="@style/header_textview" />
+                    <ImageView android:id="@id/settings" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/light_settings_icon" android:scaleType="fitCenter" android:adjustViewBounds="true" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <com.moslay.view.FontTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/Knoz_zekr" app:textview_type="2" />
+                <RelativeLayout android:layout_gravity="center" android:background="@color/transparent_100" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/knoz_icon_animation_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/knoz_icon_animation_1" android:layout_centerInParent="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+                    <com.airbnb.lottie.LottieAnimationView android:id="@id/animation_view" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="71.0dip" android:layout_marginTop="72.0dip" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/knoz_lottie" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_container_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="-30.0dip" android:layout_marginRight="12.0dip">
+            <com.moslay.view.smarteist.autoimageslider.SliderView android:id="@id/image_slider" android:layout_width="fill_parent" android:layout_height="75.0dip" app:sliderAnimationDuration="600" app:sliderAutoCycleDirection="back_and_forth" app:sliderAutoCycleEnabled="true" app:sliderIndicatorAnimationDuration="600" app:sliderIndicatorGravity="bottom|center" app:sliderIndicatorMargin="15.0dip" app:sliderIndicatorOrientation="horizontal" app:sliderIndicatorPadding="3.0dip" app:sliderIndicatorRadius="2.0dip" app:sliderIndicatorSelectedColor="#ff5a5a5a" app:sliderIndicatorUnselectedColor="#ffffffff" app:sliderScrollTimeInSec="1" app:sliderStartAutoCycle="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/knoz_menu_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/knoz_top_margin" android:layout_marginBottom="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/banner_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ad_hight_banner" />
+</LinearLayout>

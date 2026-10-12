@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="right" android:tag="layout/custom_arrow_marker_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view" android:background="@color/red" android:visibility="invisible" android:layout_width="@dimen/_80sdp" android:layout_height="@dimen/_80sdp" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:id="@id/appCompatImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qibla_map_location_arrow" app:layout_constraintLeft_toRightOf="@id/view" app:layout_constraintTop_toBottomOf="@id/view" />
+    <FrameLayout android:id="@id/frame" android:background="@drawable/qibla_distance_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_16sdp" android:rotation="130.0" app:layout_constraintBottom_toBottomOf="@id/appCompatImageView" app:layout_constraintRight_toRightOf="@id/appCompatImageView">
+        <TextView android:textSize="@dimen/_9ssp" android:gravity="center" android:layout_gravity="center" android:id="@id/distance_tv" android:paddingLeft="@dimen/_3sdp" android:paddingRight="@dimen/_3sdp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/_4sdp" android:text="2515.0 KM" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

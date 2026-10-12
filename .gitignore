@@ -1,0 +1,22 @@
+# Build output
+dist/
+app/build/
+*.apk
+*.aab
+
+# Signing keys and secrets
+*.jks
+*.keystore
+*.p12
+key.properties
+local.properties
+.env
+.env.*
+
+# Decompiled optional exports
+/decompiled-java/
+
+# IDE/OS
+.idea/
+.vscode/
+.DS_Store

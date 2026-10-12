@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/oxford_blue" android:gravity="center" android:layout_gravity="center" android:id="@id/header_text" android:background="@color/almond" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="الجزء الاول" text_apply_fonts:textview_type="2" style="@style/PinnedHeader"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto" />

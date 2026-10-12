@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/BlackHeighTransparent" android:padding="@dimen/twenty_dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/white_bg_curved" android:padding="@dimen/twenty_dp" android:layout_width="wrap_content" android:layout_height="200.0dip" android:layout_centerInParent="true">
+        <pl.droidsonroids.gif.GifImageView android:id="@id/gif_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/twenty_dp" android:src="@drawable/download_loading_bar" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <com.moslay.view.FontTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/text_dec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_prayer_times_loading_text" android:layout_centerHorizontal="true" text_apply_fonts:textview_type="3" />
+    </LinearLayout>
+</RelativeLayout>

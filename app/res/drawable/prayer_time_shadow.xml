@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="12.0dip" android:bottomRightRadius="12.0dip" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="12.0dip" android:bottomRightRadius="12.0dip" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="12.0dip" android:bottomRightRadius="12.0dip" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="12.0dip" android:bottomRightRadius="12.0dip" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:topLeftRadius="0.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="12.0dip" android:bottomRightRadius="12.0dip" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</layer-list>

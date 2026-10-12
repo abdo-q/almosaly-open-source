@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient android:startColor="@color/new_sebha_font_size_track_color" android:endColor="@color/new_sebha_font_size_track_color" android:angle="0.0" />
+            <corners android:radius="35.0dip" />
+            <size android:height="1.0dip" android:width="50.0dip" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <stroke android:width="1.0dip" android:color="@color/tangerine" />
+                <solid android:color="@color/tangerine" />
+                <corners android:radius="35.0dip" />
+                <size android:height="1.0dip" android:width="50.0dip" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

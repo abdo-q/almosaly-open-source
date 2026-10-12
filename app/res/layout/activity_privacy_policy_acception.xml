@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.moslay.view.BottomCropImage android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/policy_screen_image" android:scaleType="fitCenter" android:layout_weight="5.0" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="4.0">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.moslay.view.NewFontTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/privacy_first" />
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/gdpr_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/gpdr_liecnce_text" />
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" android:textDirection="locale" android:layoutDirection="locale">
+                <com.moslay.view.FontTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="start|center" android:id="@id/accept_privacy_policy_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/accept_privacy_policies" android:layout_toStartOf="@id/accept_privacy_policy_checkBox" />
+                <CheckBox android:gravity="center|top" android:id="@id/accept_privacy_policy_checkBox" android:layout_width="60.0dip" android:layout_height="60.0dip" android:checked="false" android:button="@null" android:layout_alignParentTop="true" android:scaleX="0.75" android:scaleY="0.75" android:drawableStart="@drawable/login_check_selector" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <Button android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/next_button" android:background="@drawable/blue_background_disable" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="40.0dip" android:text="@string/next" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

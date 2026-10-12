@@ -1,0 +1,1 @@
+{"$concat": [{"$ref": "../../shared/list/features.common.json#"}, {"$removeElement": {"filter": ["raster tile service"], "from": {"$ref": "omv.features.common.json#"}}}, {"$ref": "omv.oslo.rts.features.common.json#"}]}

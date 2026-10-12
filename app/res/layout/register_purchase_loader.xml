@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="#ab000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline1" android:layout_width="wrap_content" android:layout_height="wrap_content" text_apply_fonts:layout_constraintGuide_percent="0.5" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" text_apply_fonts:layout_constraintBottom_toBottomOf="parent" text_apply_fonts:layout_constraintEnd_toEndOf="parent" text_apply_fonts:layout_constraintStart_toStartOf="parent" text_apply_fonts:layout_constraintTop_toTopOf="@id/guideline1" text_apply_fonts:layout_constraintVertical_bias="0.5" text_apply_fonts:layout_constraintVertical_weight="1.0">
+        <com.moslay.control_2015.LoadingControl android:id="@id/loading" android:visibility="visible" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerInParent="true" />
+        <com.moslay.view.NewFontTextView android:textSize="20.0sp" android:textColor="#ffff6c93" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/txt_saving_data" android:layout_below="@id/loading" android:layout_centerHorizontal="true" text_apply_fonts:textview_type="2" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

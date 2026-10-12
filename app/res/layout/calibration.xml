@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.moslay.view.FontTextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="clip_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Calibration Sample" android:layout_weight="3.0" />
+    <ProgressBar android:id="@id/calibration_progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0" style="?android:progressBarStyleHorizontal" />
+    <Button android:id="@id/calibration_btn_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Start Calicration" android:layout_weight="2.0" />
+</LinearLayout>

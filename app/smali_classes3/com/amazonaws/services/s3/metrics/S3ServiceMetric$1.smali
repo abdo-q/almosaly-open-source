@@ -1,0 +1,44 @@
+.class final Lcom/amazonaws/services/s3/metrics/S3ServiceMetric$1;
+.super Lcom/amazonaws/services/s3/metrics/S3ServiceMetric$S3ThroughputMetric;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/amazonaws/services/s3/metrics/S3ServiceMetric;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, v0}, Lcom/amazonaws/services/s3/metrics/S3ServiceMetric$S3ThroughputMetric;-><init>(Ljava/lang/String;Lcom/amazonaws/services/s3/metrics/S3ServiceMetric$1;)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public getByteCountMetricType()Lcom/amazonaws/metrics/ServiceMetricType;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/amazonaws/services/s3/metrics/S3ServiceMetric;->S3_DOWNLOAD_BYTE_COUNT:Lcom/amazonaws/services/s3/metrics/S3ServiceMetric;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

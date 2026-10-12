@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_masajed_row_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.FontTextView android:gravity="center" android:id="@id/tv_number" android:background="@drawable/orange_circle_with_stroke" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="16.0dip" android:text="1" android:layout_alignBaseline="@id/tv_masjed_name" android:layout_alignBottom="@id/tv_masjed_name" android:layout_alignParentRight="true" text_apply_fonts:textview_type="3" />
+    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="40.0dip" android:src="@drawable/prev_calendar" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.moslay.view.FontTextView android:id="@id/tv_masjed_name" android:paddingLeft="55.0dip" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="hbjhjkhjkh" android:layout_toLeftOf="@id/tv_number" android:layout_alignParentTop="true" text_apply_fonts:textview_type="3" />
+</RelativeLayout>

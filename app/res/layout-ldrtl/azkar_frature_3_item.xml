@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" app:cardBackgroundColor="#ffa4e9fe" app:cardCornerRadius="25.0dip" app:cardElevation="2.0dip" app:cardMaxElevation="2.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="top" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/AzkarHelpItem3Point1" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" app:textview_type="2" />
+                    <ImageView android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/knoz_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:src="@drawable/werd_azkar_pager_3" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

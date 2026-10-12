@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_onboarding_select_languages_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="23.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/main_image" android:layout_width="227.0dip" android:layout_height="182.0dip" android:src="@drawable/alsalam_alaikum_icon_en_male" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ImageView android:id="@id/cloud_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onboarding_animated_cloud" app:layout_constraintBottom_toBottomOf="@id/main_image" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.97" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/main_image" app:layout_constraintVertical_bias="0.55" />
+            <ImageView android:id="@id/cloud_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onboarding_animated_cloud" app:layout_constraintBottom_toBottomOf="@id/main_image" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.17" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/main_image" app:layout_constraintVertical_bias="0.1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_lang_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

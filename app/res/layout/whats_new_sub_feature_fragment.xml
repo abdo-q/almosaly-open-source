@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/whats_new_sub_feature_fragment_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="7.0" />
+    <ScrollView android:gravity="center|right|top" android:layout_gravity="center|right|top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/twenty_dp" android:layout_weight="4.0">
+        <LinearLayout android:gravity="center|right|top" android:layout_gravity="center|right|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/twenty_two_sp" android:textColor="@color/more_text_color" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" text_apply_fonts:textview_type="3" />
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/sixteen_sp" android:textColor="@color/black" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/five_dp" text_apply_fonts:textview_type="1" />
+        </LinearLayout>
+    </ScrollView>
+    <com.moslay.view.NewFontTextView android:textSize="@dimen/sixteen_sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:tag="binding_4" android:background="@drawable/rounded_border_dark_blue" android:paddingLeft="@dimen/twenty_dp" android:paddingTop="@dimen/three_dp" android:paddingRight="@dimen/twenty_dp" android:paddingBottom="@dimen/three_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/five_dp" text_apply_fonts:textview_type="1" />
+</LinearLayout>

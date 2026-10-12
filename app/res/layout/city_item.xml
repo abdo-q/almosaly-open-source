@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/white_rec_trans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|left" android:id="@id/ll_container" android:background="@drawable/white_rectangle_radius_14dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:minHeight="60.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/img_true" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_margin="10.0dip" android:src="@drawable/theme_1_orange_circle" android:adjustViewBounds="true" />
+        <com.moslay.view.FontTextView android:textColor="@color/black" android:gravity="left" android:id="@id/txt_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="jhjhjhjh" android:layout_weight="1.0" android:contentDescription="@null" />
+        <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/onboarding_next_button_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/delete" android:background="@drawable/orange_bg" android:layout_width="60.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/delete" android:includeFontPadding="false" app:textview_type="2" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fajr_time_dialog_0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/edit_profile_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-70.0dip" android:layout_below="@id/main_layout">
+        <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="#ff0d0303" android:gravity="center" android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" android:text="@string/fajr_time_dialog_desc_1" android:lineSpacingExtra="3.0dip" text_apply_fonts:textview_type="2" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/fajr_time_bg_2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+            <LinearLayout android:gravity="left" android:layout_gravity="left" android:background="@drawable/fajr_time_confirm_bg" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.moslay.view.NewFontTextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/minus" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="-" text_apply_fonts:textview_type="1" />
+                <View android:gravity="center" android:layout_gravity="center" android:background="@color/white" android:layout_width="2.0dip" android:layout_height="15.0dip" />
+                <com.moslay.view.NewFontTextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/plus" android:layout_width="50.0dip" android:layout_height="fill_parent" android:text="+" text_apply_fonts:textview_type="1" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="#ff0d0303" android:id="@id/accroding_fajr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="@string/fajr_time_dialog_time_1" text_apply_fonts:textview_type="2" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/minutes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="2.0dip" android:text="16" />
+                <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="#ff0d0303" android:id="@id/minuteWord" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fajr_minute" text_apply_fonts:textview_type="2" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff0d0303" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/fajr_time_dialog_desc_2" android:lineSpacingExtra="4.0dip" text_apply_fonts:textview_type="1" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="50.0dip">
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/confirm" android:background="@drawable/fajr_time_solid_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="10.0dip" android:text="@string/confirm" text_apply_fonts:textview_type="2" />
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="#ff049acc" android:gravity="center" android:id="@id/later" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="15.0dip" android:text="@string/fajr_time_dialog_btn" text_apply_fonts:textview_type="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="231.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/iconImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fajr_time_icon" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

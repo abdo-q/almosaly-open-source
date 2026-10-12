@@ -1,0 +1,26 @@
+<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hybrid / usa_d_NM_01">
+<g id="usa_d_base">
+<g id="stretchable-items">
+<g id="NM">
+<path id="shape01" fill-rule="evenodd" clip-rule="evenodd" d="M10.5 19.5C15.4706 19.5 19.5 15.4706 19.5 10.5C19.5 5.52944 15.4706 1.5 10.5 1.5C5.52944 1.5 1.5 5.52944 1.5 10.5C1.5 15.4706 5.52944 19.5 10.5 19.5Z" fill="white" stroke="white" stroke-linejoin="round"/>
+<circle id="shape02" cx="10.5" cy="10.5" r="8" stroke="#CC5252"/>
+<g id="shape03">
+<path d="M11 3V1H10V3H11Z" fill="#CC5252"/>
+<path d="M1.5 8H3V9H1.5V8Z" fill="#CC5252"/>
+<path d="M3 10H1V11H3V10Z" fill="#CC5252"/>
+<path d="M3 12H1.5V13H3V12Z" fill="#CC5252"/>
+<path d="M18 11H20V10H18V11Z" fill="#CC5252"/>
+<path d="M19.5 9H18V8H19.5V9Z" fill="#CC5252"/>
+<path d="M18 13H19.5V12H18V13Z" fill="#CC5252"/>
+<path d="M10 20V18H11V20H10Z" fill="#CC5252"/>
+<path d="M12 18V19.5H13V18H12Z" fill="#CC5252"/>
+<path d="M8 19.5V18H9V19.5H8Z" fill="#CC5252"/>
+<path d="M9 1.5V3L8 3V1.5L9 1.5Z" fill="#CC5252"/>
+<path d="M13 3V1.5L12 1.5V3H13Z" fill="#CC5252"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

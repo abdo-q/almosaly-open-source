@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:integer_icrease_decrease_attrs="http://schemas.android.com/apk/res-auto" xmlns:settings_on_off="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:background="@drawable/default_header_background_transparent_curved" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:elevation="5.0dip">
+        <ImageView android:id="@id/img_menu" android:padding="@dimen/fifteen_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:scaleType="fitCenter" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_centerVertical="true" android:contentDescription="@string/dashboard" android:layout_marginStart="@dimen/twenty_dp" android:layout_marginEnd="@dimen/twenty_dp" />
+        <com.moslay.view.NewFontTextView android:textSize="@dimen/_13ssp" android:textColor="@color/white" android:id="@id/edit_khatma" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_khatmaa" android:layout_centerInParent="true" text_apply_fonts:textview_type="2" />
+    </RelativeLayout>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:layout_above="@id/layout_next_prev" android:layout_below="@id/header" android:layoutDirection="rtl" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_next_prev" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_above="@id/dots_layout" android:layoutDirection="rtl">
+        <RelativeLayout android:id="@id/layout_next" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/next_btn" android:background="@drawable/next_btn_round" android:layout_width="fill_parent" android:layout_height="@dimen/_35ssp" android:text="@string/nex" text_apply_fonts:textview_type="2" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_previous" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/_12ssp" android:textColor="@color/onyx" android:gravity="center" android:id="@id/prev_btn" android:background="@drawable/prev_btn" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/_35ssp" android:text="@string/prev" text_apply_fonts:textview_type="2" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/loading_layout" android:background="@color/BlackTransparent40" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <View android:id="@id/view" android:layout_width="@dimen/_20ssp" android:layout_height="@dimen/_20ssp" android:layout_centerInParent="true" />
+        <com.moslay.view.NewFontTextView android:textSize="@dimen/_12ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/addingNewKhatma_inProgress" android:layout_below="@id/view" android:layout_centerInParent="true" text_apply_fonts:textview_type="2" />
+        <com.moslay.control_2015.LoadingControl android:id="@id/loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/dots_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" />
+    <ScrollView android:id="@id/parent_scroll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="start|center" android:orientation="horizontal" android:background="@color/setting_item_header_color" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_header_height" android:layout_marginTop="5.0dip" android:weightSum="5.0">
+                <com.moslay.view.FontTextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/add_new_khatma" text_apply_fonts:textview_type="2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_marginBottom="5.0dip">
+                <EditText android:id="@id/werd_add_khatma_name" android:background="@drawable/rounded_border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:hint=" Khatma Name">
+                    <requestFocus android:layout_width="wrap_content" />
+                </EditText>
+                <View android:background="#fff1eae6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                <RelativeLayout android:id="@id/tex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <RelativeLayout android:background="@drawable/spinner_back" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <com.moslay.view.FontTextView android:gravity="center|left" android:id="@id/werd_spin_parts" android:background="@drawable/spinner_back" android:paddingLeft="5.0dip" android:layout_width="150.0dip" android:layout_height="33.0dip" />
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/werd_arrow_eng" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <com.moslay.view.FontTextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/daily_readings" android:layout_alignParentLeft="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="2" />
+                </RelativeLayout>
+                <com.moslay.view.IntegerIncreaseDecreaseLayout android:id="@id/werd_how_many_pages" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" text_apply_fonts:apply_divider="false" text_apply_fonts:title_text="@string/how_many_surah" />
+                <RelativeLayout android:id="@id/werd_how_many_chapter_or_hezb" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:background="@drawable/spinner_back" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <com.moslay.view.FontTextView android:gravity="center|left" android:id="@id/text_change" android:background="@drawable/spinner_back" android:paddingLeft="5.0dip" android:layout_width="150.0dip" android:layout_height="33.0dip" />
+                        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/werd_arrow_eng" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <com.moslay.view.FontTextView android:gravity="center_horizontal" android:id="@id/werd_how_many_text_change_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/how_many_chapter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="2" />
+                </RelativeLayout>
+                <View android:background="#fff1eae6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+                <com.moslay.view.IntegerIncreaseDecreaseLayout android:id="@id/werd_start_from_Page" android:paddingBottom="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" text_apply_fonts:apply_divider="false" text_apply_fonts:title_text="@string/start_from_page" />
+                <RelativeLayout android:id="@id/werd_start_reading_cont" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_weight="0.15">
+                    <RelativeLayout android:background="@drawable/spinner_back" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <com.moslay.view.FontTextView android:gravity="center|left" android:id="@id/werd_spin_start" android:background="@drawable/spinner_back" android:paddingLeft="5.0dip" android:layout_width="150.0dip" android:layout_height="33.0dip" />
+                        <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/werd_arrow_eng" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <com.moslay.view.FontTextView android:id="@id/werd_start_reading_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/start_from_chapter" android:layout_centerVertical="true" text_apply_fonts:textview_type="2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/werd_hizb_rob_cont" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_weight="0.15">
+                    <RelativeLayout android:background="@drawable/spinner_back" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <com.moslay.view.FontTextView android:gravity="center|left" android:id="@id/werd_spin_start_from" android:background="@drawable/spinner_back" android:paddingLeft="5.0dip" android:layout_width="150.0dip" android:layout_height="33.0dip" />
+                        <ImageView android:id="@id/imageView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/werd_arrow_eng" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <com.moslay.view.FontTextView android:id="@id/fontTextView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/from_hizb" android:layout_centerVertical="true" text_apply_fonts:textview_type="2" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+                <com.moslay.view.OnOffSwitchWithTitle android:layout_gravity="center_vertical" android:id="@id/werd_alert" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" text_apply_fonts:text="@string/Alert" text_apply_fonts:with_divider="true" />
+                <com.moslay.view.ExpandableView android:id="@id/alert_exp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="0.38">
+                    <LinearLayout android:orientation="vertical" android:id="@id/vertical_lay" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RelativeLayout android:id="@id/re" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="5.0dip">
+                            <com.moslay.view.FontTextView android:gravity="center_vertical" android:id="@id/werd_alert_time_pick" android:background="@drawable/spinner_back" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="@string/Time" />
+                            <ImageView android:id="@id/werd_add_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/werd_add_eng" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                        <com.moslay.view.NonScrollListView android:id="@id/werd_alert_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="4.0dip" />
+                    </LinearLayout>
+                </com.moslay.view.ExpandableView>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <LinearLayout android:id="@id/li" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <com.moslay.view.FontTextView android:textSize="22.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/werd_cancel_khatma" android:background="@drawable/curved_red" android:layout_width="130.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:text="@string/Cancel" android:textAlignment="gravity" text_apply_fonts:textview_type="2" />
+                    <com.moslay.view.FontTextView android:textSize="22.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/werd_save_khatma" android:background="@drawable/curved_dark_yellow_button" android:layout_width="130.0dip" android:layout_height="40.0dip" android:text="@string/save" android:textAlignment="gravity" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

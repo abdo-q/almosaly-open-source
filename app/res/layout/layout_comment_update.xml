@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_comment_update_0" android:background="@drawable/round_bg_white" android:layout_width="160.0dip" android:layout_height="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_reply" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_reply" android:layout_width="18.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/reply_to_comment" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reply_txt" android:layout_toRightOf="@id/imgview_reply" android:layout_centerVertical="true" android:paddingEnd="30.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    </RelativeLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <RelativeLayout android:id="@id/layout_edit" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_edit" android:layout_width="18.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/edit_comment_icon" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_txt" android:layout_toRightOf="@id/imgview_edit" android:layout_centerVertical="true" android:paddingEnd="30.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    </RelativeLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <RelativeLayout android:id="@id/layout_delete" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_delete" android:layout_width="18.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/azkar_settings_delete" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="@string/delete_txt" android:layout_toRightOf="@id/imgview_delete" android:layout_centerVertical="true" android:paddingEnd="30.0dip" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition motion:autoTransition="animateToEnd" motion:constraintSetEnd="@id/end" motion:constraintSetStart="@id/start" motion:duration="700" motion:motionInterpolator="linear">
+        <KeyFrameSet />
+    </Transition>
+    <ConstraintSet android:id="@id/start">
+        <Constraint android:id="@id/imgview_mosaly_logo" android:layout_width="160.0dip" android:layout_height="210.0dip" android:layout_marginTop="25.0dip" motion:layout_constraintLeft_toLeftOf="parent" motion:layout_constraintRight_toRightOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/end">
+        <Constraint android:id="@id/imgview_mosaly_logo" android:layout_width="65.0dip" android:layout_height="75.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginStart="15.0dip" motion:layout_constraintRight_toRightOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+</MotionScene>

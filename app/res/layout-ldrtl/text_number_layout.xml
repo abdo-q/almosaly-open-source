@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:tag="layout-ldrtl/text_number_layout_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.moslay.view.NewFontTextView android:textSize="@dimen/min_per_juz_text_font" android:textColor="@color/white" android:id="@id/textTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minutes_for_chapter" />
+    <com.moslay.view.NewFontTextView android:textSize="@dimen/min_per_juz_text_font" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" " />
+    <com.moslay.view.NewFontTextView android:textSize="@dimen/number_text_font" android:textColor="@color/tangerine" android:id="@id/numberTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+</LinearLayout>

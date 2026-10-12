@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/rounded_white_ten_radius" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/twenty_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/success_login" android:layout_centerHorizontal="true" />
+    <com.moslay.view.FontTextView android:textSize="16.699982sp" android:textStyle="bold" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/twenty_dp" android:layout_marginBottom="@dimen/ten_dp" android:text="@string/success_activation" android:layout_below="@id/img" android:layout_centerHorizontal="true" text_apply_fonts:textview_type="1" />
+</RelativeLayout>

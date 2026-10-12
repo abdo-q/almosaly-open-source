@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.moslay.view.NewFontTextView android:textSize="@dimen/_14ssp" android:textColor="@color/default_header_color" android:id="@id/suggest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp" android:text="@string/suggested_khatmat" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ten_dp" android:layout_alignParentStart="true" text_apply_fonts:textview_type="2" />
+        <LinearLayout android:id="@id/more_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp" android:layout_alignParentTop="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/ten_dp" android:layout_alignParentEnd="true">
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/_14ssp" android:textColor="@color/black" android:id="@id/khatma_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" android:layout_marginStart="@dimen/ten_dp" android:layout_toEndOf="@id/more_icon" text_apply_fonts:textview_type="2" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/more_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_icon" android:rotationY="180.0" android:layout_marginStart="15.0dip" android:layout_alignParentStart="true" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/suggest_rec_view" android:background="#fff9f8f8" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp" android:layout_below="@id/suggest" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

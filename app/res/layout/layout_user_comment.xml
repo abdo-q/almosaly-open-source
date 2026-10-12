@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/layout_user_comment_0" android:background="@drawable/round_bg_white" android:layout_width="160.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_reply" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/reply_to_comment" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/reply_txt" android:layout_toRightOf="@id/imgview_reply" android:layout_centerVertical="true" android:paddingEnd="30.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    </RelativeLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <RelativeLayout android:id="@id/layout_like" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/like_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txtview_like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/like_txt" android:layout_toRightOf="@id/imgview_like" android:layout_centerVertical="true" android:paddingEnd="30.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    </RelativeLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <RelativeLayout android:id="@id/layout_report" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/report_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/report_txt" android:layout_toRightOf="@id/imgview_report" android:layout_centerVertical="true" android:paddingEnd="30.0dip" />
+    </RelativeLayout>
+</LinearLayout>

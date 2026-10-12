@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/rounded_white_ten_radius" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/vote_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progress="90" android:indeterminate="false" android:progressDrawable="@drawable/vote_progressbar_white_bg" android:layout_alignTop="@id/inner_layout" android:layout_alignBottom="@id/inner_layout" android:rotation="180.0" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/inner_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.moslay.view.FontTextView android:textSize="@dimen/twenty_sp" android:textColor="@color/blue_cyan_dark" android:id="@id/txtview_vote_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ten_dp" android:layout_alignParentStart="true" text_apply_fonts:textview_type="1" />
+        <com.moslay.view.FontTextView android:textSize="@dimen/seventeen_sp" android:textColor="@color/black" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/txtview_vote_item_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true" android:textAlignment="gravity" android:layout_marginStart="@dimen/five_dp" text_apply_fonts:textview_type="3" />
+        <RelativeLayout android:id="@id/layout_radiobutton_percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="8.0dip" android:layout_centerVertical="true" android:layout_marginStart="@dimen/ten_sp" android:layout_alignParentEnd="true">
+            <RadioButton android:id="@id/radio_vote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:scaleX="1.5" android:scaleY="1.5" android:buttonTint="@color/black" />
+            <ProgressBar android:id="@id/submitting_progressbar" android:padding="8.0dip" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" style="?android:progressBarStyle" />
+            <TextView android:textColor="#ff4b5ab9" android:id="@id/txtview_percentage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10%" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

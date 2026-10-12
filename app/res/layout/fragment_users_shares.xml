@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:background="@drawable/default_header_background_transparent_curved" android:layout_width="fill_parent" android:layout_height="@dimen/header_height2" android:layout_alignParentTop="true" android:elevation="5.0dip">
+        <TextView android:id="@id/Azkar_menu_Header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/news_benefets" android:layout_centerInParent="true" style="@style/header_textview" />
+        <ImageView android:id="@id/img_back" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="@dimen/ten_dp" android:src="@drawable/back_arrow" android:layout_centerVertical="true" android:contentDescription="@string/back" android:layout_marginStart="@dimen/twenty_dp" />
+        <ImageView android:id="@id/img_fav" android:layout_width="15.0dip" android:layout_height="20.0dip" android:src="@drawable/favorite_img" android:adjustViewBounds="true" android:layout_centerVertical="true" android:contentDescription="@string/settings" android:layout_marginEnd="30.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/news_swipeContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/header" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_news" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

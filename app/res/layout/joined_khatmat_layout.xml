@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/news_swipeContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/khatma_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/empty_state_layout2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_joined" android:layout_centerHorizontal="true" />
+        <com.moslay.view.NewFontTextView android:textSize="@dimen/_12ssp" android:textColor="@color/grey_dark" android:gravity="center" android:id="@id/khatma_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp" android:text="@string/joined_kh_emptyState1" android:layout_below="@id/empty_image" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/eighteen_sp" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textSize="@dimen/_12ssp" android:textColor="@color/grey_dark" android:gravity="center" android:id="@id/khatma_name2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/joined_kh_emptyState2" android:layout_below="@id/khatma_name" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/eighteen_sp" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textColor="@color/white" android:id="@id/txtview_go_khatma_community" android:background="@drawable/bg_btn_joined_khatma_empty" android:paddingLeft="25.0dip" android:paddingTop="8.0dip" android:paddingRight="25.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/go_to_khatma_community" android:layout_below="@id/khatma_name2" android:layout_centerHorizontal="true" text_apply_fonts:textview_type="2" />
+    </RelativeLayout>
+    <com.moslay.control_2015.LoadingControl android:id="@id/news_bottom_loading" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.moslay.control_2015.LoadingControl android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

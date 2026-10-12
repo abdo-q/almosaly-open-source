@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gry_border_white_fill" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.FontTextView android:textSize="19.0sp" android:textColor="@color/black" android:id="@id/time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp" android:text="11:40" android:layout_centerHorizontal="true" android:layout_marginEnd="@dimen/thirty_dp" text_apply_fonts:textview_type="1" />
+    <com.moslay.view.FontTextView android:textSize="@dimen/twenty_dp" android:textColor="@color/white" android:gravity="center" android:id="@id/werd_delete_alert" android:background="@drawable/grey_bg_round" android:padding="@dimen/ten_dp" android:layout_width="45.0dip" android:layout_height="fill_parent" android:src="@drawable/down_white_arrow" android:text="+" />
+</RelativeLayout>

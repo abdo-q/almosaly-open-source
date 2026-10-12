@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/gp1">
+        <item android:icon="@drawable/ssupervisor_icon" android:id="@id/make_supervisor" android:title="جعلة مشرف" />
+    </group>
+    <group android:id="@id/gp2">
+        <item android:icon="@drawable/mute_icon" android:id="@id/mute" android:title="كتم" />
+    </group>
+    <group android:id="@id/gp3">
+        <item android:icon="@drawable/delete_icon" android:id="@id/delete" android:title="مسح" />
+    </group>
+</menu>

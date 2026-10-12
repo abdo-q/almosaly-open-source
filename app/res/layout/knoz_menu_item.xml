@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/azkar_layout" android:background="@drawable/knoz_menu_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/kenz601" />
+        <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="left" android:layout_gravity="center" android:id="@id/azkar_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/fagr_list_help_hadeth2" android:maxLines="2" android:layout_weight="1.0" text_apply_fonts:textview_type="2" />
+        <ImageView android:id="@id/arrow" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_margin="@dimen/fifteen_dp" android:src="@drawable/azkar_arrow_left" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="180.0" />
+    </LinearLayout>
+</RelativeLayout>

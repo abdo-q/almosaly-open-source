@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgview_pdf" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="8.0dip" android:src="@drawable/ic_inquiry_pdf" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.moslay.view.NewFontTextView android:textColor="#ff767676" android:ellipsize="end" android:gravity="right" android:id="@id/txtview_filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="" android:lines="1" android:layout_toLeftOf="@id/imgview_remove" android:layout_toRightOf="@id/imgview_pdf" android:layout_centerVertical="true" android:textAlignment="gravity" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/ic_close_salet" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

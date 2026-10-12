@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/pob_open_store_button_background" android:paddingTop="@dimen/pob_open_store_button_vertical_padding" android:paddingBottom="@dimen/pob_open_store_button_vertical_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/pob_open_store_button_padding_start" android:paddingEnd="@dimen/pob_open_store_button_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/pob_open_store_button_text_size" android:textStyle="bold" android:textColor="@color/pob_open_store_button_text_color" android:id="@id/pob_open_store_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pob_open_store_button_text" />
+    <ImageView android:id="@id/pob_open_store_icon" android:layout_width="@dimen/pob_open_store_button_icon_size" android:layout_height="@dimen/pob_open_store_button_icon_size" android:src="@drawable/pob_round_skip_next_24" android:scaleType="centerInside" android:contentDescription="@string/pob_open_store_button_text" />
+</LinearLayout>

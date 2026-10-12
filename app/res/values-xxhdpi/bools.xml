@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="is_hdpi">false</bool>
+    <bool name="is_xhdpi">false</bool>
+    <bool name="is_xxhdpi">true</bool>
+    <bool name="is_xxxhdpi">false</bool>
+</resources>

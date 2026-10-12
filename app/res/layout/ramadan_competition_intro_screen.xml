@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/ramadan_competition_intro_screen_0" android:background="@color/carrot_orange" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ramadan_comp_intro_ic" android:adjustViewBounds="true" android:maxHeight="370.0dip" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/bottom_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:alpha="0.0">
+            <com.moslay.view.NewFontTextView android:textSize="30.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/be_ready" app:textview_type="2" />
+            <com.moslay.view.NewFontTextView android:textSize="26.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="8.0dip" android:text="@string/special_questions_await_you" app:textview_type="1" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

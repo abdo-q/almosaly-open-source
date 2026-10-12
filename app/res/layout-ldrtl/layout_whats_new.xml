@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout-ldrtl/layout_whats_new_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" text_apply_fonts:cardBackgroundColor="@color/white" text_apply_fonts:cardCornerRadius="15.0dip" text_apply_fonts:cardElevation="2.0dip" text_apply_fonts:cardMaxElevation="2.0dip" text_apply_fonts:cardPreventCornerOverlap="true" text_apply_fonts:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="153.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="153.0dip" android:src="@drawable/bg_rewards" android:scaleType="centerCrop" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/layout_text_sec" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_toRightOf="@id/imgview_rewards" android:layout_alignTop="@id/layout_content" android:layout_alignBottom="@id/layout_content">
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/txtview_sec" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/txt_rewards_second" android:layout_alignParentRight="true" android:lineSpacingExtra="4.0dip" android:textAlignment="gravity" text_apply_fonts:textview_type="3" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="16.0dip" android:layout_toRightOf="@id/imgview_rewards" android:layout_above="@id/txtview_explore">
+            <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/txtview_rewards_reach_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_rewards_reach_to" android:layout_alignParentRight="true" text_apply_fonts:textview_type="3" />
+            <RelativeLayout android:id="@id/layout_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/txtview_rewards_reach_to">
+                <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="right" android:id="@id/txtview_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="40,000" android:layout_alignParentRight="true" android:textAlignment="gravity" />
+                <com.moslay.view.NewFontTextView android:textColor="@color/black" android:id="@id/txtview_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/txt_currency" android:layout_toLeftOf="@id/txtview_amount" android:layout_alignBottom="@id/txtview_amount" text_apply_fonts:textview_type="2" />
+            </RelativeLayout>
+            <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_thousands_golden" android:layout_below="@id/layout_price" android:layout_alignParentRight="true" android:textAlignment="gravity" text_apply_fonts:textview_type="3" />
+        </RelativeLayout>
+        <com.moslay.view.NewFontTextView android:textColor="@color/black" android:gravity="center" android:id="@id/txtview_explore" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/txt_explore_property" android:layout_below="@id/layout_content" android:textAlignment="gravity" text_apply_fonts:textview_type="3" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imgview_rewards" android:layout_alignParentRight="true" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_rewards" android:layout_width="wrap_content" android:layout_height="153.0dip" android:src="@drawable/img_rewards" android:scaleType="centerInside" android:layout_alignBottom="@id/layout_content" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

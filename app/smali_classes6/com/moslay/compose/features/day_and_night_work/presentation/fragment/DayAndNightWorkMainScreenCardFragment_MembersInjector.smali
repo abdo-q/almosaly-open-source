@@ -1,0 +1,131 @@
+.class public final Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment_MembersInjector;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ldagger/MembersInjector;
+
+
+# annotations
+.annotation build Ldagger/internal/DaggerGenerated;
+.end annotation
+
+.annotation build Ldagger/internal/QualifierMetadata;
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ldagger/MembersInjector<",
+        "Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final analyticsHandlerProvider:Ldagger/internal/Provider;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ldagger/internal/Provider<",
+            "Lcom/moslay/compose/core/handlers/FirebaseAnalyticsHandler;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method private constructor <init>(Ldagger/internal/Provider;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ldagger/internal/Provider<",
+            "Lcom/moslay/compose/core/handlers/FirebaseAnalyticsHandler;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment_MembersInjector;->analyticsHandlerProvider:Ldagger/internal/Provider;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static create(Ldagger/internal/Provider;)Ldagger/MembersInjector;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ldagger/internal/Provider<",
+            "Lcom/moslay/compose/core/handlers/FirebaseAnalyticsHandler;",
+            ">;)",
+            "Ldagger/MembersInjector<",
+            "Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment_MembersInjector;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment_MembersInjector;-><init>(Ldagger/internal/Provider;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public static injectAnalyticsHandler(Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment;Lcom/moslay/compose/core/handlers/FirebaseAnalyticsHandler;)V
+    .locals 0
+    .annotation build Ldagger/internal/InjectedFieldSignature;
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment;->analyticsHandler:Lcom/moslay/compose/core/handlers/FirebaseAnalyticsHandler;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+
+# virtual methods
+.method public injectMembers(Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment;)V
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment_MembersInjector;->analyticsHandlerProvider:Ldagger/internal/Provider;
+
+    invoke-interface {v0}, Ljavax/inject/Provider;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/moslay/compose/core/handlers/FirebaseAnalyticsHandler;
+
+    invoke-static {p1, v0}, Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment_MembersInjector;->injectAnalyticsHandler(Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment;Lcom/moslay/compose/core/handlers/FirebaseAnalyticsHandler;)V
+
+    return-void
+.end method
+
+.method public bridge synthetic injectMembers(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment;
+
+    invoke-virtual {p0, p1}, Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment_MembersInjector;->injectMembers(Lcom/moslay/compose/features/day_and_night_work/presentation/fragment/DayAndNightWorkMainScreenCardFragment;)V
+
+    return-void
+.end method

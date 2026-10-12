@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/azkar_layout" android:background="@drawable/rewards_unclicked_btn" android:layout_width="160.0dip" android:layout_height="100.0dip" android:layout_marginBottom="10.0dip" android:backgroundTint="#ffeff6ea"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:id="@id/azkar_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="jhhihioih hiohoio ihiohih ihiohoh  iwojo iojp" android:layout_weight="1.0" android:layout_centerInParent="true" android:lineSpacingExtra="3.0dip" text_apply_fonts:textview_type="2" />
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/hesn_icon8" />
+</LinearLayout>

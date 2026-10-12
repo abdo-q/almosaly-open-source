@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <com.moslay.control_2015.LoadingControl android:id="@id/news_bottom_loading" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/news_swipeContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/khatma_listview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.moslay.control_2015.LoadingControl android:id="@id/khatmat_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/empty_state_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/empty_state_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_state_ended" android:layout_centerInParent="true" />
+        <com.moslay.view.NewFontTextView android:textSize="@dimen/_12ssp" android:textColor="@color/oxford_blue" android:gravity="center" android:id="@id/khatma_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/twenty_dp" android:text="@string/no_ended_khatmat_yet" android:layout_below="@id/empty_state_image" android:layout_centerHorizontal="true" text_apply_fonts:textview_type="2" />
+    </RelativeLayout>
+</RelativeLayout>

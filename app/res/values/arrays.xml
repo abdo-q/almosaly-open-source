@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="AzanSounds">
+        <item>@string/choose_azan_from_files</item>
+        <item>@string/AzanSounds_0</item>
+        <item>@string/AzanSounds_3</item>
+    </string-array>
+    <integer-array name="AzanSoundsIds">
+        <item>-1</item>
+        <item>-10</item>
+        <item>-40</item>
+    </integer-array>
+    <string-array name="EkametSalwatTimesNames">
+        <item>@string/EkametSalwatTimesNames_0</item>
+        <item>@string/EkametSalwatTimesNames_1</item>
+        <item>@string/EkametSalwatTimesNames_2</item>
+        <item>@string/EkametSalwatTimesNames_3</item>
+        <item>@string/EkametSalwatTimesNames_4</item>
+        <item>@string/EkametSalwatTimesNames_5</item>
+    </string-array>
+    <string-array name="EkametSalwatTimesNamesForFriday">
+        <item>@string/EkametSalwatTimesNames_0</item>
+        <item>@string/EkametSalwatTimesNames_1</item>
+        <item>@string/EkametSalwatTimesNames_22</item>
+        <item>@string/EkametSalwatTimesNames_3</item>
+        <item>@string/EkametSalwatTimesNames_4</item>
+        <item>@string/EkametSalwatTimesNames_5</item>
+    </string-array>
+    <string-array name="HegryMonths">
+        <item>@string/HegryMonths_0</item>
+        <item>@string/HegryMonths_1</item>
+        <item>@string/HegryMonths_2</item>
+        <item>@string/HegryMonths_3</item>
+        <item>@string/HegryMonths_4</item>
+        <item>@string/HegryMonths_5</item>
+        <item>@string/HegryMonths_6</item>
+        <item>@string/HegryMonths_7</item>
+        <item>@string/HegryMonths_8</item>
+        <item>@string/HegryMonths_9</item>
+        <item>@string/HegryMonths_10</item>
+        <item>@string/HegryMonths_11</item>
+    </string-array>
+    <string-array name="HegryMonths_ar">
+        <item>@string/HegryMonths_0_ar</item>
+        <item>@string/HegryMonths_1_ar</item>
+        <item>@string/HegryMonths_2_ar</item>
+        <item>@string/HegryMonths_3_ar</item>
+        <item>@string/HegryMonths_4_ar</item>
+        <item>@string/HegryMonths_5_ar</item>
+        <item>@string/HegryMonths_6_ar</item>
+        <item>@string/HegryMonths_7_ar</item>
+        <item>@string/HegryMonths_8_ar</item>
+        <item>@string/HegryMonths_9_ar</item>
+        <item>@string/HegryMonths_10_ar</item>
+        <item>@string/HegryMonths_11_ar</item>
+    </string-array>
+    <string-array name="HegryMonths_en">
+        <item>@string/HegryMonths_0_en</item>
+        <item>@string/HegryMonths_1_en</item>
+        <item>@string/HegryMonths_2_en</item>
+        <item>@string/HegryMonths_3_en</item>
+        <item>@string/HegryMonths_4_en</item>
+        <item>@string/HegryMonths_5_en</item>
+        <item>@string/HegryMonths_6_en</item>
+        <item>@string/HegryMonths_7_en</item>
+        <item>@string/HegryMonths_8_en</item>
+        <item>@string/HegryMonths_9_en</item>
+        <item>@string/HegryMonths_10_en</item>
+        <item>@string/HegryMonths_11_en</item>
+    </string-array>
+    <string-array name="HegryMonths_fa">
+        <item>@string/HegryMonths_0_fa</item>
+        <item>@string/HegryMonths_1_fa</item>
+        <item>@string/HegryMonths_2_fa</item>
+        <item>@string/HegryMonths_3_fa</item>
+        <item>@string/HegryMonths_4_fa</item>
+        <item>@string/HegryMonths_5_fa</item>
+        <item>@string/HegryMonths_6_fa</item>
+        <item>@string/HegryMonths_7_fa</item>
+        <item>@string/HegryMonths_8_fa</item>
+        <item>@string/HegryMonths_9_fa</item>
+        <item>@string/HegryMonths_10_fa</item>
+        <item>@string/HegryMonths_11_fa</item>
+    </string-array>
+    <string-array name="HegryMonths_in">
+        <item>@string/HegryMonths_0_in</item>
+        <item>@string/HegryMonths_1_in</item>
+        <item>@string/HegryMonths_2_in</item>
+        <item>@string/HegryMonths_3_in</item>
+        <item>@string/HegryMonths_4_in</item>
+        <item>@string/HegryMonths_5_in</item>
+        <item>@string/HegryMonths_6_in</item>
+        <item>@string/HegryMonths_7_in</item>
+        <item>@string/HegryMonths_8_in</item>
+        <item>@string/HegryMonths_9_in</item>
+        <item>@string/HegryMonths_10_in</item>
+        <item>@string/HegryMonths_11_in</item>
+    </string-array>
+    <string-array name="MediaControlView_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="QeyamTypes">
+        <item>@string/first_third</item>
+        <item>@string/second_third</item>
+        <item>@string/third_third</item>
+    </string-array>
+    <string-array name="SalwatTimesNames">
+        <item>@string/fajr</item>
+        <item>@string/sherouk</item>
+        <item>@string/zohr</item>
+        <item>@string/asr</item>
+        <item>@string/magreb</item>
+        <item>@string/esha</item>
+    </string-array>
+    <string-array name="SalwatTimesNamesForFriday">
+        <item>@string/fajr</item>
+        <item>@string/sherouk</item>
+        <item>@string/AlJumuah</item>
+        <item>@string/asr</item>
+        <item>@string/magreb</item>
+        <item>@string/esha</item>
+    </string-array>
+    <string-array name="SalwatTimesNamesForFriday_am">
+        <item>@string/fagr_sw</item>
+        <item>@string/sherouk_sw</item>
+        <item>@string/AlJumuah_sw</item>
+        <item>@string/asr_sw</item>
+        <item>@string/magreb_sw</item>
+        <item>@string/esha_sw</item>
+    </string-array>
+    <string-array name="SalwatTimesNamesForFriday_ar">
+        <item>@string/fagr_ar</item>
+        <item>@string/sherouk_ar</item>
+        <item>@string/AlJumuah_ar</item>
+        <item>@string/asr_ar</item>
+        <item>@string/magreb_ar</item>
+        <item>@string/esha_ar</item>
+    </string-array>
+    <string-array name="SalwatTimesNamesForFriday_en">
+        <item>@string/fagr_en</item>
+        <item>@string/sherouk_en</item>
+        <item>@string/AlJumuah_en</item>
+        <item>@string/asr_en</item>
+        <item>@string/magreb_en</item>
+        <item>@string/esha_en</item>
+    </string-array>
+    <string-array name="SalwatTimesNamesForFriday_fa">
+        <item>@string/fagr_fa</item>
+        <item>@string/sherouk_fa</item>
+        <item>@string/AlJumuah_fa</item>
+        <item>@string/asr_fa</item>
+        <item>@string/magreb_fa</item>
+        <item>@string/esha_fa</item>
+    </string-array>
+    <string-array name="SalwatTimesNamesForFriday_in">
+        <item>@string/fagr_in</item>
+        <item>@string/sherouk_in</item>
+        <item>@string/AlJumuah_in</item>
+        <item>@string/asr_in</item>
+        <item>@string/magreb_in</item>
+        <item>@string/esha_in</item>
+    </string-array>
+    <string-array name="SalwatTimesNamesForFriday_sw">
+        <item>@string/fagr_sw</item>
+        <item>@string/sherouk_sw</item>
+        <item>@string/AlJumuah_sw</item>
+        <item>@string/asr_sw</item>
+        <item>@string/magreb_sw</item>
+        <item>@string/esha_sw</item>
+    </string-array>
+    <string-array name="SalwatTimesNamesWithoutShrouq">
+        <item>@string/fajr</item>
+        <item>@string/zohr</item>
+        <item>@string/asr</item>
+        <item>@string/magreb</item>
+        <item>@string/esha</item>
+    </string-array>
+    <string-array name="SalwatTimesNames_am">
+        <item>@string/fagr_am</item>
+        <item>@string/sherouk_am</item>
+        <item>@string/dohr_am</item>
+        <item>@string/asr_am</item>
+        <item>@string/magreb_am</item>
+        <item>@string/esha_am</item>
+    </string-array>
+    <string-array name="SalwatTimesNames_ar">
+        <item>@string/fagr_ar</item>
+        <item>@string/sherouk_ar</item>
+        <item>@string/dohr_ar</item>
+        <item>@string/asr_ar</item>
+        <item>@string/magreb_ar</item>
+        <item>@string/esha_ar</item>
+    </string-array>
+    <string-array name="SalwatTimesNames_en">
+        <item>@string/fagr_en</item>
+        <item>@string/sherouk_en</item>
+        <item>@string/dohr_en</item>
+        <item>@string/asr_en</item>
+        <item>@string/magreb_en</item>
+        <item>@string/esha_en</item>
+    </string-array>
+    <string-array name="SalwatTimesNames_fa">
+        <item>@string/fagr_fa</item>
+        <item>@string/sherouk_fa</item>
+        <item>@string/dohr_fa</item>
+        <item>@string/asr_fa</item>
+        <item>@string/magreb_fa</item>
+        <item>@string/esha_fa</item>
+    </string-array>
+    <string-array name="SalwatTimesNames_in">
+        <item>@string/fagr_in</item>
+        <item>@string/sherouk_in</item>
+        <item>@string/dohr_in</item>
+        <item>@string/asr_in</item>
+        <item>@string/magreb_in</item>
+        <item>@string/esha_in</item>
+    </string-array>
+    <string-array name="SalwatTimesNames_sw">
+        <item>@string/fagr_sw</item>
+        <item>@string/sherouk_sw</item>
+        <item>@string/dohr_sw</item>
+        <item>@string/asr_sw</item>
+        <item>@string/magreb_sw</item>
+        <item>@string/esha_sw</item>
+    </string-array>
+    <string-array name="SalwatTimesReminderText">
+        <item>@string/remind_for_fajr</item>
+        <item>@string/remind_for_shrouq</item>
+        <item>@string/remind_for_zohr</item>
+        <item>@string/remind_for_asr</item>
+        <item>@string/remind_for_maghreb</item>
+        <item>@string/remind_for_eshaa</item>
+    </string-array>
+    <string-array name="SalwatTimesReminderTextForFriday">
+        <item>@string/remind_for_fajr</item>
+        <item>@string/remind_for_shrouq</item>
+        <item>@string/remind_for_gom3a</item>
+        <item>@string/remind_for_asr</item>
+        <item>@string/remind_for_maghreb</item>
+        <item>@string/remind_for_eshaa</item>
+    </string-array>
+    <string-array name="YearHegryEvents">
+        <item>@string/YearHegryEvents_0</item>
+        <item>@string/YearHegryEvents_1</item>
+        <item>@string/YearHegryEvents_2</item>
+        <item>@string/YearHegryEvents_3</item>
+        <item>@string/YearHegryEvents_4</item>
+        <item>@string/YearHegryEvents_5</item>
+    </string-array>
+    <string-array name="alert_types">
+        <item>@string/alert_types_0</item>
+        <item>@string/alert_types_1</item>
+    </string-array>
+    <string-array name="almosaly_stars_features">
+        <item>@string/widget_premium_feature_label</item>
+        <item>@string/silence_premium_feature_label</item>
+        <item>@string/seb7a_duaa_themes_premium_feature_label</item>
+        <item>@string/dhikr_duaa_vertical_mode_premium_feature_label</item>
+        <item>@string/mushaf_themes_premium_feature_label</item>
+        <item>@string/audio_player_speed_premium_feature_label</item>
+        <item>@string/qibla_themes_premium_feature_label</item>
+        <item>@string/dhikr_readers_premium_feature_label</item>
+        <item>@string/share_taatk_premium_feature_label</item>
+        <item>@string/audio_player_timer_premium_feature_label</item>
+        <item>@string/augmented_reality_qibla_premium_feature_label</item>
+        <item>@string/vocal_praise_premium_feature_label</item>
+    </string-array>
+    <array name="array_dot_active">
+        <item>@color/orange_index_selected</item>
+        <item>@color/orange_index_selected</item>
+        <item>@color/orange_index_selected</item>
+        <item>@color/orange_index_selected</item>
+        <item>@color/orange_index_selected</item>
+        <item>@color/orange_index_selected</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>@color/dimmed_text</item>
+        <item>@color/dimmed_text</item>
+        <item>@color/dimmed_text</item>
+        <item>@color/dimmed_text</item>
+        <item>@color/dimmed_text</item>
+        <item>@color/dimmed_text</item>
+    </array>
+    <string-array name="arrival_dhikr_bodies">
+        <item>@string/arrival_first_dhikr_body</item>
+    </string-array>
+    <string-array name="arrival_dhikr_bodies_arabic">
+        <item>@string/arrival_first_dhikr_body_arabic</item>
+    </string-array>
+    <string-array name="arrival_dhikr_titles">
+        <item>@string/arrival_first_dhikr_title</item>
+    </string-array>
+    <array name="autosize_text_sizes">
+        <item>11.0sp</item>
+        <item>13.0sp</item>
+        <item>15.0sp</item>
+        <item>17.0sp</item>
+        <item>19.0sp</item>
+    </array>
+    <string-array name="azan_modes">
+        <item>@string/azan_modes_0</item>
+        <item>@string/azan_modes_1</item>
+    </string-array>
+    <string-array name="azkar_language">
+        <item>@string/azkar_language_0</item>
+        <item>@string/azkar_language_1</item>
+        <item>@string/azkar_language_2</item>
+        <item>@string/azkar_language_3</item>
+        <item>@string/azkar_language_4</item>
+        <item>@string/azkar_language_5</item>
+        <item>@string/azkar_language_6</item>
+        <item>@string/azkar_language_7</item>
+    </string-array>
+    <string-array name="azkar_noom_notification">
+        <item>@string/azkar_noom_notification_0</item>
+        <item>@string/azkar_noom_notification_1</item>
+        <item>@string/azkar_noom_notification_2</item>
+        <item>@string/azkar_noom_notification_3</item>
+        <item>@string/azkar_noom_notification_4</item>
+        <item>@string/azkar_noom_notification_5</item>
+        <item>@string/azkar_noom_notification_6</item>
+    </string-array>
+    <string-array name="beforeAzanMessage">
+        <item>@string/beforeAzanMessage_0</item>
+        <item>@string/beforeAzanMessage_1</item>
+        <item>@string/beforeAzanMessage_2</item>
+        <item>@string/beforeAzanMessage_3</item>
+        <item>@string/beforeAzanMessage_4</item>
+        <item>@string/beforeAzanMessage_5</item>
+    </string-array>
+    <string-array name="beforeAzanMessageForFriday">
+        <item>@string/beforeAzanMessage_0</item>
+        <item>@string/beforeAzanMessage_1</item>
+        <item>@string/beforeAzanMessage_22</item>
+        <item>@string/beforeAzanMessage_3</item>
+        <item>@string/beforeAzanMessage_4</item>
+        <item>@string/beforeAzanMessage_5</item>
+    </string-array>
+    <string-array name="chapters_names_arr">
+        <item>الجزء الأول</item>
+        <item>الجزء الثاني</item>
+        <item>الجزء الثالث</item>
+        <item>الجزء الرابع</item>
+        <item>الجزء الخامس</item>
+        <item>الجزء السادس</item>
+        <item>الجزء السابع</item>
+        <item>الجزء الثامن</item>
+        <item>الجزء التاسع</item>
+        <item>الجزء العاشر</item>
+        <item>الجزء الحادي عشر</item>
+        <item>الجزء الثاني عشر</item>
+        <item>الجزء الثالث عشر</item>
+        <item>الجزء الرابع عشر</item>
+        <item>الجزء الخامس عشر</item>
+        <item>الجزء السادس عشر</item>
+        <item>الجزء السابع عشر</item>
+        <item>الجزء الثامن عشر</item>
+        <item>الجزء التاسع عشر</item>
+        <item>الجزء العشرون</item>
+        <item>الجزء الحادى والعشرون</item>
+        <item>الجزء الثاني والعشرون</item>
+        <item>الجزء الثالث والعشرون</item>
+        <item>الجزء الرابع والعشرون</item>
+        <item>الجزء الخامس والعشرون</item>
+        <item>الجزء السادس والعشرون</item>
+        <item>الجزء السابع والعشرون</item>
+        <item>الجزء الثامن والعشرون</item>
+        <item>الجزء التاسع والعشرون</item>
+        <item>الجزء الثلاثون</item>
+    </string-array>
+    <string-array name="charity_bank_failed_donation_survey_items">
+        <item>@string/failed_donation_option_1</item>
+        <item>@string/failed_donation_option_2</item>
+        <item>@string/failed_donation_option_3</item>
+        <item>@string/failed_donation_option_4</item>
+        <item>@string/failed_donation_option_5</item>
+        <item>@string/failed_donation_option_6</item>
+    </string-array>
+    <string-array name="configs_name">
+        <item>@string/config_switch_horizontally</item>
+        <item>@string/config_switch_vertically</item>
+        <item>@string/config_rotate_axis</item>
+    </string-array>
+    <string-array name="default_Azan_group_names">
+        <item>@string/masajed</item>
+        <item>@string/masajed</item>
+        <item>@string/masajed</item>
+        <item>@string/masajed</item>
+        <item>@string/masajed</item>
+        <item>@string/masajed</item>
+        <item>@string/masajed</item>
+        <item>@string/masajed</item>
+        <item>@string/masajed</item>
+    </string-array>
+    <string-array name="default_tasks">
+        <item>@string/default_tasks_7</item>
+        <item>@string/default_tasks_4</item>
+        <item>@string/default_tasks_2</item>
+        <item>@string/default_tasks_5</item>
+        <item>@string/default_tasks_8</item>
+        <item>@string/default_tasks_1</item>
+        <item>@string/default_tasks_0</item>
+        <item>@string/default_tasks_3</item>
+        <item>@string/default_tasks_6</item>
+    </string-array>
+    <string-array name="display_types">
+        <item>ANGLE</item>
+        <item>INCLINATION</item>
+        <item>ROOF_PITCH</item>
+    </string-array>
+    <string-array name="display_types_name">
+        <item>@string/angle</item>
+        <item>@string/inclination</item>
+        <item>@string/roof_pitch</item>
+    </string-array>
+    <string-array name="droid_speech_errors">
+        <item>Network Timeout</item>
+        <item>Network Error</item>
+        <item>Audio Error</item>
+        <item>Server Error</item>
+        <item>Client Error</item>
+        <item>Speech Timeout</item>
+        <item>No match</item>
+        <item>Speech Recognizer busy</item>
+        <item>Insufficient permissions</item>
+    </string-array>
+    <string-array name="during_flight_dhikr_bodies">
+        <item>@string/during_flight_first_dhikr_body</item>
+        <item>@string/during_flight_second_dhikr_body</item>
+        <item>@string/during_flight_third_dhikr_body</item>
+        <item>@string/during_flight_fourth_dhikr_body</item>
+    </string-array>
+    <string-array name="during_flight_dhikr_bodies_arabic">
+        <item>@string/during_flight_first_dhikr_body_arabic</item>
+        <item>@string/during_flight_second_dhikr_body_arabic</item>
+        <item>@string/during_flight_third_dhikr_body_arabic</item>
+        <item>@string/during_flight_fourth_dhikr_body_arabic</item>
+    </string-array>
+    <string-array name="during_flight_dhikr_titles">
+        <item>@string/during_flight_first_dhikr_title</item>
+        <item>@string/during_flight_second_dhikr_title</item>
+        <item>@string/during_flight_third_dhikr_title</item>
+        <item>@string/during_flight_fourth_dhikr_title</item>
+    </string-array>
+    <string-array name="ekamaSounds">
+        <item>@string/ekamaSounds_0</item>
+        <item>@string/ekamaSounds_1</item>
+    </string-array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="fajr_ahadeth">
+        <item>@string/fajr_ahadeth_0</item>
+        <item>@string/fajr_ahadeth_1</item>
+        <item>@string/fajr_ahadeth_2</item>
+        <item>@string/fajr_ahadeth_3</item>
+        <item>@string/fajr_ahadeth_4</item>
+        <item>@string/fajr_ahadeth_5</item>
+    </string-array>
+    <string-array name="fav_ayat_highlight_night_mode">
+        <item>\#4DC8A7E9</item>
+        <item>\#4DF1C077</item>
+        <item>\#4D6EA7CD</item>
+        <item>\#4DF7A1A1</item>
+        <item>\#4D8CBC9A</item>
+    </string-array>
+    <string-array name="fav_mushaf_clrs">
+        <item>\#A46DDB</item>
+        <item>\#E6D91E</item>
+        <item>\#0D6DAB</item>
+        <item>\#F26262</item>
+        <item>\#409057</item>
+    </string-array>
+    <string-array name="flight_notification_bodies">
+        <item>@string/flight_preparation_first_dhikr_notification_body</item>
+        <item>@string/flight_preparation_second_dhikr_notification_body</item>
+        <item>@string/flight_preparation_third_dhikr_notification_body</item>
+        <item>@string/reaching_airport_first_dhikr_notification_body</item>
+        <item>@string/reaching_airport_second_dhikr_notification_body</item>
+        <item>@string/during_flight_first_dhikr_notification_body</item>
+        <item>@string/during_flight_second_dhikr_notification_body</item>
+        <item>@string/during_flight_third_dhikr_notification_body</item>
+        <item>@string/during_flight_fourth_dhikr_notification_body</item>
+        <item>@string/arrival_first_dhikr_notification_body</item>
+    </string-array>
+    <string-array name="flight_notification_sounds">
+        <item>flight_preparation_first_notification</item>
+        <item>flight_preparation_second_notification</item>
+        <item>flight_preparation_third_notification</item>
+        <item>reaching_airport_first_notification</item>
+        <item>reaching_airport_second_notification</item>
+        <item>during_flight_first_notification</item>
+        <item>during_flight_second_notification</item>
+        <item>during_flight_third_notification</item>
+        <item>during_flight_fourth_notification</item>
+        <item>arrival_first_notification</item>
+    </string-array>
+    <string-array name="flight_notification_titles">
+        <item>@string/flight_preparation_first_dhikr_notification_title</item>
+        <item>@string/flight_preparation_second_dhikr_notification_title</item>
+        <item>@string/flight_preparation_third_dhikr_notification_title</item>
+        <item>@string/reaching_airport_first_dhikr_notification_title</item>
+        <item>@string/reaching_airport_second_dhikr_notification_title</item>
+        <item>@string/during_flight_first_dhikr_notification_title</item>
+        <item>@string/during_flight_second_dhikr_notification_title</item>
+        <item>@string/during_flight_third_dhikr_notification_title</item>
+        <item>@string/during_flight_fourth_dhikr_notification_title</item>
+        <item>@string/arrival_first_dhikr_notification_title</item>
+    </string-array>
+    <string-array name="flight_preparation_dhikr_bodies">
+        <item>@string/flight_preparation_first_dhikr_body</item>
+        <item>@string/flight_preparation_second_dhikr_body</item>
+        <item>@string/flight_preparation_third_dhikr_body</item>
+    </string-array>
+    <string-array name="flight_preparation_dhikr_bodies_arabic">
+        <item>@string/flight_preparation_first_dhikr_body_arabic</item>
+        <item>@string/flight_preparation_second_dhikr_body_arabic</item>
+        <item>@string/flight_preparation_third_dhikr_body_arabic</item>
+    </string-array>
+    <string-array name="flight_preparation_dhikr_titles">
+        <item>@string/flight_preparation_first_dhikr_title</item>
+        <item>@string/flight_preparation_second_dhikr_title</item>
+        <item>@string/flight_preparation_third_dhikr_title</item>
+    </string-array>
+    <string-array name="flights_dhikr_categories">
+        <item>@string/flights_dhikr_category_1</item>
+        <item>@string/flights_dhikr_category_2</item>
+        <item>@string/flights_dhikr_category_3</item>
+        <item>@string/flights_dhikr_category_4</item>
+    </string-array>
+    <string-array name="fonts">
+        <item>0</item>
+        <item>+2</item>
+        <item>+4</item>
+        <item>+6</item>
+        <item>-2</item>
+        <item>-4</item>
+        <item>-6</item>
+    </string-array>
+    <string-array name="forbidden_time_description">
+        <item>@string/forbidden_time_name_after_fajr_pray_time_description</item>
+        <item>@string/forbidden_time_name_shrouk_time_description</item>
+        <item>@string/forbidden_time_name_remove_time_description</item>
+        <item>@string/forbidden_time_name_after_asr_pray_time_description</item>
+        <item>@string/forbidden_time_name_ghroub_time_description</item>
+        <item>@string/forbidden_time_name_remove_for_friday_time_description</item>
+    </string-array>
+    <string-array name="forbidden_time_hadeeth">
+        <item>@string/forbidden_time_hadeeth_1</item>
+        <item>@string/forbidden_time_hadeeth_2</item>
+    </string-array>
+    <string-array name="forbidden_time_names">
+        <item>@string/forbidden_time_name_after_fajr_pray_time</item>
+        <item>@string/forbidden_time_name_shrouk_time</item>
+        <item>@string/forbidden_time_name_remove_time</item>
+        <item>@string/forbidden_time_name_after_asr_pray_time</item>
+        <item>@string/forbidden_time_name_ghroub_time</item>
+        <item>@string/forbidden_time_name_remove_for_friday_time</item>
+    </string-array>
+    <string-array name="ganaez_do3aa">
+        <item>@string/ganaez_do3aa_0</item>
+    </string-array>
+    <string-array name="ganaez_prayers">
+        <item>@string/ganaez_prayers_0</item>
+        <item>@string/ganaez_prayers_1</item>
+        <item>@string/ganaez_prayers_2</item>
+        <item>@string/ganaez_prayers_3</item>
+        <item>@string/ganaez_prayers_4</item>
+    </string-array>
+    <string-array name="hezb_names">
+        <item>@string/hezb_names_0</item>
+        <item>@string/hezb_names_1</item>
+    </string-array>
+    <string-array name="high_latitude">
+        <item>@string/high_latitude_0</item>
+        <item>@string/high_latitude_1</item>
+        <item>@string/high_latitude_2</item>
+        <item>@string/high_latitude_3</item>
+    </string-array>
+    <string-array name="language">
+        <item>@string/language_0</item>
+        <item>@string/language_1</item>
+        <item>@string/language_6</item>
+        <item>@string/language_4</item>
+        <item>@string/language_9</item>
+        <item>@string/language_2</item>
+        <item>@string/language_3</item>
+        <item>@string/language_5</item>
+        <item>@string/language_7</item>
+        <item>@string/language_10</item>
+        <item>@string/language_8</item>
+        <item>@string/language_11</item>
+        <item>@string/language_12</item>
+    </string-array>
+    <integer-array name="languages_bg_colors">
+        <item>0xFFA3C049</item>
+        <item>0xFF2DB398</item>
+        <item>0xFFA3C049</item>
+        <item>0xFFE5B201</item>
+        <item>0xFFDD5B45</item>
+        <item>0xFF835639</item>
+        <item>0xFF3B4E5D</item>
+        <item>0xFF2DB398</item>
+        <item>0xFFE87525</item>
+        <item>0xFF3B4E5D</item>
+        <item>0xFFA3C049</item>
+        <item>0xFFBB0000</item>
+        <item>0xFF0F47AF</item>
+    </integer-array>
+    <string-array name="location_detection_periods">
+        <item>@string/location_detection_periods_0</item>
+        <item>@string/location_detection_periods_1</item>
+        <item>@string/location_detection_periods_2</item>
+        <item>@string/location_detection_periods_3</item>
+        <item>@string/location_detection_periods_4</item>
+        <item>@string/location_detection_periods_5</item>
+        <item>@string/location_detection_periods_6</item>
+    </string-array>
+    <string-array name="mazhab_types">
+        <item>@string/mazhab_types_0</item>
+        <item>@string/mazhab_types_1</item>
+    </string-array>
+    <integer-array name="media2_widget_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="menu_title">
+        <item>@string/menu_title_0</item>
+        <item>@string/menu_title_1</item>
+        <item>@string/menu_title_2</item>
+        <item>@string/menu_title_3</item>
+        <item>@string/menu_title_4</item>
+        <item>@string/menu_title_5</item>
+        <item>@string/menu_title_7</item>
+        <item>@string/menu_title_8</item>
+        <item>@string/menu_title_9</item>
+        <item>@string/menu_title_10</item>
+        <item>@string/menu_title_11</item>
+        <item>@string/menu_title_12</item>
+        <item>@string/menu_title_13</item>
+        <item>@string/all_questions</item>
+        <item>@string/menu_title_15</item>
+        <item>@string/menu_title_16</item>
+        <item>@string/menu_title_17</item>
+        <item>@string/menu_title_18</item>
+        <item>@string/paid_version</item>
+    </string-array>
+    <string-array name="miladyMonthes">
+        <item>@string/miladyMonthes_0</item>
+        <item>@string/miladyMonthes_1</item>
+        <item>@string/miladyMonthes_2</item>
+        <item>@string/miladyMonthes_3</item>
+        <item>@string/miladyMonthes_4</item>
+        <item>@string/miladyMonthes_5</item>
+        <item>@string/miladyMonthes_6</item>
+        <item>@string/miladyMonthes_7</item>
+        <item>@string/miladyMonthes_8</item>
+        <item>@string/miladyMonthes_9</item>
+        <item>@string/miladyMonthes_10</item>
+        <item>@string/miladyMonthes_11</item>
+    </string-array>
+    <string-array name="miladyMonthesPartial">
+        <item>@string/miladyMonthesPartial_0</item>
+        <item>@string/miladyMonthesPartial_1</item>
+        <item>@string/miladyMonthesPartial_2</item>
+        <item>@string/miladyMonthesPartial_3</item>
+        <item>@string/miladyMonthesPartial_4</item>
+        <item>@string/miladyMonthesPartial_5</item>
+        <item>@string/miladyMonthesPartial_6</item>
+        <item>@string/miladyMonthesPartial_7</item>
+        <item>@string/miladyMonthesPartial_8</item>
+        <item>@string/miladyMonthesPartial_9</item>
+        <item>@string/miladyMonthesPartial_10</item>
+        <item>@string/miladyMonthesPartial_11</item>
+    </string-array>
+    <string-array name="miladymonths">
+        <item>@string/miladymonths_0</item>
+        <item>@string/miladymonths_1</item>
+        <item>@string/miladymonths_2</item>
+        <item>@string/miladymonths_3</item>
+        <item>@string/miladymonths_4</item>
+        <item>@string/miladymonths_5</item>
+        <item>@string/miladymonths_6</item>
+        <item>@string/miladymonths_7</item>
+        <item>@string/miladymonths_8</item>
+        <item>@string/miladymonths_9</item>
+        <item>@string/miladymonths_10</item>
+        <item>@string/miladymonths_11</item>
+    </string-array>
+    <string-array name="on_off">
+        <item>@string/disabled</item>
+        <item>@string/enabled</item>
+    </string-array>
+    <string-array name="payment_methods">
+        <item>@string/google_play_payment_method</item>
+        <item>@string/fawry_payment_method</item>
+        <item>@string/we_payment_method</item>
+        <item>@string/vodafone_cash_payment_method</item>
+        <item>@string/orange_cash_payment_method</item>
+        <item>@string/etisalat_cash_payment_method</item>
+    </string-array>
+    <string-array name="payment_methods_keys">
+        <item>Google play store</item>
+        <item>Fawry</item>
+        <item>WE cash</item>
+        <item>Vodafone cash</item>
+        <item>Orange cash</item>
+        <item>Etisalat cash</item>
+    </string-array>
+    <string-array name="prayers">
+        <item>@string/prayers_0</item>
+        <item>@string/prayers_1</item>
+        <item>@string/prayers_2</item>
+        <item>@string/prayers_3</item>
+        <item>@string/prayers_4</item>
+    </string-array>
+    <string-array name="quarter_hezb">
+        <item>@string/quarter_hezb_0</item>
+        <item>@string/quarter_hezb_1</item>
+        <item>@string/quarter_hezb_2</item>
+        <item>@string/quarter_hezb_3</item>
+        <item>@string/quarter_hezb_4</item>
+        <item>@string/quarter_hezb_5</item>
+        <item>@string/quarter_hezb_6</item>
+        <item>@string/quarter_hezb_7</item>
+    </string-array>
+    <string-array name="quran_chapters">
+        <item>@string/Chapter_1</item>
+        <item>@string/Chapter_2</item>
+        <item>@string/Chapter_3</item>
+        <item>@string/Chapter_4</item>
+        <item>@string/Chapter_5</item>
+        <item>@string/Chapter_6</item>
+        <item>@string/Chapter_7</item>
+        <item>@string/Chapter_8</item>
+        <item>@string/Chapter_9</item>
+        <item>@string/Chapter_10</item>
+        <item>@string/Chapter_11</item>
+        <item>@string/Chapter_12</item>
+        <item>@string/Chapter_13</item>
+        <item>@string/Chapter_14</item>
+        <item>@string/Chapter_15</item>
+        <item>@string/Chapter_16</item>
+        <item>@string/Chapter_17</item>
+        <item>@string/Chapter_18</item>
+        <item>@string/Chapter_19</item>
+        <item>@string/Chapter_20</item>
+        <item>@string/Chapter_21</item>
+        <item>@string/Chapter_22</item>
+        <item>@string/Chapter_23</item>
+        <item>@string/Chapter_24</item>
+        <item>@string/Chapter_25</item>
+        <item>@string/Chapter_26</item>
+        <item>@string/Chapter_27</item>
+        <item>@string/Chapter_28</item>
+        <item>@string/Chapter_29</item>
+        <item>@string/Chapter_30</item>
+    </string-array>
+    <string-array name="quran_parts">
+        <item>@string/quran_parts_0</item>
+        <item>@string/quran_parts_1</item>
+        <item>@string/quran_parts_2</item>
+        <item>@string/quran_parts_3</item>
+        <item>@string/quran_parts_4</item>
+    </string-array>
+    <string-array name="quran_parts2">
+        <item>@string/quran_part_0</item>
+        <item>@string/quran_part_1</item>
+        <item>@string/quran_part_2</item>
+        <item>@string/quran_part_3</item>
+        <item>@string/quran_part_4</item>
+        <item>@string/quran_part_5</item>
+        <item>@string/quran_part_6</item>
+        <item>@string/quran_part_7</item>
+        <item>@string/quran_part_8</item>
+        <item>@string/quran_part_9</item>
+        <item>@string/quran_part_10</item>
+        <item>@string/quran_part_11</item>
+    </string-array>
+    <string-array name="ramdan_days">
+        <item>@string/day_1</item>
+        <item>@string/day_2</item>
+        <item>@string/day_3</item>
+        <item>@string/day_4</item>
+        <item>@string/day_5</item>
+        <item>@string/day_6</item>
+        <item>@string/day_7</item>
+        <item>@string/day_8</item>
+        <item>@string/day_9</item>
+        <item>@string/day_10</item>
+        <item>@string/day_11</item>
+        <item>@string/day_12</item>
+        <item>@string/day_13</item>
+        <item>@string/day_14</item>
+        <item>@string/day_15</item>
+        <item>@string/day_16</item>
+        <item>@string/day_17</item>
+        <item>@string/day_18</item>
+        <item>@string/day_19</item>
+        <item>@string/day_20</item>
+        <item>@string/day_21</item>
+        <item>@string/day_22</item>
+        <item>@string/day_23</item>
+        <item>@string/day_24</item>
+        <item>@string/day_25</item>
+        <item>@string/day_26</item>
+        <item>@string/day_27</item>
+        <item>@string/day_28</item>
+        <item>@string/day_29</item>
+        <item>@string/day_30</item>
+        <item>@string/day_31</item>
+    </string-array>
+    <string-array name="reaching_airport_dhikr_bodies">
+        <item>@string/reaching_airport_first_dhikr_body</item>
+        <item>@string/reaching_airport_second_dhikr_body</item>
+    </string-array>
+    <string-array name="reaching_airport_dhikr_bodies_arabic">
+        <item>@string/reaching_airport_first_dhikr_body_arabic</item>
+        <item>@string/reaching_airport_second_dhikr_body_arabic</item>
+    </string-array>
+    <string-array name="reaching_airport_dhikr_titles">
+        <item>@string/reaching_airport_first_dhikr_title</item>
+        <item>@string/reaching_airport_second_dhikr_title</item>
+    </string-array>
+    <string-array name="salawat_b3d">
+        <item>@string/salawat_b3d_0</item>
+        <item>@string/salawat_b3d_1</item>
+        <item>@string/salawat_b3d_2</item>
+        <item>@string/salawat_b3d_3</item>
+        <item>@string/salawat_b3d_4</item>
+        <item>@string/salawat_b3d_5</item>
+    </string-array>
+    <string-array name="salawat_mnz">
+        <item>@string/salawat_mnz_0</item>
+        <item>@string/salawat_mnz_1</item>
+        <item>@string/salawat_mnz_2</item>
+        <item>@string/salawat_mnz_3</item>
+        <item>@string/salawat_mnz_4</item>
+        <item>@string/salawat_mnz_5</item>
+    </string-array>
+    <string-array name="salwat_offset">
+        <item>@string/salwat_offset_0</item>
+        <item>@string/salwat_offset_1</item>
+        <item>@string/salwat_offset_2</item>
+        <item>@string/salwat_offset_3</item>
+        <item>@string/salwat_offset_4</item>
+        <item>@string/salwat_offset_5</item>
+    </string-array>
+    <integer-array name="stored_data_childs">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+    </integer-array>
+    <string-array name="stored_data_titles">
+        <item>@string/mushaf_sounds_title</item>
+        <item>@string/mushaf_font_title</item>
+        <item>@string/azkar_sounds_title</item>
+        <item>@string/azan_wallpapers_files_title</item>
+        <item>@string/azan_sounds_title</item>
+        <item>@string/translations_title_title</item>
+        <item>@string/tfaseer_title</item>
+    </string-array>
+    <string-array name="sura_names">
+        <item>@string/sura_1</item>
+        <item>@string/sura_2</item>
+        <item>@string/sura_3</item>
+        <item>@string/sura_4</item>
+        <item>@string/sura_5</item>
+        <item>@string/sura_6</item>
+        <item>@string/sura_7</item>
+        <item>@string/sura_8</item>
+        <item>@string/sura_9</item>
+        <item>@string/sura_10</item>
+        <item>@string/sura_11</item>
+        <item>@string/sura_12</item>
+        <item>@string/sura_13</item>
+        <item>@string/sura_14</item>
+        <item>@string/sura_15</item>
+        <item>@string/sura_16</item>
+        <item>@string/sura_17</item>
+        <item>@string/sura_18</item>
+        <item>@string/sura_19</item>
+        <item>@string/sura_20</item>
+        <item>@string/sura_21</item>
+        <item>@string/sura_22</item>
+        <item>@string/sura_23</item>
+        <item>@string/sura_24</item>
+        <item>@string/sura_25</item>
+        <item>@string/sura_26</item>
+        <item>@string/sura_27</item>
+        <item>@string/sura_28</item>
+        <item>@string/sura_29</item>
+        <item>@string/sura_30</item>
+        <item>@string/sura_31</item>
+        <item>@string/sura_32</item>
+        <item>@string/sura_33</item>
+        <item>@string/sura_34</item>
+        <item>@string/sura_35</item>
+        <item>@string/sura_36</item>
+        <item>@string/sura_37</item>
+        <item>@string/sura_38</item>
+        <item>@string/sura_39</item>
+        <item>@string/sura_40</item>
+        <item>@string/sura_41</item>
+        <item>@string/sura_42</item>
+        <item>@string/sura_43</item>
+        <item>@string/sura_44</item>
+        <item>@string/sura_45</item>
+        <item>@string/sura_46</item>
+        <item>@string/sura_47</item>
+        <item>@string/sura_48</item>
+        <item>@string/sura_49</item>
+        <item>@string/sura_50</item>
+        <item>@string/sura_51</item>
+        <item>@string/sura_52</item>
+        <item>@string/sura_53</item>
+        <item>@string/sura_54</item>
+        <item>@string/sura_55</item>
+        <item>@string/sura_56</item>
+        <item>@string/sura_57</item>
+        <item>@string/sura_58</item>
+        <item>@string/sura_59</item>
+        <item>@string/sura_60</item>
+        <item>@string/sura_61</item>
+        <item>@string/sura_62</item>
+        <item>@string/sura_63</item>
+        <item>@string/sura_64</item>
+        <item>@string/sura_65</item>
+        <item>@string/sura_66</item>
+        <item>@string/sura_67</item>
+        <item>@string/sura_68</item>
+        <item>@string/sura_69</item>
+        <item>@string/sura_70</item>
+        <item>@string/sura_71</item>
+        <item>@string/sura_72</item>
+        <item>@string/sura_73</item>
+        <item>@string/sura_74</item>
+        <item>@string/sura_75</item>
+        <item>@string/sura_76</item>
+        <item>@string/sura_77</item>
+        <item>@string/sura_78</item>
+        <item>@string/sura_79</item>
+        <item>@string/sura_80</item>
+        <item>@string/sura_81</item>
+        <item>@string/sura_82</item>
+        <item>@string/sura_83</item>
+        <item>@string/sura_84</item>
+        <item>@string/sura_85</item>
+        <item>@string/sura_86</item>
+        <item>@string/sura_87</item>
+        <item>@string/sura_88</item>
+        <item>@string/sura_89</item>
+        <item>@string/sura_90</item>
+        <item>@string/sura_91</item>
+        <item>@string/sura_92</item>
+        <item>@string/sura_93</item>
+        <item>@string/sura_94</item>
+        <item>@string/sura_95</item>
+        <item>@string/sura_96</item>
+        <item>@string/sura_97</item>
+        <item>@string/sura_98</item>
+        <item>@string/sura_99</item>
+        <item>@string/sura_100</item>
+        <item>@string/sura_101</item>
+        <item>@string/sura_102</item>
+        <item>@string/sura_103</item>
+        <item>@string/sura_104</item>
+        <item>@string/sura_105</item>
+        <item>@string/sura_106</item>
+        <item>@string/sura_107</item>
+        <item>@string/sura_108</item>
+        <item>@string/sura_109</item>
+        <item>@string/sura_110</item>
+        <item>@string/sura_111</item>
+        <item>@string/sura_112</item>
+        <item>@string/sura_113</item>
+        <item>@string/sura_114</item>
+    </string-array>
+    <string-array name="transparency">
+        <item>0%</item>
+        <item>20%</item>
+        <item>40%</item>
+        <item>60%</item>
+        <item>80%</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="vibration_list">
+        <item>@string/vibration_list_0</item>
+        <item>@string/vibration_list_1</item>
+    </string-array>
+    <string-array name="viscosities">
+        <item>LOW</item>
+        <item>MEDIUM</item>
+        <item>HIGH</item>
+    </string-array>
+    <string-array name="viscosities_name">
+        <item>@string/viscosity_low</item>
+        <item>@string/viscosity_medium</item>
+        <item>@string/viscosity_high</item>
+    </string-array>
+    <string-array name="wayOfCalculations">
+        <item>@string/wayOfCalculations_0</item>
+        <item>@string/wayOfCalculations_1</item>
+        <item>@string/wayOfCalculations_2</item>
+        <item>@string/wayOfCalculations_3</item>
+        <item>@string/wayOfCalculations_4</item>
+        <item>@string/wayOfCalculations_5</item>
+        <item>@string/wayOfCalculations_6</item>
+        <item>@string/wayOfCalculations_7</item>
+        <item>@string/wayOfCalculations_8</item>
+        <item>@string/wayOfCalculations_9</item>
+    </string-array>
+    <integer-array name="wayOfCalculationsIndex">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </integer-array>
+    <string-array name="weekdays">
+        <item>@string/sat</item>
+        <item>@string/sun</item>
+        <item>@string/mon</item>
+        <item>@string/tue</item>
+        <item>@string/wen</item>
+        <item>@string/thu</item>
+        <item>@string/fri</item>
+    </string-array>
+    <string-array name="weekdays_partial_name">
+        <item>@string/sat</item>
+        <item>@string/sun</item>
+        <item>@string/mon</item>
+        <item>@string/tue</item>
+        <item>@string/wen</item>
+        <item>@string/thu</item>
+        <item>@string/fri</item>
+    </string-array>
+    <string-array name="whats_new_features_names">
+        <item>@string/day_night_txt_card_title</item>
+        <item>@string/the_two_holy_mosques_duaa_title</item>
+        <item>@string/ramadan_khatma_title</item>
+        <item>@string/shortened_azkar</item>
+        <item>@string/zakat_calculator_title</item>
+        <item>@string/mushaf_features</item>
+    </string-array>
+    <string-array name="whats_new_messages">
+        <item>@string/AnimatedText1</item>
+        <item>@string/AnimatedText2</item>
+        <item>@string/AnimatedText3</item>
+        <item>@string/AnimatedText4</item>
+        <item>@string/AnimatedText5</item>
+        <item>@string/AnimatedText6</item>
+    </string-array>
+    <string-array name="whats_new_titles">
+        <item>@string/AnimatedTitle1</item>
+        <item>@string/AnimatedTitle2</item>
+        <item>@string/AnimatedTitle3</item>
+        <item>@string/AnimatedTitle4</item>
+        <item>@string/AnimatedTitle5</item>
+        <item>@string/AnimatedTitle6</item>
+    </string-array>
+    <string-array name="zekr_app_features">
+        <item>@string/zekr_app_features_text_1</item>
+        <item>@string/zekr_app_features_text_2</item>
+        <item>@string/zekr_app_features_text_3</item>
+        <item>@string/zekr_app_features_text_4</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/parent_view" android:tag="layout/item_mushaf_chips_0" android:background="@drawable/shape_radius_16dp_with_padding" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:gravity="center" android:id="@id/name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/the_indonesian" app:textview_type="2" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/check_iv" android:layout_width="15.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/mushaf_type_check" android:adjustViewBounds="true" />
+</LinearLayout>

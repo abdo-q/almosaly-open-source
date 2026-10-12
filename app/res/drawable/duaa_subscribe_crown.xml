@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="23.0dip" android:width="23.0dip" android:viewportWidth="23.0" android:viewportHeight="23.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ff2b3560" android:pathData="M11.5,11.5m-11.5,0a11.5,11.5 0,1 1,23 0a11.5,11.5 0,1 1,-23 0" android:strokeAlpha="0.7" android:fillAlpha="0.7" />
+    <path android:fillColor="#ffffc250" android:pathData="M16.403,18.586L6.236,18.319L5.219,11.395L8.636,14.029L11.595,7.937L14.231,14.176L17.781,11.725L16.403,18.586Z" />
+    <path android:fillColor="#ffebb044" android:pathData="M14.715,13.841L13.776,18.516L16.402,18.585L17.781,11.725L14.715,13.841Z" />
+    <path android:fillColor="#ffffe07d" android:pathData="M6.236,18.319L5.877,15.872L16.89,16.161L16.403,18.586L6.236,18.319Z" />
+    <path android:fillColor="#ffffd064" android:pathData="M14.263,16.092L13.776,18.517L16.403,18.586L16.89,16.161L14.263,16.092Z" />
+    <group>
+        <clip-path android:pathData="M14.877,4.897L9.296,4.161L8.781,8.071L14.362,8.806L14.877,4.897Z" />
+        <path android:fillColor="@drawable/$duaa_subscribe_crown__0" android:pathData="M13.19,6.126C12.055,6.152 11.895,6.274 11.575,7.365C11.549,6.228 11.427,6.07 10.337,5.75C11.472,5.724 11.632,5.601 11.951,4.511C11.978,5.647 12.099,5.806 13.19,6.126Z" />
+        <path android:fillColor="#fffece46" android:pathData="M10.566,7.455C9.899,7.47 9.806,7.541 9.619,8.181C9.603,7.515 9.531,7.422 8.892,7.234C9.558,7.218 9.651,7.147 9.839,6.507C9.854,7.174 9.926,7.267 10.566,7.455Z" />
+        <path android:fillColor="#fffece46" android:pathData="M14.569,7.232C13.902,7.248 13.809,7.319 13.622,7.959C13.606,7.292 13.535,7.199 12.895,7.011C13.561,6.996 13.655,6.925 13.842,6.285C13.858,6.951 13.929,7.044 14.569,7.232Z" />
+    </group>
+    <path android:fillColor="@drawable/$duaa_subscribe_crown__1" android:pathData="M13.676,15.417L12.005,15.354L11.53,10.423L13.676,15.417Z" android:strokeAlpha="0.27" android:fillAlpha="0.27" />
+</vector>

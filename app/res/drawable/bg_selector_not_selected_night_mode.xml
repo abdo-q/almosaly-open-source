@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/favourite_ayat_unselected_button_background_color_night_mode" />
+    <stroke android:width="1.0dip" android:color="@color/favourite_ayat_unselected_button_border_color_night_mode" />
+    <corners android:radius="7.0dip" />
+</shape>

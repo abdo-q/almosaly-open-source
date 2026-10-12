@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/popup_white_rounded_border" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imgview_checkmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/ic_question_mark_successfully" android:layout_centerHorizontal="true" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/ic_close_salet" />
+    <com.moslay.view.NewFontTextView android:textColor="#ff808080" android:gravity="center" android:id="@id/txtview_sent_successfully" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/success_inquiries_message_title" android:layout_below="@id/imgview_checkmark" android:layout_centerHorizontal="true" android:lineSpacingExtra="4.0dip" android:textAlignment="gravity" text_apply_fonts:textview_type="2" />
+</RelativeLayout>

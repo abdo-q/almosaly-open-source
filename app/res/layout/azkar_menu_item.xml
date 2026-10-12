@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/azkar_layout" android:background="@drawable/azkar_morning_bg" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/azkar_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/azkar_morning" />
+        <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/azkar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="@string/azkar_menu_day" text_apply_fonts:textview_type="3" />
+    </LinearLayout>
+</RelativeLayout>

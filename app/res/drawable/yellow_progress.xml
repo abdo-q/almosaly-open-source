@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/secondaryProgress">
+        <shape android:shape="ring" android:useLevel="true" android:innerRadius="@dimen/seventy_dp" android:thickness="25.0dip">
+            <solid android:useLevel="true" android:type="sweep" android:color="@color/grey_dark_black" />
+        </shape>
+    </item>
+    <item>
+        <shape android:id="@android:id/progress" android:shape="ring" android:useLevel="true" android:innerRadius="@dimen/seventy_dp" android:thickness="25.0dip">
+            <solid android:useLevel="true" android:type="sweep" android:color="#ffeca322" />
+        </shape>
+    </item>
+</layer-list>

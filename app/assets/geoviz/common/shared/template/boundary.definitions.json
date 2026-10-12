@@ -1,0 +1,1 @@
+{"definitions": {"StateBoundary.Gap.Length": 0, "StateBoundary.Dash.Length": 0, "Boundary.Ambient.Factor": ["ref", "Base.Ambient.Factor"], "Boundary.Diffuse.Factor": ["ref", "Base.Diffuse.Factor"]}}

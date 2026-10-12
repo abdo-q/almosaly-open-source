@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:background="@drawable/default_header_background_transparent_curved" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:elevation="5.0dip">
+        <ImageView android:id="@id/img_back" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/back_location" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+        <com.moslay.view.FontTextView android:id="@id/webview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" text_apply_fonts:textview_type="1" style="@style/header_textview" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/nonVideoLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/social_container" android:layout_below="@id/header">
+        <com.moslay.view.VideoEnabledWebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <com.moslay.control_2015.LoadingControl android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/social_container" android:background="@color/white" android:padding="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/videoLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/social_container" android:layout_below="@id/header" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0,25</item>
+        <item>0,5</item>
+        <item>0,75</item>
+        <item>Обычная</item>
+        <item>1,25</item>
+        <item>1,5</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="payment_methods_keys">
+        <item>Google play store</item>
+        <item>Fawry</item>
+        <item>WE cash</item>
+        <item>Vodafone cash</item>
+        <item>Orange cash</item>
+        <item>Etisalat cash</item>
+    </string-array>
+</resources>

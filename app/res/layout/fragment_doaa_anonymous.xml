@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_doaa_anonymous_0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/doaa_popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iconImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/doaa_anonymous_unactive" />
+            <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:src="@drawable/doaa_close" />
+        </RelativeLayout>
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="#ff0d0303" android:gravity="center" android:layout_gravity="center" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/doaa_anonymous_unactive_text_1" android:lineSpacingExtra="4.0dip" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="#ff0d0303" android:gravity="center" android:layout_gravity="center" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:text="@string/doaa_anonymous_unactive_text_2" android:lineSpacingExtra="4.0dip" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="#ff0d0303" android:gravity="center" android:layout_gravity="center" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="40.0dip" android:text="@string/doaa_anonymous_unactive_text_3" android:lineSpacingExtra="5.0dip" text_apply_fonts:textview_type="2" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/agree" android:background="@drawable/notific_save_bg_blue" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip" android:text="@string/doaa_anonymous_unactive_text_4" android:backgroundTint="#ffff1717" text_apply_fonts:textview_type="2" />
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/doaa_society_grey" android:gravity="center" android:id="@id/later" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="15.0dip" android:text="@string/fajr_later" text_apply_fonts:textview_type="1" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

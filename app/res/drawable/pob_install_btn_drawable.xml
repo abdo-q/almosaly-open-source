@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="@dimen/pob_control_stroke_width" android:color="@color/pob_controls_stroke_color" />
+    <corners android:radius="@dimen/pob_control_button_radius" />
+    <solid android:color="@color/pob_install_button_background_color" />
+</shape>

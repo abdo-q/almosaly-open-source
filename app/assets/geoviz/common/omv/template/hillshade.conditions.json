@@ -1,0 +1,1 @@
+{"definitions": {"Is.Hillshade.Layer": ["==", ["get", "$layer"], "hillshade"], "Is.Hillshade.Shadow": ["==", ["get", "kind"], "shadow"]}}

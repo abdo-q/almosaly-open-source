@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/loading_container" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_bigcircle_layout" android:background="@drawable/black_transparent_circle_nostroke" android:layout_width="135.0dip" android:layout_height="135.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/rl_circleone_layout" android:background="@drawable/black_transparent_circle" android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/rl_circletwo_layout" android:background="@drawable/black_transparent_circle" android:visibility="invisible" android:layout_width="90.0dip" android:layout_height="90.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/rl_whitecircle" android:background="@drawable/white_circle" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/img_location_detection" android:layout_width="39.0dip" android:layout_height="48.0dip" android:src="@drawable/location_detection" android:adjustViewBounds="true" android:layout_above="@id/rl_whitecircle" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/img_right_location" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/right_location" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/img_wrong_location" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/wrong_location" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+    <com.moslay.view.FontTextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/txt_prgress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/loading" android:lines="2" android:layout_below="@id/rl_bigcircle_layout" android:layout_centerHorizontal="true" text_apply_fonts:textview_type="2" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/fragNumSearch_pagesLo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/pined_header" />
+                <com.moslay.view.NonScrollListView android:layout_gravity="center_horizontal" android:id="@id/fragNumSearch_pagesLv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/fragNumSearch_sowarLo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/pined_header" />
+                <com.moslay.view.NonScrollListView android:layout_gravity="center_horizontal" android:id="@id/fragNumSearch_sowarLv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/fragNumSearch_ahzapLo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/pined_header" />
+                <com.moslay.view.NonScrollListView android:layout_gravity="center_horizontal" android:id="@id/fragNumSearch_ahzapLv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/fragNumSearch_quartersLo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/pined_header" />
+                <com.moslay.view.NonScrollListView android:layout_gravity="center_horizontal" android:id="@id/fragNumSearch_quartersLv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/zekr_layout" android:background="@color/white" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="#ff5699c7" android:id="@id/tv_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="اذكار الصباح" android:layout_alignParentEnd="true" app:textview_type="2" />
+    <ImageView android:id="@id/iv_arrow" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/arrow_left" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:tint="#ff000000" />
+    <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="#ff2d2d2d" android:ellipsize="end" android:id="@id/tv_zekr_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="سُبْحَانَ اللهِ وَبِحَمْدِهِ" android:maxLines="2" android:layout_below="@id/tv_category" android:lineSpacingExtra="4.0dip" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/iv_arrow" app:textview_type="1" />
+    <View android:background="#ffe0e0e0" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="16.0dip" android:layout_below="@id/tv_zekr_content" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:tag="layout/item_ramadn_cards_0" android:layout_width="@dimen/_140sdp" android:layout_height="@dimen/_140sdp" android:layout_marginLeft="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:layout_marginBottom="@dimen/_13sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

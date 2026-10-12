@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/parent_view" android:tag="layout/taatk_completed_badge_pop_up_0" android:background="@color/dark_blue1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_18sdp" android:src="@drawable/close_transparent_bg" android:elevation="2.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/default_badges_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_badge" android:layout_width="fill_parent" android:layout_height="280.0dip" app:layout_constraintTop_toTopOf="parent">
+            <View android:id="@id/view_badge" android:background="@color/clr_alzekr" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:background="@drawable/ic_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.2" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_bg_stars" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_badge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/ic_badge_alzekr" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="25.0" app:layout_constraintTop_toBottomOf="@id/layout_badge">
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:id="@id/badge_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_3sdp" android:text="@string/alaamr_marouf" app:textview_type="3" />
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/_13ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/you_already_have_tv" android:paddingLeft="@dimen/_3sdp" android:paddingRight="@dimen/_3sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="@string/you_already_have" app:textview_type="3" />
+        </LinearLayout>
+        <com.moslay.view.NewFontTextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/description_tv" android:paddingLeft="@dimen/_15sdp" android:paddingRight="@dimen/_15sdp" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="@string/alwed_badge_description" android:lineSpacingExtra="4.0dip" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/duaa_tv" app:layout_constraintTop_toBottomOf="@id/linearLayout" app:textview_type="1" />
+        <com.moslay.view.NewFontTextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/duaa_tv" android:paddingLeft="@dimen/_16sdp" android:paddingRight="@dimen/_16sdp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp" android:text="@string/alwed_badge_duaa" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/bottom_btn_container" app:layout_constraintTop_toBottomOf="@id/description_tv" app:textview_type="2" />
+        <LinearLayout android:gravity="top" android:id="@id/bottom_btn_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_26sdp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/duaa_tv">
+            <androidx.cardview.widget.CardView android:id="@id/share_btn" android:layout_width="fill_parent" android:layout_height="@dimen/_30sdp" android:layout_marginLeft="@dimen/_60sdp" android:layout_marginRight="@dimen/_60sdp" app:cardBackgroundColor="@color/orange_peel" app:cardCornerRadius="7.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="@dimen/_14ssp" android:textColor="@color/white" android:gravity="center" android:id="@id/share_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/share_your_achivements" app:textview_type="1" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/share_container" android:paddingLeft="@dimen/_20sdp" android:paddingRight="@dimen/_20sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:weightSum="1.0" app:layout_constraintTop_toBottomOf="@id/duaa_tv">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mosaly_logo_square" />
+            <View android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mosaly_qr_code" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/last_four_badges_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layout_last_four" android:layout_width="fill_parent" android:layout_height="340.0dip" android:layout_marginTop="-5.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <View android:id="@id/last_four_view_badge" android:background="@color/clr_bronze" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:background="@drawable/ic_light" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.2" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_bg_stars" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/last_four_logo_bg" android:layout_width="250.0dip" android:layout_height="250.0dip" android:layout_marginTop="45.0dip" android:layout_marginBottom="45.0dip" android:src="@drawable/badge_bronze" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/layout_last_four">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/_19ssp" android:textColor="@color/white_smoke" android:id="@id/last_four_top_badge_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_4sdp" android:text="@string/the_bronze" app:textview_type="3" />
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/_19ssp" android:textColor="@color/white_smoke" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/the_badge" app:textview_type="3" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp">
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/_19ssp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/now_you_have_more_than" app:textview_type="3" />
+                    <TextView android:textSize="@dimen/_18ssp" android:textColor="@color/white" android:id="@id/points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginRight="@dimen/_4sdp" android:text="500" android:fontFamily="@font/arimo_bold" />
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/_19ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/point" app:textview_type="3" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp">
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/_17ssp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/you_already_have" app:textview_type="2" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.moslay.view.NewFontTextView android:textSize="@dimen/_17ssp" android:textColor="@color/white" android:id="@id/last_four_bottom_badge_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:layout_marginRight="@dimen/_4sdp" android:text="@string/the_bronze" app:textview_type="2" />
+                        <com.moslay.view.NewFontTextView android:textSize="@dimen/_17ssp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:text="@string/the_badge" app:textview_type="2" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:id="@id/last_four_badges_share_btn" android:layout_width="fill_parent" android:layout_height="@dimen/_34sdp" android:layout_marginLeft="@dimen/_60sdp" android:layout_marginTop="@dimen/_40sdp" android:layout_marginRight="@dimen/_60sdp" app:cardCornerRadius="7.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+                <com.moslay.view.NewFontTextView android:textSize="@dimen/_15ssp" android:textColor="#ffa76011" android:gravity="center" android:id="@id/four_badges_share_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/share_with_your_friends" app:textview_type="1" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/last_four_badges_share_container" android:paddingLeft="@dimen/_20sdp" android:paddingRight="@dimen/_20sdp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-30.0dip" android:weightSum="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mosaly_logo_square" />
+                <View android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mosaly_qr_code" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

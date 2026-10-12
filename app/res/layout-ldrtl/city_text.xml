@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/country__header_textView" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hello" text_apply_fonts:textview_type="2" />
+    <com.moslay.view.FontTextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="right" android:id="@id/city_extended" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hello" text_apply_fonts:textview_type="3" />
+</LinearLayout>

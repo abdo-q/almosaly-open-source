@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/ramadan_count_down_fragment_0" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/layout_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" text_apply_fonts:cardBackgroundColor="@color/white" text_apply_fonts:cardCornerRadius="15.0dip" text_apply_fonts:cardElevation="2.0dip" text_apply_fonts:cardMaxElevation="2.0dip" text_apply_fonts:cardPreventCornerOverlap="true" text_apply_fonts:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:id="@id/card_layout" android:background="@drawable/ramadan_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/thirty_five_dp" android:layout_marginEnd="@dimen/fourty_five_dp" android:layout_alignParentEnd="true">
+                    <com.moslay.view.FontTextView android:textSize="@dimen/fifty_sp" android:textColor="@color/white" android:id="@id/day_txt_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15" />
+                    <com.moslay.view.FontTextView android:textSize="@dimen/twenty_sp" android:textColor="@color/dark_yellow" android:id="@id/english_day_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/fifteen_dp" android:text="@string/days" android:layout_marginStart="@dimen/five_dp" text_apply_fonts:textview_type="3" style="@style/header_textview" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/sixteen_sp" android:textColor="@color/forbidden_times_title_text_color" android:gravity="center" android:id="@id/congrats_btn" android:background="@drawable/bg_btn_congrat" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/congrats_friends" android:layout_below="@id/card_layout" android:paddingStart="@dimen/ten_dp" android:paddingEnd="@dimen/ten_dp" text_apply_fonts:textview_type="2" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

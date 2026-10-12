@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/stickyBarView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/conrainer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top" android:id="@id/back" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/doaa_request_active_back" android:scaleType="centerInside" />
+            <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/stickyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="" android:lineSpacingExtra="5.0dip" app:textview_type="2" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="top" android:id="@id/icon_iv" android:padding="10.0dip" android:layout_width="68.0dip" android:layout_height="wrap_content" android:src="@drawable/doaa_req_noti_icon" android:adjustViewBounds="true" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="5.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/new_azkar_progress_bar" android:progressTint="@color/default_header_color" android:progressBackgroundTint="@color/azkar_dark_theme_text" style="?android:progressBarStyleHorizontal" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

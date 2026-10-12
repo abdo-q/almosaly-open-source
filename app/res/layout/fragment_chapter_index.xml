@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.moslay.scrollIndicator.indicator.PinnedHeaderListView android:id="@id/fragChapterIndex_itemLv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" android:cacheColorHint="@android:color/transparent" android:divider="@color/divider_color" android:dividerHeight="0.5dip" android:fastScrollEnabled="true" android:fadeScrollbars="false" />
+    <ImageView android:id="@id/fragChapterIndex_trackIm" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="24.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="17.0dip" android:src="@drawable/tracks" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+</RelativeLayout>

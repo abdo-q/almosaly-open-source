@@ -1,0 +1,39 @@
+<svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="night / shield_exit-info_02">
+<g id="shield_exit-info_alternative">
+<g id="exit-info_02">
+<g id="stretchable-items">
+<rect id="fill" x="0.5" y="0.5" width="23" height="16" rx="1.5" fill="#1D8C6D" fill-opacity="0.9"/>
+<g id="fx">
+<rect id="shape" x="1.01" y="1.01" width="21.98" height="14.98" rx="0.99" stroke="#306355" stroke-opacity="0.01" stroke-width="1.02"/>
+<g id="shape_2">
+<mask id="path-3-inside-1_3776_30712" fill="white">
+<rect x="0.5" y="0.5" width="23" height="16" rx="1.5"/>
+</mask>
+<rect x="0.5" y="0.5" width="23" height="16" rx="1.5" stroke="#306355" stroke-opacity="0.01" stroke-width="3.08" mask="url(#path-3-inside-1_3776_30712)"/>
+</g>
+<g id="shape_3">
+<mask id="path-4-inside-2_3776_30712" fill="white">
+<rect x="0.5" y="0.5" width="23" height="16" rx="1.5"/>
+</mask>
+<rect x="0.5" y="0.5" width="23" height="16" rx="1.5" stroke="#306355" stroke-opacity="0.01" stroke-width="4.12" mask="url(#path-4-inside-2_3776_30712)"/>
+</g>
+<g id="shape_4">
+<mask id="path-5-inside-3_3776_30712" fill="white">
+<rect x="0.5" y="0.5" width="23" height="16" rx="1.5"/>
+</mask>
+<rect x="0.5" y="0.5" width="23" height="16" rx="1.5" stroke="#306355" stroke-opacity="0.01" stroke-width="5.16" mask="url(#path-5-inside-3_3776_30712)"/>
+</g>
+<g id="shape_5">
+<mask id="path-6-inside-4_3776_30712" fill="white">
+<rect x="0.5" y="0.5" width="23" height="16" rx="1.5"/>
+</mask>
+<rect x="0.5" y="0.5" width="23" height="16" rx="1.5" stroke="#306355" stroke-opacity="0.01" stroke-width="6.2" mask="url(#path-6-inside-4_3776_30712)"/>
+</g>
+</g>
+<rect id="outline" x="0.5" y="0.5" width="23" height="16" rx="1.5" stroke="#5CB29A"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

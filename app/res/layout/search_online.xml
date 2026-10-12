@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/background_onbaording" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:transitionName="background_onbaording">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/za5rafa__onboarding" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <pl.droidsonroids.gif.GifImageView android:id="@id/loading_onbaording" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_location_onboarding" android:scaleType="centerInside" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/quran_memorization_primary_background_color_3_night_mode" />
+    <stroke android:width="1.0dip" android:color="@color/quran_memorization_audio_player_background_border_color_night_mode" />
+    <corners android:radius="12.0dip" />
+</shape>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/parent_view" android:background="@color/quran_memorization_primary_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/favourite_ayat_remove_text_color" android:layout_gravity="center_vertical" android:id="@id/txtview_remove_fav" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/favourite_ayat_remove_favourite" android:layout_weight="0.3" app:textview_type="1" />
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/txtview_surah_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="سورةالبقرة" android:layout_weight="1.0" app:textview_type="3" />
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fav_back" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:scaleX="-1.0" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+            <com.moslay.view.QuranTextVieww android:textSize="18.0sp" android:textColor="#ff0d6dab" android:id="@id/txtview_ayah" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:includeFontPadding="false" android:layout_toLeftOf="@id/view_right_sep" />
+            <View android:id="@id/view_right_sep" android:background="#ff0d6dab" android:layout_width="3.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="-3.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="-3.0dip" android:layout_alignTop="@id/txtview_ayah" android:layout_alignBottom="@id/txtview_ayah" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/ayah_color_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/favourite_ayat_color_label" app:textview_type="3" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_colors" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.moslay.view.NewFontTextView android:textColor="@color/favourite_ayat_redirect_text_color" android:layout_gravity="left" android:id="@id/txtview_add_note" android:background="@drawable/bg_rounded_rectangle" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:paddingRight="12.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="16.0dip" android:text="@string/favourite_ayat_add_note" android:drawableLeft="@drawable/icon_add_ayah_note_plus" android:drawablePadding="8.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_note_lis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginEnd="8.0dip" />
+    </LinearLayout>
+</RelativeLayout>

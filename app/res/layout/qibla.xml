@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_compass" android:background="@drawable/qebla_circle_fajr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/im_qibla_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/qebla_arrow" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+</RelativeLayout>

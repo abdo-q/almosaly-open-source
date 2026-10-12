@@ -1,0 +1,10 @@
+ @font-face
+{
+font-family: 'GE SS TWO LIGHT';
+/*src: url('file:///android_asset/fonts/GE_SS_Two_Light.otf');*/
+src: url('file:///android_res/font/ge_ss_two_light.otf');
+ font-weight: normal;
+        font-style: normal;
+}
+
+h2,h4{color:#064082}a,body,div,p,span{color:gb(6,8,7);}.iframeContainer,body,div{direction:(direction);white-space:normal}.iframeContainer,div,h1,h2,h3,h4,h5,h6,p,span{overflow-wrap:break-word;word-break:normal;word-wrap:break-word}.iframeContainer,a,body,div,p,span{white-space:normal}body,div{text-align:(rtl);font-family:'GE SS TWO LIGHT'; font-size:(currentFontSize)px}h1,h2,h3{font-size:1.9rem}div,h1,h2,h3,h4,h5,h6,p,span{width:100%;line-height:normal;margin-bottom:20px}h1,h2,h3,h4,h5,h6{display:block;font-weight:700}h1{color:#064082}h3{color:#064082}h4,h5,h6{font-size:1.8rem}p,span{font-size:(currentFontSize)px;line-height:normal}small{font-size:.6em}img,video{margin:20px auto;float:none;width:91%;min-height:300px;height:auto;max-height:375px}a{text-decoration:none;font-size:(currentFontSize)px}.iframeContainer{width:(webViewWidth)px;line-height:30px!important;margin: auto;overflow: hidden;padding: 0 1%;}iframe{width:100%!important;height:400px!important}؟؟

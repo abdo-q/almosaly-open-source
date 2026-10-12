@@ -1,0 +1,39 @@
+<svg width="76" height="26" viewBox="0 0 76 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="logistics_day / billboard_exit-info_01_toll">
+<g id="billboard_exit-info_toll">
+<g id="billboard_base_02">
+<g id="stretchable-items">
+<rect id="fill" x="0.5" y="0.5" width="75" height="25" rx="1.5" fill="#8BC5B4" fill-opacity="0.9"/>
+<g id="fx">
+<rect id="shape" x="1.01" y="1.01" width="73.98" height="23.98" rx="0.99" stroke="#306355" stroke-opacity="0.01" stroke-width="1.02"/>
+<g id="shape_2">
+<mask id="path-3-inside-1_3733_30752" fill="white">
+<rect x="0.5" y="0.5" width="75" height="25" rx="1.5"/>
+</mask>
+<rect x="0.5" y="0.5" width="75" height="25" rx="1.5" stroke="#306355" stroke-opacity="0.01" stroke-width="3.08" mask="url(#path-3-inside-1_3733_30752)"/>
+</g>
+<g id="shape_3">
+<mask id="path-4-inside-2_3733_30752" fill="white">
+<rect x="0.5" y="0.5" width="75" height="25" rx="1.5"/>
+</mask>
+<rect x="0.5" y="0.5" width="75" height="25" rx="1.5" stroke="#306355" stroke-opacity="0.01" stroke-width="4.12" mask="url(#path-4-inside-2_3733_30752)"/>
+</g>
+<g id="shape_4">
+<mask id="path-5-inside-3_3733_30752" fill="white">
+<rect x="0.5" y="0.5" width="75" height="25" rx="1.5"/>
+</mask>
+<rect x="0.5" y="0.5" width="75" height="25" rx="1.5" stroke="#306355" stroke-opacity="0.01" stroke-width="5.16" mask="url(#path-5-inside-3_3733_30752)"/>
+</g>
+<g id="shape_5">
+<mask id="path-6-inside-4_3733_30752" fill="white">
+<rect x="0.5" y="0.5" width="75" height="25" rx="1.5"/>
+</mask>
+<rect x="0.5" y="0.5" width="75" height="25" rx="1.5" stroke="#306355" stroke-opacity="0.01" stroke-width="6.2" mask="url(#path-6-inside-4_3733_30752)"/>
+</g>
+</g>
+<rect id="outline" x="0.5" y="0.5" width="75" height="25" rx="1.5" stroke="white"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

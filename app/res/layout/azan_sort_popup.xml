@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-3.0dip" android:src="@drawable/sort_arrow" android:scaleType="fitCenter" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_grey_border" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/more_views_item" android:layout_width="wrap_content" android:layout_height="48.0dip">
+            <com.moslay.view.FontTextView android:id="@id/more_views_select_text" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_views_sort" android:layout_toRightOf="@id/startimg" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/more_views_select_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/tick" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <View android:background="@color/country_name_text_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/letters_sort_item" android:layout_width="wrap_content" android:layout_height="48.0dip">
+            <com.moslay.view.FontTextView android:id="@id/letters_sort_select_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/letters_sort" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/letters_sort_select_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/tick" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

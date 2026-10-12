@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/forbiddn_times_settings_fragment_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:background="@drawable/default_header_background_transparent_curved" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/header_height">
+        <ImageView android:id="@id/img_menu" android:padding="@dimen/dashboard_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/light_more" android:scaleType="fitCenter" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_centerVertical="true" android:contentDescription="@string/dashboard" android:layout_marginStart="@dimen/twenty_dp" android:layout_marginEnd="@dimen/twenty_dp" />
+        <ImageView android:id="@id/img_back" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="@dimen/ten_dp" android:src="@drawable/back_arrow" android:contentDescription="@string/back" />
+        <com.moslay.view.NewFontTextView android:gravity="center" android:id="@id/header_txt" android:layout_width="260.0dip" android:layout_height="wrap_content" android:text="@string/forbidden_times_title" android:layout_centerInParent="true" android:textAlignment="gravity" text_apply_fonts:textview_type="1" style="@style/header_textview" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ten_dp" android:src="@drawable/forbidden_times_header_icon_settings" android:scaleType="fitCenter" android:adjustViewBounds="true" android:contentDescription="@null" />
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/sixteen_sp" android:textColor="@color/forbidden_times_details" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ten_dp" android:text="@string/forbidden_times_details" android:layout_centerInParent="true" android:lineSpacingExtra="@dimen/seven_dp" text_apply_fonts:textview_type="1" />
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/eighteen_sp" android:textColor="@color/more_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/ten_dp" android:text="@string/forbidden_times_notifications" android:layout_centerInParent="true" android:lineSpacingExtra="@dimen/seven_dp" text_apply_fonts:textview_type="2" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/forbidden_times_notification_Rv" android:layout_width="fill_parent" android:layout_height="600.0dip" android:layout_margin="@dimen/ten_dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

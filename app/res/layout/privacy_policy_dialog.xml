@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/popup_rounded_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/conatiner" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/privacy_policy_image" android:scaleType="fitCenter" />
+        <com.moslay.view.NewFontTextView android:textSize="17.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:text="@string/accept_privacy_policies_for_comments" />
+        <com.moslay.view.UnderlineTextView android:textSize="18.0sp" android:textColor="@color/dark_gray_app_purchase" android:gravity="center" android:layout_gravity="center" android:id="@id/privacy_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/privacy_policy" text_apply_fonts:textview_type="2" />
+        <Button android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/accept_B" android:background="@drawable/add_article_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/OK" />
+        <Button android:textSize="22.0sp" android:textColor="@color/labany_calendar_first_bar" android:id="@id/refuse_B" android:background="@drawable/add_btn_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/Cancel" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:tag="layout-ldrtl/mushaf_type_view_0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:theme="@style/Theme.MaterialComponents.Light" android:id="@id/mushaf_type_card" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_margin="2.0dip" app:cardBackgroundColor="#ffecddcd" app:cardCornerRadius="16.0dip" app:cardElevation="1.0dip" app:strokeColor="#ffdcc4ad" app:strokeWidth="1.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+            <ImageView android:id="@id/mushaf_type_arrow_iv" android:layout_width="10.0dip" android:layout_height="wrap_content" android:src="@drawable/arrow_down_popup_menu" android:adjustViewBounds="true" app:tint="@color/oxford_blue" />
+            <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/oxford_blue" android:id="@id/mushaf_type_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="@string/the_translate" android:includeFontPadding="false" app:textview_type="2" />
+            <ImageView android:id="@id/mushaf_type_icon_iv" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/new_mushaf_translate_17" android:adjustViewBounds="true" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

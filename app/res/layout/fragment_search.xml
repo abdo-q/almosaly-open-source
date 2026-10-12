@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/fragTextSearch_parent" android:background="@color/mushaf_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="@dimen/right_left_mushaf_screen_marge" android:elevation="5.0dip">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/fragTextSearch_backIm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_beig_background" android:scaleType="fitCenter" />
+            <LinearLayout android:gravity="center" android:id="@id/fragTextSearch_searchBoarderLayout" android:background="@drawable/round_dark_beige_boarder" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/twenty_dp" android:layout_weight="1.0">
+                <ImageView android:id="@id/fragTextSearch_clearIm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/new_mushaf_search_close" />
+                <EditText android:textColor="@color/black" android:textColorHint="@color/light_rat" android:ellipsize="end" android:gravity="center|right" android:id="@id/fragmentSearch_textNumbersSv" android:background="@null" android:paddingRight="7.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:hint="@string/search_by_text_and_num" android:layout_weight="1.0" android:layout_centerInParent="true" android:inputType="textNoSuggestions" />
+                <ImageView android:id="@id/fragTextSearch_searchIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_beig_background_brown" android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/right_left_mushaf_screen_marge" android:layout_marginRight="@dimen/right_left_mushaf_screen_marge" android:layout_marginBottom="5.0dip" android:layout_below="@id/header" android:layout_centerInParent="true">
+            <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="left" android:id="@id/fragSearch_resultTopTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/searchResult" text_apply_fonts:textview_type="2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/searchContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

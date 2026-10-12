@@ -1,0 +1,1 @@
+{"inherit": ["../../common/omv/oslo.scene.json", "../assets/assets.night.json"], "extends": ["../../common/omv/common.json", "../../miami/schemes/normal.day.definitions.json", "../schemes/normal.day.definitions.json", "../schemes/normal.night.definitions.json"]}

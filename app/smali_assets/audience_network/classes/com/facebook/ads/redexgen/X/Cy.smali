@@ -1,0 +1,104 @@
+.class public final Lcom/facebook/ads/redexgen/X/Cy;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/facebook/ads/redexgen/X/je;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/facebook/ads/redexgen/X/5w;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic A00:Lcom/facebook/ads/redexgen/X/5w;
+
+
+# direct methods
+.method public constructor <init>(Lcom/facebook/ads/redexgen/X/5w;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x8010
+        }
+        names = {
+            null
+        }
+    .end annotation
+
+    .line 33623
+    iput-object p1, p0, Lcom/facebook/ads/redexgen/X/Cy;->A00:Lcom/facebook/ads/redexgen/X/5w;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final AAw()Z
+    .locals 3
+
+    .line 33624
+    iget-object v0, p0, Lcom/facebook/ads/redexgen/X/Cy;->A00:Lcom/facebook/ads/redexgen/X/5w;
+
+    invoke-static {v0}, Lcom/facebook/ads/redexgen/X/5w;->A04(Lcom/facebook/ads/redexgen/X/5w;)Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    move-result v0
+
+    const/4 v2, 0x1
+
+    if-nez v0, :cond_0
+
+    .line 33625
+    return v2
+
+    .line 33626
+    :cond_0
+    iget-object v0, p0, Lcom/facebook/ads/redexgen/X/Cy;->A00:Lcom/facebook/ads/redexgen/X/5w;
+
+    iget-object v0, v0, Lcom/facebook/ads/redexgen/X/D8;->A03:Lcom/facebook/ads/redexgen/X/LA;
+
+    invoke-virtual {v0}, Lcom/facebook/ads/redexgen/X/LA;->A3J()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/facebook/ads/redexgen/X/Cy;->A00:Lcom/facebook/ads/redexgen/X/5w;
+
+    iget-object v0, v0, Lcom/facebook/ads/redexgen/X/D8;->A09:Lcom/facebook/ads/redexgen/X/r2;
+
+    .line 33627
+    invoke-virtual {v0}, Lcom/facebook/ads/redexgen/X/r2;->getToolbarActionMode()I
+
+    move-result v1
+
+    const/16 v0, 0x8
+
+    if-ne v1, v0, :cond_1
+
+    .line 33628
+    return v2
+
+    .line 33629
+    :cond_1
+    iget-object v0, p0, Lcom/facebook/ads/redexgen/X/Cy;->A00:Lcom/facebook/ads/redexgen/X/5w;
+
+    invoke-virtual {v0}, Lcom/facebook/ads/redexgen/X/5w;->A0t()Z
+
+    move-result v0
+
+    return v0
+.end method

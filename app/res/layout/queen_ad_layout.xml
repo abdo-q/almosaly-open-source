@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/main" android:tag="layout/queen_ad_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content" text_apply_fonts:cardCornerRadius="0.0dip" text_apply_fonts:cardElevation="0.0dip" text_apply_fonts:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto" />

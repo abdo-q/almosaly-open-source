@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout-ldrtl/completed_questions_card_0" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="15.0dip" app:cardElevation="2.0dip" app:cardMaxElevation="2.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="-40.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/new_main_screen_card_title_size" android:textColor="@color/black" android:gravity="right" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/competitionCardsTitle" app:textview_type="2" />
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/main_screen_card_sub_title_big_size" android:textColor="#ff049acc" android:gravity="right" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/competitionCardsSubTitle" app:textview_type="2" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whats_new_icon" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/background" android:background="#ff1d3993" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_marginTop="40.0dip" />
+                <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/completed_questions_card_image" android:layout_alignBottom="@id/background" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/icon">
+                    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="@string/competitionAnsweredQuestionCardText1" android:lineSpacingExtra="@dimen/_2sdp" app:textview_type="2" />
+                    <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/competitionAnsweredQuestionCardText2" android:lineSpacingExtra="@dimen/_2sdp" app:textview_type="2" />
+                    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                        <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/competitionAnsweredQuestionCardText3" android:lineSpacingExtra="@dimen/_2sdp" app:textview_type="2" />
+                        <TextView android:textSize="23.0sp" android:textStyle="bold" android:textColor="@color/white" android:background="@drawable/fajr_button_background" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="40,000" android:lineSpacingExtra="0.0dip" android:backgroundTint="#ff050c20" />
+                    </LinearLayout>
+                    <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/competitionAnsweredQuestionCardText4" android:lineSpacingExtra="@dimen/_2sdp" app:textview_type="2" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/share" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/competitionAnsweredQuestionCardText5" app:textview_type="3" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

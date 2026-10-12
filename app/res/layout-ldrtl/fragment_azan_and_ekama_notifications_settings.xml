@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:settings_on_off="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:background="@drawable/default_header_background_transparent_curved" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="5.0dip">
+        <com.moslay.view.FontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/azan_ekama_settings" android:layout_centerInParent="true" text_apply_fonts:textview_type="1" style="@style/header_textview" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scroll" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/sub_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.moslay.view.FontTextView android:gravity="center|right" android:background="@color/setting_item_header_color" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_header_height" android:layout_marginTop="5.0dip" android:text="@string/azan_ekama_alerts_settings" text_apply_fonts:textview_type="2" style="@style/sub_header_settings_textview" />
+            <com.moslay.view.OnOffSwitchWithTitle android:id="@id/on_off_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" text_apply_fonts:text="@string/activate_alarm" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.moslay.view.OnOffSwitchWithTitle android:id="@id/on_off_apply_for_all_salawat" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" text_apply_fonts:text="@string/ApplyForAllSalwatTimes" text_apply_fonts:with_divider="false" />
+                    <com.moslay.view.ExpandableView android:id="@id/all_settings" android:background="@drawable/white_curve" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" />
+                    <com.moslay.view.ExpandableView android:orientation="vertical" android:id="@id/ex_seprate_salwat" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/white_curve" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <RelativeLayout android:id="@id/rl_fajr" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.moslay.view.FontTextView android:textColor="@color/labany_calendar_first_bar" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fajr" android:layout_alignParentRight="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="3" style="@style/collapsed_textview" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/im_fajr_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow_up_down" android:scaleType="fitCenter" android:textOn="" android:textOff="" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <com.moslay.view.ExpandableView android:id="@id/fajr_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/white_curve" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <RelativeLayout android:id="@id/rl_shrouq" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.moslay.view.FontTextView android:textColor="@color/labany_calendar_first_bar" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shorouqe" android:layout_alignParentRight="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="3" style="@style/collapsed_textview" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/im_shouroq_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow_up_down" android:scaleType="fitCenter" android:textOn="" android:textOff="" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <com.moslay.view.ExpandableView android:id="@id/shrouq_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/white_curve" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <RelativeLayout android:id="@id/rl_zohr" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.moslay.view.FontTextView android:textColor="@color/labany_calendar_first_bar" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zohr" android:layout_alignParentRight="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="3" style="@style/collapsed_textview" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/im_zohr_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow_up_down" android:scaleType="fitCenter" android:textOn="" android:textOff="" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <com.moslay.view.ExpandableView android:id="@id/zohr_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/white_curve" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <RelativeLayout android:id="@id/rl_asr" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.moslay.view.FontTextView android:textColor="@color/labany_calendar_first_bar" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asr" android:layout_alignParentRight="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="3" style="@style/collapsed_textview" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/im_asr_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow_up_down" android:scaleType="fitCenter" android:textOn="" android:textOff="" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <com.moslay.view.ExpandableView android:id="@id/asr_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/white_curve" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <RelativeLayout android:id="@id/rl_magreb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.moslay.view.FontTextView android:textColor="@color/labany_calendar_first_bar" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/magreb" android:layout_alignParentRight="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="3" style="@style/collapsed_textview" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/im_magreb_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow_up_down" android:scaleType="fitCenter" android:textOn="" android:textOff="" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <com.moslay.view.ExpandableView android:id="@id/magreb_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/white_curve" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <RelativeLayout android:id="@id/rl_esha" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.moslay.view.FontTextView android:textColor="@color/labany_calendar_first_bar" android:padding="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/esha" android:layout_alignParentRight="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="3" style="@style/collapsed_textview" />
+                                <ImageView android:layout_gravity="center_vertical" android:id="@id/im_esha_more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow_up_down" android:scaleType="fitCenter" android:textOn="" android:textOff="" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <com.moslay.view.ExpandableView android:id="@id/esha_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </com.moslay.view.ExpandableView>
+                </LinearLayout>
+                <View android:id="@id/notications_off_bg" android:background="@color/white_zuhr_salawat_times_list" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

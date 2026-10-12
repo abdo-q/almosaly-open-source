@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/toggleContainer" android:background="@drawable/bg_toggle_unselected" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="38.0dip" android:paddingStart="8.0dip" android:paddingEnd="5.0dip" android:paddingVertical="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favourite_ayat_all" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iconCircle" android:background="@drawable/bg_circle_unselected" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/tvTitle" />
+</LinearLayout>

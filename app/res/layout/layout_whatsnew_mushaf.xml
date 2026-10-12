@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/layout_whatsnew_mushaf_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" text_apply_fonts:cardBackgroundColor="@color/white" text_apply_fonts:cardCornerRadius="15.0dip" text_apply_fonts:cardElevation="2.0dip" text_apply_fonts:cardMaxElevation="2.0dip" text_apply_fonts:cardPreventCornerOverlap="true" text_apply_fonts:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="180.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_width="fill_parent" android:layout_height="180.0dip" android:src="@drawable/whats_new_mushaf_card_bg" android:scaleType="centerCrop" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imgview_rewards" android:layout_alignBottom="@id/imgview_rewards" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+            <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="-3.0dip" android:text="@string/whatsnew_mushaf_1" android:lineSpacingExtra="2.0dip" android:textAlignment="gravity" text_apply_fonts:textview_type="2" />
+        </LinearLayout>
+        <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txtview_explore" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="@string/txt_explore_property" android:layout_below="@id/layout_content" android:textAlignment="gravity" text_apply_fonts:textview_type="2" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgview_rewards" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whats_new_mushaf" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

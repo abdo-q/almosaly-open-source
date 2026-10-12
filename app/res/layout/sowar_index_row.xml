@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/right_left_mushaf_screen_marge"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.moslay.view.NewFontTextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|left" android:id="@id/sowarIndexRow_sorahNumTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            <com.moslay.view.NewFontTextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center|left" android:id="@id/sowarIndexRow_dashTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " />
+            <com.moslay.view.NewFontTextView android:textSize="@dimen/eighteen_sp" android:ellipsize="end" android:gravity="center|left" android:id="@id/sowarIndexRow_sorahNameIm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="سورة الفاتحة" android:lines="1" app:textview_type="3" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:padding="1.0dip" android:layout_width="10.0dip" android:layout_height="14.599976dip" android:src="@drawable/quran_location" />
+            <com.moslay.view.NewFontTextView android:textAppearance="?android:textAppearanceSmall" android:textSize="14.0sp" android:textColor="@color/main_color" android:id="@id/sowarIndexRow_ayatNumTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="مكية - 7ايات" app:textview_type="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.moslay.view.FontTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/dark2_rat" android:id="@id/sowarIndexRow_pageNumTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="صفحة" />
+        <ImageView android:id="@id/sowarIndexRow_leftIm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_arrow" android:rotation="180.0" />
+    </LinearLayout>
+</LinearLayout>

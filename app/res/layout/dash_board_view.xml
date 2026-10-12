@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/dash_board_view_0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.5dip" android:layout_marginRight="2.5dip" android:layout_marginHorizontal="2.5dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="15.0dip" app:cardElevation="2.0dip" app:cardMaxElevation="2.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/dash_board_recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:nestedScrollingEnabled="false" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

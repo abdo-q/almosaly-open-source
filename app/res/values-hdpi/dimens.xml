@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="math_solution_height">48.0dip</dimen>
+    <dimen name="sala_remained_time_font">46.0sp</dimen>
+    <dimen name="widget_height">180.0dip</dimen>
+    <dimen name="widget_width">320.0dip</dimen>
+</resources>

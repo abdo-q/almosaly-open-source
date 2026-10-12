@@ -1,0 +1,1 @@
+{"definitions": {"Lighting.Enabled": false, "Base.Ambient.Factor": ["ref", "Base.Ambient.Factor.Default"], "Base.Ambient.Factor.Default": 0.69, "Base.Diffuse.Factor": ["ref", "Base.Diffuse.Factor.Default"], "Base.Diffuse.Factor.Default": 1}}

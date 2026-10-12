@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/whats_new_screen_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="16.0" android:layout_above="@id/banner_container">
+        <RelativeLayout android:id="@id/header" android:background="@drawable/default_header_background_transparent_curved" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:elevation="5.0dip">
+            <ImageView android:id="@id/img_menu" android:padding="@dimen/dashboard_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/light_more" android:scaleType="fitCenter" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_centerVertical="true" android:contentDescription="@string/dashboard" android:layout_marginStart="@dimen/twenty_dp" android:layout_marginEnd="@dimen/twenty_dp" />
+            <com.moslay.view.FontTextView android:id="@id/Azkar_menu_Header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discove_new" android:layout_centerInParent="true" text_apply_fonts:textview_type="1" style="@style/header_textview" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+            <com.moslay.view.NoInternetView android:id="@id/news_noIntenert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/whats_new_recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.moslay.control_2015.LoadingControl android:id="@id/loading_whats_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/banner_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ad_hight_banner" android:layout_alignParentBottom="true" />
+</RelativeLayout>

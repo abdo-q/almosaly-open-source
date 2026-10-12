@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="80.0dip" android:layout_height="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:theme="@style/progressBar_orange" android:id="@id/progress_azkar_ad_timer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:progress="10" android:progressDrawable="@drawable/progress_orange_gray" style="?android:progressBarStyleHorizontal" />
+</RelativeLayout>

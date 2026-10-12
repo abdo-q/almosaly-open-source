@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="no_of_pages">
+        <item>21</item>
+        <item>20</item>
+        <item>21</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>21</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>21</item>
+        <item>20</item>
+        <item>21</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>21</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>20</item>
+        <item>23</item>
+    </integer-array>
+</resources>

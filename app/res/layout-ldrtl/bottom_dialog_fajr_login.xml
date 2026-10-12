@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout-ldrtl/bottom_dialog_fajr_login_0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/edit_profile_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-80.0dip" android:layout_below="@id/main_layout">
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="#ff0d0303" android:gravity="center" android:layout_gravity="center" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="30.0dip" android:text="@string/fajr_login_pop_up_1" android:lineSpacingExtra="4.0dip" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="#ff0d0303" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:text="@string/fajr_login_pop_up_2" text_apply_fonts:textview_type="2" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="15.0dip">
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/agree" android:background="@drawable/add_article_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="10.0dip" android:text="@string/fajr_agree" text_apply_fonts:textview_type="2" />
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/later" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="15.0dip" android:text="@string/fajr_later" text_apply_fonts:textview_type="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="231.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/iconImage" android:layout_width="318.0dip" android:layout_height="231.0dip" android:src="@drawable/fajr_permissions_pop_up_icon" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

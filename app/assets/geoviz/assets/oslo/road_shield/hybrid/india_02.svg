@@ -1,0 +1,15 @@
+<svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="hybrid / india_02">
+<g id="india_base">
+<g id="stretchable-items">
+<path id="shape01" d="M1.5 1.5H15.5V13.5C15.5 17.366 12.366 20.5 8.5 20.5V20.5C4.63401 20.5 1.5 17.366 1.5 13.5V1.5Z" fill="#1F9E87" stroke="white" stroke-linejoin="round"/>
+</g>
+<g id="non-stretchable-items">
+<g id="shape02">
+<path d="M12.1246 7.99574H13V3H12.1246V4.94676H10.0482V3H9.17275V7.99574H10.0482V5.72325H12.1246V7.99574Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.20627 6.88587H6.93319L7.2862 7.99575H8.15277L6.46753 3H5.69854L4 8L4.86479 7.99575L5.20627 6.88587ZM6.70435 6.13659H5.45462L6.09235 4.17878L6.70435 6.13659Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

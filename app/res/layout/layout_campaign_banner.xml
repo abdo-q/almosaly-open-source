@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_container" android:tag="layout/layout_campaign_banner_0" android:background="#ffececec" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" text_apply_fonts:cardBackgroundColor="@color/white" text_apply_fonts:cardCornerRadius="15.0dip" text_apply_fonts:cardElevation="2.0dip" text_apply_fonts:cardMaxElevation="2.0dip" text_apply_fonts:cardPreventCornerOverlap="true" text_apply_fonts:cardUseCompatPadding="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.moslay.view.smarteist.autoimageslider.SliderView android:id="@id/image_slider" android:layout_width="fill_parent" android:layout_height="75.0dip" text_apply_fonts:sliderAnimationDuration="600" text_apply_fonts:sliderAutoCycleDirection="back_and_forth" text_apply_fonts:sliderAutoCycleEnabled="true" text_apply_fonts:sliderIndicatorAnimationDuration="600" text_apply_fonts:sliderIndicatorGravity="bottom|center" text_apply_fonts:sliderIndicatorMargin="15.0dip" text_apply_fonts:sliderIndicatorOrientation="horizontal" text_apply_fonts:sliderIndicatorPadding="3.0dip" text_apply_fonts:sliderIndicatorRadius="2.0dip" text_apply_fonts:sliderIndicatorSelectedColor="#ff5a5a5a" text_apply_fonts:sliderIndicatorUnselectedColor="#ffffffff" text_apply_fonts:sliderScrollTimeInSec="1" text_apply_fonts:sliderStartAutoCycle="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

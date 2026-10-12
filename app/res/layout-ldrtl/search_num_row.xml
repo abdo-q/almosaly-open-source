@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/right_left_mushaf_screen_marge">
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+            <ImageView android:id="@id/sowarNumRow_leftIm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_arrow" />
+            <com.moslay.view.NewFontTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/pageNumTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Small Text" />F </LinearLayout>
+        <com.moslay.view.NewFontTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/sorahNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" />
+    </LinearLayout>
+    <View android:id="@id/com.madarsoft.quran.views.TextViewM3w" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.moslay.view.NewFontTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/num_search_text" android:id="@id/itemNameTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/right_left_mushaf_screen_marge" android:bufferType="spannable" android:text="Medium Text" />
+</LinearLayout>

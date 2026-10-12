@@ -1,0 +1,1 @@
+{"clear": {}, "geo": {}, "depthsky": {}, "background": {}, "tilezen_lines": {"factory": "geometry-line", "factoryOptions": {"datasource": "tilezen.line", "flags": ["simple"], "pickFilterName": "mapomv:line"}}, "route": {"factory": "geojson.polylines"}, "labels": {}}

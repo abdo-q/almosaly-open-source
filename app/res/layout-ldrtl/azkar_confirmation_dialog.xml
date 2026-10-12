@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:tag="layout-ldrtl/azkar_confirmation_dialog_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/azkar_close" />
+        <com.moslay.view.NewFontTextView android:textSize="17.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/reader_azkar_dialog_title" android:lineSpacingExtra="@dimen/_3sdp" app:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/reader_azkar_dialog_sub_title" android:lineSpacingExtra="@dimen/_3sdp" app:textview_type="1" />
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:orientation="vertical" android:id="@id/recycler_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/donot_ask_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-10.0dip" android:text="@string/azkar_donot_ask_again" android:lineSpacingExtra="@dimen/_3sdp" app:textview_type="1" />
+            <CheckBox android:gravity="center" android:layout_gravity="center" android:id="@id/donot_ask_checkBox" android:layout_width="60.0dip" android:layout_height="60.0dip" android:checked="false" android:button="@null" android:scaleX="0.6" android:scaleY="0.6" android:drawableStart="@drawable/login_check_selector" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

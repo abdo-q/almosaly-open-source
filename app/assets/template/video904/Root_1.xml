@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mbridge.msdk.config.dynamic.baseview.cusview.XMLView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/mbridge_videoview_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/mbridge_vfpv_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <com.mbridge.msdk.config.dynamic.baseview.cusview.CusPlayerView
+            android:id="@+id/mbridge_vfpv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="player" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="playerFullScreenBtn"
+        app:mbridge_data="clickable=true" />
+
+    <!-- TOP CONTROLLER -->
+    <RelativeLayout
+        android:id="@+id/mbridge_top_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:tag="topController"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/mbridge_iv_link"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:src="@drawable/mbridge_reward_notice"
+            android:tag="privacyBtn"
+            app:mbridge_data="clickable=true" />
+
+        <com.mbridge.msdk.config.dynamic.baseview.cusview.CountDownView
+            android:id="@+id/mbridge_tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/mbridge_iv_link"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/mbridge_iv_link"
+            android:layout_toRightOf="@+id/mbridge_iv_link"
+            android:gravity="center"
+            android:tag="countdownView"
+            android:textSize="11sp"
+            android:textColor="#FFFFFF"
+            app:mbridge_data="data=$context.state.rewardMsg" />
+
+        <ImageView
+            android:id="@+id/mbridge_rl_playing_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/mbridge_reward_close"
+            android:tag="playerCloseBtn"
+            android:visibility="gone"
+            app:mbridge_data="clickable=true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mbridge_reward_bottom_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.mbridge.msdk.config.dynamic.baseview.cusview.SoundImageView
+            android:id="@+id/mbridge_sound_switch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/mbridge_reward_end_close_shape_oval"
+            android:padding="6dp"
+            android:src="@drawable/mbridge_reward_sound_open"
+            android:tag="muteBtn"
+            android:visibility="visible"
+            app:mbridge_data="clickable=true" />
+
+        <com.mbridge.msdk.config.dynamic.baseview.cusview.SegmentsProgressBar
+            android:id="@+id/mbridge_reward_segment_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="progressBar"
+            android:visibility="visible"
+            app:mbridge_data="count=$player.adCount|percent=$context.state.playerProgress|index=$player.currentIndex" />
+    </LinearLayout>
+
+    <!-- CTA -->
+    <RelativeLayout
+        android:id="@+id/mbridge_cta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mbridge_reward_bottom_widget"
+        android:layout_margin="10dp"
+        android:background="@drawable/mbridge_cta_bg"
+        android:padding="10dp"
+        android:tag="CTABanner"
+        android:visibility="invisible"
+        app:mbridge_data="clickable=true">
+
+        <ImageView
+            android:id="@+id/mbridge_iv_appicon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            app:mbridge_data="data=$g0.showModel.currentOffer.creative_info.icon_url" />
+
+        <TextView
+            android:id="@+id/mbridge_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/mbridge_tv_install"
+            android:layout_toLeftOf="@+id/mbridge_tv_install"
+            android:layout_toEndOf="@+id/mbridge_iv_appicon"
+            android:layout_toRightOf="@+id/mbridge_iv_appicon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            app:mbridge_data="data=$g0.showModel.currentOffer.creative_info.title" />
+
+        <TextView
+            android:id="@+id/mbridge_tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbridge_tv_title"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/mbridge_tv_install"
+            android:layout_toLeftOf="@+id/mbridge_tv_install"
+            android:layout_toEndOf="@+id/mbridge_iv_appicon"
+            android:layout_toRightOf="@+id/mbridge_iv_appicon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:mbridge_data="data=$g0.showModel.currentOffer.creative_info.desc" />
+
+        <TextView
+            android:id="@+id/mbridge_tv_install"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/mbridge_reward_shape_videoend_buttonbg"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="12"
+            android:minWidth="45dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:tag="CTABtn"
+            app:mbridge_data="data=$g0.showModel.currentOffer.creative_info.ctatext" />
+    </RelativeLayout>
+
+    <!-- REWARD ALERT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70000000"
+        android:visibility="invisible"
+        android:tag="rewardAlert">
+
+        <RelativeLayout
+            android:id="@+id/mbridge_alertview_rl"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@drawable/mbridge_cm_alertview_bg"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/mbridge_alertview_titleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/mbridge_video_common_alertview_title_textcolor"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="@string/mbridge_reward_dialog_title"/>
+
+            <TextView
+                android:id="@+id/mbridge_alertview_contentview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mbridge_alertview_titleview"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/mbridge_video_common_alertview_content_textcolor"
+                android:textSize="18sp"
+                android:text="@string/mbridge_reward_dialog_content" />
+
+            <TextView
+                android:id="@+id/mbridge_alertview_cancel_button"
+                android:layout_width="105dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/mbridge_alertview_contentview"
+                android:layout_marginTop="38dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/mbridge_cm_alertview_confirm_bg"
+                android:gravity="center"
+                android:textColor="@color/mbridge_video_common_alertview_confirm_button_textcolor"
+                android:textSize="18sp"
+                android:text="@string/mbridge_reward_dialog_close"
+                app:mbridge_data="clickable=true"
+                android:tag="rewardAlertCloseBtn"/>
+
+            <TextView
+                android:id="@+id/mbridge_alertview_confirm_button"
+                android:layout_width="105dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/mbridge_alertview_contentview"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="38dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/mbridge_cm_alertview_cancel_bg"
+                android:gravity="center"
+                android:textColor="@color/mbridge_video_common_alertview_cancel_button_textcolor"
+                android:textSize="18sp"
+                android:text="@string/mbridge_reward_dialog_continue"
+                app:mbridge_data="clickable=true"
+                android:tag="rewardAlertContinueBtn"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- FEEDBACK ALERT -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:tag="feedbackAlert"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/mbridge_cm_feedback_dialog_view_bg"
+            android:minHeight="280dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp">
+
+                <TextView
+                    android:id="@+id/mbridge_video_common_alertview_titleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/mbridge_cm_feedback_dialog_title"
+                    android:textAllCaps="false"
+                    android:textColor="@color/mbridge_black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mbridge_video_common_alertview_confirm_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="×"
+                    android:textColor="@color/mbridge_black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:tag="feedbackCloseBtn"
+                    app:mbridge_data="clickable=true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0" />
+
+            <ScrollView
+                android:id="@+id/mbridge_video_common_alertview_contentview_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fadeScrollbars="false"
+                android:fillViewport="true"
+                android:paddingStart="20dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="16dp"
+                android:scrollbars="vertical">
+
+                <com.mbridge.msdk.config.dynamic.baseview.cusview.FeedBackLinerLayout
+                    android:id="@+id/mbridge_video_common_alertview_contentview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="160dp"
+                    android:orientation="vertical"
+                    android:tag="feedbackList"
+                    app:mbridge_data="data=$g0.showModel.feedback|saveContent=true" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/mbridge_video_common_alertview_cancel_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/mbridge_cm_feedback_choice_btn_bg_pressed"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="@string/mbridge_cm_feedback_dialog_close_submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/mbridge_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:tag="feedbackSubmitBtn"
+                    app:mbridge_data="clickable=true" />
+
+                <TextView
+                    android:id="@+id/mbridge_video_common_alertview_private_action_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="@string/mbridge_cm_feedback_dialog_privacy_des"
+                    android:textAllCaps="false"
+                    android:textColor="@color/mbridge_cm_feedback_dialog_chice_bg_pressed"
+                    android:textSize="12sp"
+                    android:tag="privacyPolicyBtn"
+                    app:mbridge_data="clickable=true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!--watermark-->
+    <ImageView
+        android:id="@+id/mbridge_iv_watermark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:tag="watermark"
+        app:mbridge_data="data=$g0.initModel.watermark" />
+
+</com.mbridge.msdk.config.dynamic.baseview.cusview.XMLView>

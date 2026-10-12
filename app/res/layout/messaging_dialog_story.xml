@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/progressContainer" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="10.0dip" android:elevation="10.0dip" app:layout_constraintEnd_toEndOf="@id/fake_layout" app:layout_constraintStart_toStartOf="@id/fake_layout" app:layout_constraintTop_toTopOf="@id/fake_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/storyContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="60.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/messaging_viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/fake_layout" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/storyContainer" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/storyContainer" app:layout_constraintWidth_default="percent" app:layout_constraintWidth_percent="1.0" />
+    <ImageView android:id="@id/close_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/inapp_close" app:layout_constraintEnd_toEndOf="@id/fake_layout" app:layout_constraintTop_toTopOf="@id/fake_layout" />
+    <RelativeLayout android:id="@id/timer_bg" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/close_img" app:layout_constraintEnd_toEndOf="@id/close_img" app:layout_constraintStart_toStartOf="@id/close_img" app:layout_constraintTop_toTopOf="@id/close_img">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/timer" android:background="@drawable/timer_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

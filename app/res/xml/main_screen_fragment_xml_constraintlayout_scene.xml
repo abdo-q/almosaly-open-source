@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition motion:constraintSetEnd="@id/end" motion:constraintSetStart="@id/start" motion:duration="1000">
+        <KeyFrameSet />
+    </Transition>
+    <ConstraintSet android:id="@id/start" />
+    <ConstraintSet android:id="@id/end">
+        <Constraint android:id="@id/imgview_eid_mubarak_text" android:layout_width="200.0dip" android:layout_height="10.0dip" android:layout_marginTop="0.0dip" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/imgview_eid_mubarak_text" android:layout_width="200.0dip" android:layout_height="60.0dip" android:layout_marginTop="20.0dip" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+</MotionScene>

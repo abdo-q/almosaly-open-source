@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentRight="true" app:cardCornerRadius="8.0dip">
+        <ImageView android:id="@id/imgview_message" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerInside" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

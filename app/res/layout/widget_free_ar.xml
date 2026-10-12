@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/fg" android:background="@drawable/white_rec_more_curv_without_border" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/vs_cont" android:background="@drawable/widget_zokhrofa" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/img_pr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fifteen_dp">
+                    <ImageView android:id="@id/next_sala_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/three_dp" android:src="@drawable/widget_asr_large" android:scaleType="fitCenter" />
+                    <TextView android:textSize="@dimen/twenty_sp" android:textStyle="bold" android:textColor="@color/main_color" android:gravity="center" android:layout_gravity="center" android:id="@id/city_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="الاسكندرية" android:includeFontPadding="false" />
+                    <TextView android:textSize="@dimen/eleven_sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/pray_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                    <TextView android:textSize="@dimen/twelve_sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/refresh" android:background="@drawable/widget_refresh_background" android:paddingLeft="@dimen/four_dp" android:paddingTop="@dimen/two_dp" android:paddingRight="@dimen/four_dp" android:paddingBottom="@dimen/two_dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/eight_dp" android:minHeight="32.0dip" android:text="@string/click_for_refresh" android:drawableRight="@drawable/widget_refresh" android:drawablePadding="@dimen/two_dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/eight_dp" android:paddingTop="@dimen/two_dp" android:paddingRight="@dimen/fifteen_dp" android:paddingBottom="@dimen/two_dp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="6.0">
+                <LinearLayout android:gravity="center|right" android:layout_gravity="center|right" android:orientation="vertical" android:id="@id/vscont" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/sixteen_sp" android:textColor="@color/light_black" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/pray_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00:00" android:includeFontPadding="false" />
+                        <TextView android:textSize="@dimen/sixteen_sp" android:gravity="center|right" android:layout_gravity="center|right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="  " android:includeFontPadding="false" />
+                        <TextView android:textSize="@dimen/twenty_sp" android:textStyle="bold" android:textColor="@color/light_black" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/pray_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="الظهر" android:includeFontPadding="false" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/twenty_sp" android:textStyle="bold" android:textColor="@color/main_color" android:gravity="center" android:id="@id/pray_remind_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00:00" android:includeFontPadding="false" />
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/four_dp" android:src="@drawable/widget_lock" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/zxvz" android:background="@color/light_grey" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/conatiner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="6.0">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/twelve_sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/isha_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/eight_dp" android:src="@drawable/widget_prayer_lock" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+                <ImageView android:background="@color/main_divider_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ten_dp" android:layout_marginBottom="@dimen/ten_dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/twelve_sp" android:layout_gravity="center_horizontal" android:id="@id/maghrib_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/eight_dp" android:src="@drawable/widget_prayer_lock" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+                <ImageView android:background="@color/main_divider_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ten_dp" android:layout_marginBottom="@dimen/ten_dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/twelve_sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/asr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/eight_dp" android:src="@drawable/widget_prayer_lock" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+                <ImageView android:background="@color/main_divider_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ten_dp" android:layout_marginBottom="@dimen/ten_dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/twelve_sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/zohr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/eight_dp" android:src="@drawable/widget_prayer_lock" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+                <ImageView android:background="@color/main_divider_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ten_dp" android:layout_marginBottom="@dimen/ten_dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/twelve_sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/shorouqe_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/eight_dp" android:src="@drawable/widget_prayer_lock" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+                <ImageView android:background="@color/main_divider_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ten_dp" android:layout_marginBottom="@dimen/ten_dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/twelve_sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/fajr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/eight_dp" android:src="@drawable/widget_prayer_lock" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/seven_dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/fourteen_sp" android:textColor="@color/more_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_text_to_upgrade_to_paid" android:lineSpacingExtra="11.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/activity_fasting_days_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/banner_container">
+        <RelativeLayout android:id="@id/header" android:background="@drawable/default_header_background_transparent_curved" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" text_apply_fonts:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/iv_close" android:padding="@dimen/dashboard_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_white_ic" android:scaleType="fitCenter" android:minWidth="40.0dip" android:minHeight="40.0dip" android:layout_centerVertical="true" android:contentDescription="@string/back" android:layout_marginStart="10.0dip" android:layout_alignParentStart="true" />
+            <com.moslay.view.NewFontTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/qdaa_Header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qdaa_days" android:layout_centerInParent="true" text_apply_fonts:textview_type="2" />
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" android:layoutDirection="rtl">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/fasting_days_recycler" android:layout_width="fill_parent" android:layout_height="0.0sp" android:layout_marginTop="24.0dip" android:nestedScrollingEnabled="true" text_apply_fonts:layout_constraintBottom_toTopOf="@id/btn" text_apply_fonts:layout_constraintTop_toTopOf="parent" />
+            <androidx.cardview.widget.CardView android:id="@id/btn" android:layout_width="fill_parent" android:layout_height="83.0dip" text_apply_fonts:cardElevation="10.0dip" text_apply_fonts:layout_constraintBottom_toTopOf="@id/queen_ad_layout" text_apply_fonts:layout_constraintEnd_toEndOf="parent" text_apply_fonts:layout_constraintStart_toStartOf="parent">
+                <com.moslay.view.NewFontTextView android:textSize="19.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/edit_qdaa_days" android:background="@drawable/bg_rounded_burgundy" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="11.0dip" android:text="@string/update_qdaa_days" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" text_apply_fonts:textview_type="3" />
+            </androidx.cardview.widget.CardView>
+            <include android:id="@id/queen_ad_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" text_apply_fonts:layout_constraintBottom_toBottomOf="parent" text_apply_fonts:layout_constraintEnd_toEndOf="parent" text_apply_fonts:layout_constraintStart_toStartOf="parent" layout="@layout/queen_ad_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@id/empty_state_ly" android:visibility="gone" layout="@layout/activity_main_qdaa" />
+        <include android:id="@id/ramdan_qdaa_intro" android:visibility="gone" layout="@layout/ramdan_qdaa_intro" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/banner_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/ad_hight_banner" android:layout_alignParentBottom="true" text_apply_fonts:layout_constraintBottom_toBottomOf="parent" text_apply_fonts:layout_constraintEnd_toEndOf="parent" text_apply_fonts:layout_constraintStart_toStartOf="parent" />
+</RelativeLayout>

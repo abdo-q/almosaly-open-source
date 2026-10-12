@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preferences">
+        <CheckBoxPreference android:title="@string/preference_show_angle" android:key="preference_show_angle" android:summary="@string/preference_show_angle_summary" android:defaultValue="true" />
+        <ListPreference android:entries="@array/display_types_name" android:title="@string/preference_display_type" android:key="preference_display_type" android:dependency="preference_show_angle" android:entryValues="@array/display_types" />
+        <CheckBoxPreference android:title="@string/preference_lock" android:key="preference_lock" android:summary="@string/preference_lock_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preference_economy" android:key="preference_economy" android:summary="@string/preference_economy_summary" android:defaultValue="false" />
+        <ListPreference android:entries="@array/viscosities_name" android:title="@string/preference_viscosity" android:key="preference_viscosity" android:entryValues="@array/viscosities" />
+        <CheckBoxPreference android:title="@string/preference_sound" android:key="preference_sound" android:summary="@string/preference_sound_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

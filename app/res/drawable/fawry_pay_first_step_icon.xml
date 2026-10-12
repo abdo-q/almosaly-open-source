@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="22.0dip" android:width="22.0dip" android:viewportWidth="22.0" android:viewportHeight="22.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$fawry_pay_first_step_icon__0" android:pathData="M0,11a10.917,11 0,1 0,21.834 0a10.917,11 0,1 0,-21.834 0z" />
+    <path android:fillColor="@drawable/$fawry_pay_first_step_icon__1" android:pathData="M22,13.933l-8.544,-8.544h-4.7v2.549l1.667,1.667v7.031l4.854,4.854A11.3,11.3 0,0 0,22 13.933Z" android:strokeAlpha="0.49" android:fillAlpha="0.49" />
+    <path android:fillColor="#ffffffff" android:pathData="M13.538,5.389v11.247h-3.03v-8.7h-1.667v-2.549Z" />
+</vector>

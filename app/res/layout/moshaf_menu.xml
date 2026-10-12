@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto" xmlns:integer_icrease_decrease_attrs="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/sss" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/my" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="start|center" android:id="@id/lang_title" android:background="@color/setting_item_header_color" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_header_height">
+                <com.moslay.view.FontTextView android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/browse" integer_icrease_decrease_attrs:textview_type="2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/moshaf_menu_surah_layout" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4.5">
+                    <com.moslay.view.FontTextView android:textColor="#ff202020" android:layout_gravity="center_vertical" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/with_surah" integer_icrease_decrease_attrs:textview_type="2" />
+                </LinearLayout>
+                <ToggleButton android:layout_gravity="center_vertical" android:id="@id/moshaf_menu_surah_arrow" android:background="@drawable/arrow_up_down" android:paddingLeft="3.0dip" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:checked="false" android:textOn="" android:textOff="" />
+            </LinearLayout>
+            <com.moslay.view.ExpandableView android:orientation="vertical" android:id="@id/moshaf_menu_expandable_surah" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="4.0dip">
+                <RelativeLayout android:id="@id/tex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <RelativeLayout android:background="@drawable/spinner_back" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <com.moslay.view.FontTextView android:gravity="center|left" android:id="@id/moshaf_menu_surah_dialog" android:background="@drawable/spinner_back" android:paddingLeft="5.0dip" android:layout_width="150.0dip" android:layout_height="33.0dip" />
+                        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/werd_arrow_eng" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <com.moslay.view.FontTextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="@string/surah" android:layout_alignParentLeft="true" android:layout_centerVertical="true" integer_icrease_decrease_attrs:textview_type="2" />
+                </RelativeLayout>
+                <com.moslay.view.FontTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/moshaf_main_surah_go" android:background="@drawable/curved_orange_hegry_correction" android:layout_width="200.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:text="@string/go" integer_icrease_decrease_attrs:textview_type="2" />
+            </com.moslay.view.ExpandableView>
+            <View android:background="#ff8a8788" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/moshaf_menu_chapter_layout" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4.5">
+                    <com.moslay.view.FontTextView android:textColor="#ff202020" android:layout_gravity="center_vertical" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/with_chapter" integer_icrease_decrease_attrs:textview_type="2" />
+                </LinearLayout>
+                <ToggleButton android:layout_gravity="center_vertical" android:id="@id/moshaf_menu_chapter_arrow" android:background="@drawable/arrow_up_down" android:paddingLeft="3.0dip" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:checked="false" android:textOn="" android:textOff="" />
+            </LinearLayout>
+            <com.moslay.view.ExpandableView android:orientation="vertical" android:id="@id/moshaf_menu_expandable_chapter" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginBottom="4.0dip">
+                <RelativeLayout android:id="@id/tex1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <RelativeLayout android:background="@drawable/spinner_back" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <com.moslay.view.FontTextView android:gravity="center|left" android:id="@id/moshaf_menu_chapter_dialog" android:background="@drawable/spinner_back" android:paddingLeft="5.0dip" android:layout_width="150.0dip" android:layout_height="33.0dip" />
+                        <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/werd_arrow_eng" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <com.moslay.view.FontTextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="@string/chapter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" integer_icrease_decrease_attrs:textview_type="2" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/tex2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                    <RelativeLayout android:background="@drawable/spinner_back" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                        <com.moslay.view.FontTextView android:gravity="center|left" android:id="@id/moshaf_menu_quarter_dialog" android:background="@drawable/spinner_back" android:paddingLeft="5.0dip" android:layout_width="150.0dip" android:layout_height="33.0dip" />
+                        <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/werd_arrow_eng" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <com.moslay.view.FontTextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:text="@string/quarter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" integer_icrease_decrease_attrs:textview_type="2" />
+                </RelativeLayout>
+                <com.moslay.view.FontTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/moshaf_main_chapter_go" android:background="@drawable/curved_orange_hegry_correction" android:layout_width="200.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:text="@string/go" integer_icrease_decrease_attrs:textview_type="2" />
+            </com.moslay.view.ExpandableView>
+            <View android:background="#ff8a8788" android:layout_width="fill_parent" android:layout_height="0.100000024dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/moshaf_menu_pages_layout" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="4.5">
+                    <com.moslay.view.FontTextView android:textColor="#ff202020" android:layout_gravity="center_vertical" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/with_pages" integer_icrease_decrease_attrs:textview_type="2" />
+                </LinearLayout>
+                <ToggleButton android:layout_gravity="center_vertical" android:id="@id/moshaf_menu_page_arrow" android:background="@drawable/arrow_up_down" android:paddingLeft="3.0dip" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:checked="false" android:textOn="" android:textOff="" />
+            </LinearLayout>
+            <com.moslay.view.ExpandableView android:orientation="vertical" android:id="@id/moshaf_menu_expandable_page" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="4.0dip">
+                <com.moslay.view.IntegerIncreaseDecreaseLayout android:id="@id/moshaf_menu_page_no" android:paddingBottom="1.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginRight="10.0dip" integer_icrease_decrease_attrs:apply_divider="false" integer_icrease_decrease_attrs:title_text="@string/page" />
+                <com.moslay.view.FontTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/moshaf_main_page_go" android:background="@drawable/curved_orange_hegry_correction" android:layout_width="200.0dip" android:layout_height="30.0dip" android:text="@string/go" integer_icrease_decrease_attrs:textview_type="2" />
+            </com.moslay.view.ExpandableView>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/lang_title1" android:background="@color/setting_item_header_color" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_header_height" android:layout_marginTop="1.0dip">
+                <com.moslay.view.FontTextView android:textColor="#ffffffff" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_moshaf" android:layout_centerHorizontal="true" android:layout_centerVertical="true" integer_icrease_decrease_attrs:textview_type="2" />
+                <ImageView android:layout_width="18.0dip" android:layout_height="20.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/werd_moshaf_download" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.moslay.view.FontTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/moshaf_main_download" android:background="@drawable/curved_orange_hegry_correction" android:layout_width="200.0dip" android:layout_height="30.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip" android:text="@string/downlod_now" integer_icrease_decrease_attrs:textview_type="2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

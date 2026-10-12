@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Ad Information</title>
+    <style>
+        :root {
+            --primary-color: #39BADD;
+            --text-color: #333333;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            position: fixed;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            /* margin: var(--spacing-md); */
+            padding-top: max(env(safe-area-inset-top), var(--spacing-md));
+            padding-bottom: max(env(safe-area-inset-bottom), var(--spacing-md));
+            padding-left: max(env(safe-area-inset-left), var(--spacing-md));
+            padding-right: max(env(safe-area-inset-right), var(--spacing-md));
+            line-height: 1.4;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        main {
+            height: 100%;
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .info-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            width: 100%;
+        }
+
+        .content-column {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            margin-left: var(--spacing-md);
+            margin-right: var(--spacing-md);
+            flex: 1;
+        }
+
+        .icon-column {
+            display: flex;
+            align-items: flex-start;
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            margin-top: 2px;
+        }
+
+        .info-icon {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .main-heading {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: var(--spacing-sm);
+            line-height: 1.3;
+        }
+
+        .sub-heading {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .params-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+        }
+
+        .param-text {
+            font-size: 14px;
+            display: none;
+            line-height: 1.5;
+            color: var(--text-color);
+        }
+
+        .info-value {
+            font-size: 14px;
+            margin-top: var(--spacing-sm);
+            line-height: 1.5;
+        }
+
+        .info-container {
+            margin-top: var(--spacing-md);
+        }
+
+        #pubmatic_info {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            border-top: 1px solid #eee;
+            padding-top: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+            padding-left: var(--spacing-md);
+            padding-right: var(--spacing-md);
+        }
+
+        #pubmatic_info.centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% - var(--spacing-md) * 4);
+            max-width: 320px;
+            border-top: none;
+            margin: 0;
+            padding: var(--spacing-md);
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        .logo-icon {
+            width: 130px;
+            height: 22px;
+            object-fit: contain;
+            margin: var(--spacing-lg) 0 var(--spacing-md);
+        }
+
+        .privacy-content {
+            margin: var(--spacing-md) 0;
+            font-size: 14px;
+            line-height: 1.5;
+            max-width: 100%;
+        }
+
+        .privacy-column {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: var(--spacing-md);
+        }
+
+        .privacy-button {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: var(--spacing-sm);
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .privacy-button:active {
+            opacity: 0.7;
+        }
+
+        @media (min-height: 600px) {
+            #pubmatic_info.centered {
+                max-width: 360px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="info-section" id="advertiser_info_params">
+            <div class="icon-column">
+                <img src="pob_info_button.svg" alt="Information icon" class="info-icon" />
+            </div>
+            <div class="content-column">
+                <h1 class="main-heading">WHY YOU'RE SEEING THIS AD</h1>
+                <div class="params-container">
+                    <p class="param-text" id="param-1">
+                        Advertising presented to you on this service can be based on your advertising profiles, which can reflect your activity on this service or other websites or apps (like the forms you submit, content you look at), possible interests and personal aspects.
+                    </p>
+                    <p class="param-text" id="param-2">
+                        Advertising presented to you on this service can be based on limited data, such as the website or app you are using, your non-precise location, your device type or which content you are (or have been) interacting with (for example, to limit the number of times an ad is presented to you).
+                    </p>
+                    <p class="param-text" id="param-3">
+                        With your acceptance, your precise location (within a radius of less than 500 metres) may be used in support of the purposes explained in this notice.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section" id="advertiser_info">
+            <div class="icon-column">
+                <img src="pob_person_button.svg" alt="Advertiser icon" class="info-icon" />
+            </div>
+            <div class="content-column">
+                <h2 class="main-heading">ABOUT THIS ADVERTISER</h2>
+                <div id="advertiser_container">
+                    <h3 class="sub-heading">Advertiser</h3>
+                    <p class="info-value" id="advertiser"></p>
+                </div>
+                <div class="info-container" id="paidBy_container">
+                    <h3 class="sub-heading">Paid By</h3>
+                    <p class="info-value" id="paidBy"></p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="info-section" id="pubmatic_info" style="flex-direction: column; align-items: flex-start; text-align: left;">
+            <img src="PubMatic_Logo.svg" alt="PubMatic Logo" class="logo-icon" style="margin-left: auto; margin-right: auto; display: block;" />
+            <div class="content-column">
+                <p class="info-value privacy-content">
+                    This advertisement was served by PubMatic. PubMatic offers transparent advertising solutions to publishers, media buyers and data owners, allowing them to harness the power and potential of the open internet to drive better business outcomes.
+                </p>
+            </div>
+            <div class="privacy-column">
+                <a href="https://pubmatic.com/" class="privacy-button" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            </div>
+        </footer>
+    </main>
+    <script>
+        /**
+         * MethodName: getQueryParams
+         * Description: Method to extract the query params from the url, extracts the value and returns an object
+         * Parameters: None
+         * Return: Object
+         * @returns {Object} - Object containing advertiser, paidBy and params
+         */
+        function getQueryParams() {
+            // Extract the query parameters
+            const params = new URLSearchParams(window.location.search);
+            const lowerCaseParams = {};
+            // Convert the keys to lowercase
+            params.forEach((value, key) => {
+                lowerCaseParams[key.toLowerCase()] = value;
+            });
+            // Return the object containing advertiser, paidBy and params
+            return {
+                advertiser: lowerCaseParams["advertiser"],
+                paidBy: lowerCaseParams["paidby"],
+                params:
+                lowerCaseParams["params"] !== undefined
+                ? lowerCaseParams["params"]?.split(",")
+                : []
+            };
+        }
+
+        /**
+         * MethodName: isNullOrEmpty
+         * Description: Checks if a value is null, undefined, or an empty string (after trimming)
+         * Parameters: value - The value to check
+         * Return: Boolean
+         * @param {*} value - The value to be checked
+         * @returns {boolean} - True if the value is null, undefined, or an empty string; false otherwise
+         */
+        function isNullOrEmpty(value) {
+            return value === null || value === undefined || value.trim() === "";
+        }
+
+        /**
+         * MethodName: updateContent
+         * Description: Method to update the content based on the query params. Hide the elements if the value is not present
+         * Parameters: Array
+         * Return: None
+         * @param {Array} params - Array containing advertiser, paidBy and params
+         */
+        function updateContent(params) {
+            const advertiser = params[0];
+            const paidBy = params[1];
+            const adParams = params[2];
+
+            let hasContent = false;
+
+            // Update the advertiser and paidBy values
+            if (!isNullOrEmpty(advertiser) && !isNullOrEmpty(paidBy)) {
+                // Show both advertiser and paidBy field when both values are available
+                document.getElementById("advertiser").innerText = advertiser;
+                document.getElementById("paidBy").innerText = paidBy;
+                hasContent = true;
+            } else if (!isNullOrEmpty(advertiser)) {
+                // Show advertiser's value for both the text fields
+                document.getElementById("advertiser").innerText = advertiser;
+                document.getElementById("paidBy").innerText = advertiser;
+                hasContent = true;
+            } else if (!isNullOrEmpty(paidBy)) {
+                // Show paidBy's value for both the text fields
+                document.getElementById("paidBy").innerText = paidBy;
+                document.getElementById("advertiser").innerText = paidBy;
+                hasContent = true;
+            } else {
+                // Hide the advertiser_info div when both paidBy and advertiser values are unavailable
+                document.getElementById("advertiser_info").style.display = "none";
+            }
+
+            // Update the ad params
+            adParams.forEach((param) => {
+                const paramElement = document.getElementById(`param-${param}`);
+                if (paramElement && param) {
+                    paramElement.style.display = "block";
+                    hasContent = true;
+                }
+            });
+
+            const param1Visible = document.getElementById("param-1").style.display === "block";
+            const param2Visible = document.getElementById("param-2").style.display === "block";
+            const param3Visible = document.getElementById("param-3").style.display === "block";
+            
+            if (!param1Visible && !param2Visible && !param3Visible) {
+                document.getElementById("advertiser_info_params").style.display = "none";
+            }
+
+            // Handle footer visibility based on showFooter parameter
+            const pubmaticInfo = document.getElementById("pubmatic_info");
+            if (!hasContent) {
+                pubmaticInfo.classList.add("centered");
+            }
+        }
+
+        // Get the query params
+        const queryParams = getQueryParams();
+        const params = [
+            queryParams.advertiser,
+            queryParams.paidBy,
+            queryParams.params
+        ];
+        // Update the content based on the query params
+        updateContent(params);
+    </script>
+</body>
+</html>

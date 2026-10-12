@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/activity_mail_main_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/header" android:background="@drawable/default_header_background_transparent_curved" android:layout_width="fill_parent" android:layout_height="@dimen/header_height" android:minWidth="?android:actionBarSize" text_apply_fonts:contentInsetEnd="0.0dip" text_apply_fonts:contentInsetLeft="0.0dip" text_apply_fonts:contentInsetRight="0.0dip" text_apply_fonts:contentInsetStart="0.0dip" text_apply_fonts:layout_scrollFlags="scroll|enterAlways">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mosaly_mail" android:layout_centerInParent="true" text_apply_fonts:textview_type="3" />
+            <ImageView android:id="@id/back_button" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back_fasting_rules" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/imgview_inbox_illustration" android:visibility="gone" android:layout_width="290.0dip" android:layout_height="160.0dip" android:layout_marginTop="24.0dip" android:src="@drawable/ic_inbox_illustration" android:scaleType="fitCenter" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/ic_bg_mail_selection" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="24.0dip" android:weightSum="3.0" android:layoutDirection="ltr">
+                <RelativeLayout android:id="@id/layout_inbox" android:background="@drawable/ic_mail_tab_selected" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/txtview_inbox" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/inbox" android:textAlignment="gravity" text_apply_fonts:textview_type="2" />
+                    <View android:id="@id/view_sep_inbox_sent" android:background="@color/black" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/txtview_inbox" android:layout_alignTop="@id/txtview_inbox" android:layout_alignBottom="@id/txtview_inbox" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_sent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txtview_sent" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sent" android:textAlignment="gravity" text_apply_fonts:textview_type="2" />
+                    <View android:id="@id/view_sep_sent_fav" android:background="@color/black" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_alignTop="@id/txtview_sent" android:layout_alignBottom="@id/txtview_sent" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_fav" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/txtview_fav" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/favorite" android:textAlignment="gravity" text_apply_fonts:textview_type="2" />
+                </RelativeLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/imgview_fab" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_margin="16.0dip" android:layout_marginRight="32.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/ic_send_mail" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:elevation="8.0dip" android:stateListAnimator="@null" />
+    </RelativeLayout>
+</LinearLayout>

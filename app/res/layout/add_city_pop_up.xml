@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/black_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center|left" android:orientation="vertical" android:background="@drawable/white_rectangle_radius_14dp" android:paddingLeft="20.0dip" android:paddingTop="40.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip">
+            <com.moslay.view.FontTextView android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/didnot_find_city_name_add_city_name_to_your_location" />
+            <com.moslay.view.FontTextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/country_name" />
+            <RelativeLayout android:orientation="horizontal" android:background="@drawable/white_rec" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Spinner android:textColorHint="@color/gray_light_hint" android:gravity="center|right" android:id="@id/country_list_spinner" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/country_name" android:lines="1" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/arrow_bottom_gray_dark" android:layout_centerVertical="true" android:contentDescription="@string/country_selection_choose_country" />
+            </RelativeLayout>
+            <com.moslay.view.FontTextView android:textSize="18.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/city_name" />
+            <EditText android:textColorHint="@color/gray_light_hint" android:gravity="center|right" android:id="@id/et_city_name" android:background="@drawable/white_rec" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="@string/city_name_" />
+            <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_save" android:background="@drawable/orange_curved_add_contact" android:layout_width="250.0dip" android:layout_height="48.0dip" android:layout_marginTop="10.0dip" android:text="@string/save" android:layout_centerInParent="true" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_city_icon" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</RelativeLayout>

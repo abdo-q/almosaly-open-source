@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/onboarding_nav_graph" app:startDestination="@id/onboardingSelectLanguagesFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="OnboardingSelectGenderFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingSelectGenderFragment" android:id="@id/onboardingSelectGenderFragment">
+        <action android:id="@id/action_onboardingSelectGenderFragment_to_onboardingWelcomeFragment" app:destination="@id/onboardingWelcomeFragment" />
+        <action android:id="@id/action_onboardingSelectGenderFragment_to_onboardingSignupFeaturesFragment" app:destination="@id/onboardingSignupFeaturesFragment" />
+    </fragment>
+    <fragment android:label="OnboardingWelcomeFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingWelcomeFragment" android:id="@id/onboardingWelcomeFragment">
+        <action android:id="@id/action_onboardingWelcomeFragment_to_onboardingSignupFeaturesFragment" app:destination="@id/onboardingSignupFeaturesFragment" />
+    </fragment>
+    <fragment android:label="OnboardingSignupFeaturesFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingSignupFeaturesFragment" android:id="@id/onboardingSignupFeaturesFragment">
+        <action android:id="@id/action_onboardingSignupFeaturesFragment_to_onboardingGoldenVersionFragment" app:destination="@id/onboardingGoldenVersionFragment" />
+        <action android:id="@id/action_onboardingSignupFeaturesFragment_to_onboardingPrivacyPolicyFragment" app:destination="@id/onboardingPrivacyPolicyFragment" />
+    </fragment>
+    <fragment android:label="OnboardingPrivacyPolicyFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingPrivacyPolicyFragment" android:id="@id/onboardingPrivacyPolicyFragment">
+        <action android:id="@id/action_onboardingPrivacyPolicyFragment_to_onboardingGoldenVersionFragment" app:destination="@id/onboardingGoldenVersionFragment" />
+    </fragment>
+    <fragment android:label="OnboardingGoldenVersionFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingGoldenVersionFragment" android:id="@id/onboardingGoldenVersionFragment">
+        <action android:id="@id/action_onboardingGoldenVersionFragment_to_onboardingTrialPeriodFragment" app:destination="@id/onboardingTrialPeriodFragment" />
+    </fragment>
+    <fragment android:label="OnboardingSelectLanguagesFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingSelectLanguagesFragment" android:id="@id/onboardingSelectLanguagesFragment">
+        <action android:id="@id/action_onboardingSelectLanguagesFragment_to_onboardingDetectLocationFragment" app:destination="@id/onboardingDetectLocationFragment" />
+    </fragment>
+    <fragment android:label="OnboardingDetectLocationFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingDetectLocationFragment" android:id="@id/onboardingDetectLocationFragment">
+        <action android:id="@id/action_onboardingDetectLocationFragment_to_onbardingLoadingDetectLocationFragment" app:destination="@id/onbardingLoadingDetectLocationFragment" />
+    </fragment>
+    <fragment android:label="OnboardingLoadingDetectLocationFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingLoadingDetectLocationFragment" android:id="@id/onbardingLoadingDetectLocationFragment">
+        <action android:id="@id/action_onbardingLoadingDetectLocationFragment_to_onbardingSuccessfullyDetectLocationFragment" app:destination="@id/onbardingSuccessfullyDetectLocationFragment" />
+        <action android:id="@id/action_onbardingLoadingDetectLocationFragment_to_onboardingIfDenyLocPermissionFragment" app:destination="@id/onboardingIfDenyLocPermissionFragment" />
+        <action android:id="@id/action_onbardingLoadingDetectLocationFragment_to_onboardingNoInternetToDetectLocFragment" app:destination="@id/onboardingNoInternetToDetectLocFragment" />
+    </fragment>
+    <fragment android:label="OnboardingSuccessfullyDetectLocationFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingSuccessfullyDetectLocationFragment" android:id="@id/onbardingSuccessfullyDetectLocationFragment">
+        <action android:id="@id/action_onbardingSuccessfullyDetectLocationFragment_to_onboardingAllowNotificationsFragment" app:destination="@id/onboardingAllowNotificationsFragment" />
+        <action android:id="@id/action_onbardingSuccessfullyDetectLocationFragment_to_onboardingLocationOptionsFragment" app:destination="@id/onboardingLocationOptionsFragment" />
+        <action android:id="@id/action_onbardingSuccessfullyDetectLocationFragment_to_onboardingSelectGenderFragment" app:destination="@id/onboardingSelectGenderFragment" />
+    </fragment>
+    <fragment android:label="OnboardingAllowNotificationsFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingAllowNotificationsFragment" android:id="@id/onboardingAllowNotificationsFragment">
+        <action android:id="@id/action_onboardingAllowNotificationsFragment_to_onboardingSelectGenderFragment" app:destination="@id/onboardingSelectGenderFragment" />
+    </fragment>
+    <fragment android:label="OnboardingLocationOptionsFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingLocationOptionsFragment" android:id="@id/onboardingLocationOptionsFragment">
+        <action android:id="@id/action_onboardingLocationOptionsFragment_to_onbardingSuccessfullyDetectLocationFragment" app:destination="@id/onbardingSuccessfullyDetectLocationFragment" />
+        <action android:id="@id/action_onboardingLocationOptionsFragment_to_onboardingChoseeDetectLocOptionsFragment" app:destination="@id/onboardingChoseeDetectLocOptionsFragment" />
+    </fragment>
+    <fragment android:label="OnboardingNoInternetToDetectLocFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingNoInternetToDetectLocFragment" android:id="@id/onboardingNoInternetToDetectLocFragment">
+        <action android:id="@id/action_onboardingNoInternetToDetectLocFragment_to_countryInnerFragment" app:destination="@id/countryInnerFragment" />
+        <action android:id="@id/action_onboardingNoInternetToDetectLocFragment_to_onboardingAddCityFragment" app:destination="@id/onboardingAddCityFragment" />
+    </fragment>
+    <fragment android:label="OnboardingIfDenyLocPermissionFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingIfDenyLocPermissionFragment" android:id="@id/onboardingIfDenyLocPermissionFragment">
+        <action android:id="@id/action_onboardingIfDenyLocPermissionFragment_to_onbardingLoadingDetectLocationFragment" app:destination="@id/onbardingLoadingDetectLocationFragment" />
+        <action android:id="@id/action_onboardingIfDenyLocPermissionFragment_to_countryInnerFragment" app:destination="@id/countryInnerFragment" />
+    </fragment>
+    <fragment android:label="OnboardingAddCityFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingAddCityFragment" android:id="@id/onboardingAddCityFragment">
+        <action android:id="@id/onboardingAddCityFragment_to_onbardingSuccessfullyDetectLocationFragment" app:destination="@id/onbardingSuccessfullyDetectLocationFragment" />
+    </fragment>
+    <dialog android:label="OnboardingChoseeDetectLocOptionsFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingChoseeDetectLocOptionsFragment" android:id="@id/onboardingChoseeDetectLocOptionsFragment">
+        <action android:id="@id/action_onboardingChoseeDetectLocOptionsFragment_to_onboardingAddCityFragment" app:destination="@id/onboardingAddCityFragment" />
+        <action android:id="@id/action_onboardingChoseeDetectLocOptionsFragment_to_onbardingLoadingDetectLocationFragment" app:destination="@id/onbardingLoadingDetectLocationFragment" />
+        <action android:id="@id/action_onboardingChoseeDetectLocOptionsFragment_to_countryInnerFragment" app:destination="@id/countryInnerFragment" />
+    </dialog>
+    <fragment android:label="CountryInnerFragment" android:name="com.moslay.fragments.LocationDetectionFragments.CountryInnerFragment" android:id="@id/countryInnerFragment">
+        <action android:id="@id/countryInnerFragment_to_onbardingSuccessfullyDetectLocationFragment" app:destination="@id/onbardingSuccessfullyDetectLocationFragment" />
+    </fragment>
+    <fragment android:label="OnboardingTrialPeriodFragment" android:name="com.moslay.on_boarding.ui.fragment.OnboardingTrialPeriodFragment" android:id="@id/onboardingTrialPeriodFragment">
+        <argument android:name="nextButtonText" app:argType="string" />
+    </fragment>
+</navigation>

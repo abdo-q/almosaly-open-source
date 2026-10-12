@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="320.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/black_trans_curves_circle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/parent_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_centerVertical="true">
+            <LinearLayout android:layout_gravity="center|right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                <com.moslay.view.FontTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/orange_dark" android:gravity="right" android:id="@id/halalItem_nameTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="halal name" />
+                <LinearLayout android:gravity="center|right|top" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.moslay.view.FontTextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center|right|top" android:id="@id/halalItem_addressTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="halal name" android:maxLines="4" />
+                    <ImageView android:layout_width="14.0dip" android:layout_height="wrap_content" android:src="@drawable/address_icon_map" android:scaleType="fitCenter" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:background="@drawable/circle_boarder" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_margin="3.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/halalItem_profile_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/_4sdp" android:src="@drawable/mosque_black" android:scaleType="fitCenter" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/around_world_arrow_bottom" />
+</LinearLayout>

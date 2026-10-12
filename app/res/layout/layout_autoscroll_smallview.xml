@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/autoscroll_small_view" android:tag="layout/layout_autoscroll_smallview_0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="@dimen/autoscroll_view_padding_bottom" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="bottom" android:id="@id/autoscroll_settings" android:tag="binding_1" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/quran_memorization_plan_settings_icon" android:scaleType="fitXY" android:layout_marginStart="6.0dip" />
+    <ImageView android:id="@id/autoscroll_pause_image" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/autoscroll_pause_button_brown" android:scaleType="fitCenter" android:cropToPadding="true" android:minWidth="48.0dip" />
+</LinearLayout>

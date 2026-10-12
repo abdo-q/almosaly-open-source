@@ -1,0 +1,1 @@
+{"definitions": {"Is.CityCenter.Block": ["all", ["==", ["get", "kind"], "microhood"], ["==", ["get", "kind_detail"], "block"]], "Is.CityCenter.Parcel": ["all", ["==", ["get", "kind"], "microhood"], ["==", ["get", "kind_detail"], "parcel"]], "Is.CityCenter.Oaza": ["all", ["==", ["get", "kind"], "oaza"]], "Is.CityCenter.Aza": ["all", ["==", ["get", "kind"], "aza"]]}}

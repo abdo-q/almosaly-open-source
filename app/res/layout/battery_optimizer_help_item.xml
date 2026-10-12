@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/d" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_battery_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/battery_optimizer_icon" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <com.moslay.view.FontTextView android:textSize="18.0sp" android:gravity="center" android:id="@id/tv_battery_help_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:src="@drawable/fagr_helper_big_alarm" android:layout_alignParentBottom="true" text_apply_fonts:textview_type="2" />
+</RelativeLayout>

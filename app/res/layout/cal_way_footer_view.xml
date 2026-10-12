@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="480.0">
+        <RelativeLayout android:id="@id/ll_container" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:orientation="horizontal" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/img_check" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="50.0dip" android:src="@drawable/check_quick_settings" android:scaleType="centerInside" />
+                <com.moslay.view.FontTextView android:textSize="12.0sp" android:textColor="@color/grey_dark_black" android:gravity="center" android:id="@id/txt_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/mo5asas" text_apply_fonts:textview_type="3" />
+            </LinearLayout>
+            <com.moslay.view.FontTextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_edit_custom" android:background="@drawable/curved_labany_edit" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="20.0dip" android:layout_marginRight="55.0dip" android:text="edit" android:layout_alignParentRight="true" android:layout_centerVertical="true" text_apply_fonts:textview_type="3" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

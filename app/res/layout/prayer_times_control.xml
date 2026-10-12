@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/r_parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/conatiner" android:background="@drawable/pray_times_background" android:layout_width="fill_parent" android:layout_height="95.0dip" android:weightSum="11.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <com.moslay.view.FontTextView android:textSize="10.0sp" android:layout_gravity="center_horizontal" android:id="@id/isha_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/isha" text_apply_fonts:textview_type="3" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/isha_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/isha_icon" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/isha_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextSwitcher android:id="@id/isha_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+                <TextSwitcher android:id="@id/isha_time_extent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divider" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <com.moslay.view.FontTextView android:textSize="10.0sp" android:layout_gravity="center_horizontal" android:id="@id/maghrib_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/magreb" text_apply_fonts:textview_type="3" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/maghrib_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/maghrib_icon" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/maghrib_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextSwitcher android:layout_gravity="center_horizontal" android:id="@id/maghrib_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+                <TextSwitcher android:layout_gravity="bottom" android:id="@id/maghrib_time_extent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ImageView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divider" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <com.moslay.view.FontTextView android:textSize="10.0sp" android:layout_gravity="center_horizontal" android:id="@id/asr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/asr" text_apply_fonts:textview_type="3" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/asr_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/asr_icon" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/asr_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextSwitcher android:layout_gravity="center_horizontal" android:id="@id/asr_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+                <TextSwitcher android:layout_gravity="bottom" android:id="@id/asr_time_extent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divider" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <com.moslay.view.FontTextView android:textSize="10.0sp" android:layout_gravity="center_horizontal" android:id="@id/zohr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zohr" text_apply_fonts:textview_type="3" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/zohr_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zohr_icon" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/zohr_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextSwitcher android:layout_gravity="center_horizontal" android:id="@id/zohr_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+                <TextSwitcher android:layout_gravity="bottom" android:id="@id/zohr_time_extent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divider" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <com.moslay.view.FontTextView android:textSize="10.0sp" android:layout_gravity="center_horizontal" android:id="@id/shorouqe_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shorouqe" text_apply_fonts:textview_type="3" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/shorouqe_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shorouqe_icon" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/shorouqe_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextSwitcher android:layout_gravity="center_horizontal" android:id="@id/shorouqe_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+                <TextSwitcher android:layout_gravity="bottom" android:id="@id/shorouqe_time_extent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ImageView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divider" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <com.moslay.view.FontTextView android:textSize="10.0sp" android:layout_gravity="center_horizontal" android:id="@id/fajr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fajr" text_apply_fonts:textview_type="3" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/fajr_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fajr_prayer_icon" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/fajr_time_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextSwitcher android:layout_gravity="center_horizontal" android:id="@id/fajr_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" />
+                <TextSwitcher android:layout_gravity="bottom" android:id="@id/fajr_time_extent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/ImageView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divider" android:layout_weight="1.0" />
+    <View android:id="@id/separator" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/conatiner" />
+</RelativeLayout>

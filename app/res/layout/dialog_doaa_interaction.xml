@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/dialog_doaa_interaction_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="15.0dip" app:cardElevation="2.0dip" app:cardMaxElevation="2.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_state_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doaa_interaction_text_1" android:lineSpacingExtra="5.0dip" app:textview_type="2" />
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/doaa_amen_clicked" />
+        </LinearLayout>
+        <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="#ff525252" android:gravity="center" android:layout_gravity="center" android:id="@id/mainText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/doaa_interaction_text_2" android:lineSpacingExtra="5.0dip" app:textview_type="1" />
+        <View android:background="@color/gray_white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ff2b3560" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/approveButton" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/OK" app:textview_type="2" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

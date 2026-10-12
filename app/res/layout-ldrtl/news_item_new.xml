@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/salawat_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" card_view:cardBackgroundColor="@color/white" card_view:cardCornerRadius="16.0dip" card_view:cardElevation="10.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/layout_news_item_logo" android:layout_width="98.0dip" android:layout_height="105.0dip" android:layout_margin="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <androidx.cardview.widget.CardView android:layout_width="95.0dip" android:layout_height="105.0dip" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" card_view:cardCornerRadius="8.0dip" card_view:cardElevation="0.0dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <androidx.appcompat.widget.AppCompatImageView android:id="@id/news_newsBodyImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_img_placeholder" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <com.moslay.view.FontTextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/category_txt" android:background="@drawable/bg_news_cat_bg" android:paddingLeft="20.0dip" android:paddingTop="3.0dip" android:paddingRight="20.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/historical" android:lines="1" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" card_view:textview_type="1" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_toLeftOf="@id/layout_news_item_logo" android:layout_centerVertical="true">
+                <Button android:gravity="center" android:id="@id/fav_button" android:background="@drawable/add_to_favorite" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <RelativeLayout android:id="@id/layout_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/fav_button">
+                    <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="right" android:id="@id/news_newsTitle" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/seven_dp" android:text="fgvhbjnkm ftgyhuj vgbhnjm bhjn " android:maxLines="1" android:textAlignment="gravity" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" card_view:textview_type="3" />
+                    <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/labany_calendar_first_bar" android:id="@id/news_dateText" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="12/22" android:layout_below="@id/news_newsTitle" android:layout_alignParentRight="true" card_view:textview_type="1" />
+                </RelativeLayout>
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="right" android:id="@id/txtview_news_details" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="3" android:layout_below="@id/layout_title" android:lineSpacingExtra="6.0sp" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" card_view:textview_type="1" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout android:id="@id/adsContainerWithDefualtAdImage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:id="@id/ads_Container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/ad_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_ad" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

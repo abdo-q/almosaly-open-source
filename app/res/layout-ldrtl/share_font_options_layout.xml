@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout-ldrtl/share_font_options_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:rotationY="180.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/ten_dp" android:paddingStart="@dimen/ten_dp" android:paddingEnd="@dimen/ten_dp">
+        <LinearLayout android:orientation="horizontal" android:id="@id/text_size_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0">
+            <androidx.cardview.widget.CardView android:id="@id/settings_book_card" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginEnd="2.0dip" android:elevation="@dimen/two_dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="5.0dip" app:cardElevation="@dimen/two_dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+                    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <com.moslay.view.NewFontTextView android:textSize="@dimen/eighteen_sp" android:textColor="@color/azkar_share_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_text_type" android:layout_toEndOf="@id/iv_text_size" />
+                        <ImageView android:id="@id/iv_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/five_dp" android:src="@drawable/texttype" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_kofi" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <TextView android:textSize="@dimen/fourteen_sp" android:layout_gravity="center" android:id="@id/tv_text_kofi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mosaly_app_name" />
+                            <View android:id="@id/frame_text_kofi" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_default" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <TextView android:textSize="@dimen/fourteen_sp" android:layout_gravity="center" android:id="@id/tv_text_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mosaly_app_name" />
+                            <View android:id="@id/frame_text_default" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_tunisia" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <TextView android:textSize="@dimen/fourteen_sp" android:layout_gravity="center" android:id="@id/tv_text_tunisia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mosaly_app_name" />
+                            <View android:id="@id/frame_text_tunisia" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_arial" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <TextView android:textSize="@dimen/fourteen_sp" android:layout_gravity="center" android:id="@id/tv_text_arial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mosaly_app_name" />
+                            <View android:id="@id/frame_text_arial" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/settings_notch" android:layout_width="6.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/fifteen_dp" android:layout_marginBottom="@dimen/fifteen_dp" android:src="@drawable/rounded_fill_color_red" android:layout_centerVertical="true" android:rotation="180.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/settings_book_card" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/text_size_container">
+            <androidx.cardview.widget.CardView android:id="@id/settings_book_card2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0" android:layout_centerVertical="true" android:layout_marginEnd="2.0dip" android:elevation="@dimen/two_dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="5.0dip" app:cardElevation="@dimen/two_dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+                    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <com.moslay.view.NewFontTextView android:textSize="@dimen/eighteen_sp" android:textColor="@color/azkar_share_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_text_color" android:layout_toEndOf="@id/iv_text_align" />
+                        <ImageView android:id="@id/iv_text_align" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/five_dp" android:src="@drawable/coloralign" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="65.0dip">
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/container_color_black" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <androidx.appcompat.widget.AppCompatImageView android:id="@id/color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_black" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_black" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_below="@id/color_black" android:layout_centerHorizontal="true">
+                                <TextView android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_color_black" />
+                                <View android:id="@id/frame_text_black" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/container_color_blue" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <androidx.appcompat.widget.AppCompatImageView android:id="@id/color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_black" android:tint="#ff0b4987" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_blue" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_below="@id/color_blue" android:layout_centerHorizontal="true">
+                                <TextView android:textColor="#ff11223e" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_color_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_color_blue" />
+                                <View android:id="@id/frame_text_blue" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/container_color_dark_blue" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <androidx.appcompat.widget.AppCompatImageView android:id="@id/color_qormzy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_black" android:tint="#ff036574" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_green" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_below="@id/color_qormzy" android:layout_centerHorizontal="true">
+                                <TextView android:textColor="#ff036574" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_color_darkgrey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_color_dark_green" />
+                                <View android:id="@id/frame_text_green" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/container_color_red" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <androidx.appcompat.widget.AppCompatImageView android:id="@id/color_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_black" android:tint="#ff740e0e" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_red" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_below="@id/color_red" android:layout_centerHorizontal="true">
+                                <TextView android:textColor="#ff740e0e" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_color_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_color_red" />
+                                <View android:id="@id/frame_text_red" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/container_color_yellow" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                            <androidx.appcompat.widget.AppCompatImageView android:id="@id/color_yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_black" android:tint="#ff734517" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_text_yellow" android:layout_width="60.0dip" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_below="@id/color_yellow" android:layout_centerHorizontal="true">
+                                <TextView android:textColor="#ff734517" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_color_yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_color_yellow" />
+                                <View android:id="@id/frame_text_yellow" android:layout_width="60.0dip" android:layout_height="@dimen/five_dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/settings_notch2" android:layout_width="6.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/fifteen_dp" android:layout_marginBottom="@dimen/fifteen_dp" android:src="@drawable/rounded_fill_color_red" android:layout_centerVertical="true" android:rotation="180.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/settings_book_card" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

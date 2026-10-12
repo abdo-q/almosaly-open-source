@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_foreground_root" android:layout_width="fill_parent" android:layout_height="48.0dip" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/next_sala_icon" android:layout_centerVertical="true">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff5f5f5f" android:id="@id/txt_view_next_sala_time_am" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_view_next_sala_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_toRightOf="@id/txt_view_next_sala_time_am" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#fff99a49" android:id="@id/txtview_next_sala_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/txt_view_next_sala_time" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff9f9f9f" android:gravity="left" android:layout_gravity="left" android:id="@id/txtview_hijri_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="4.0dip" android:text="" android:textAlignment="gravity" />
+    </LinearLayout>
+    <ImageView android:id="@id/next_sala_icon" android:layout_width="@dimen/dim_large_icon_foreground" android:layout_height="@dimen/dim_large_icon_foreground" android:layout_margin="6.0dip" android:src="@drawable/mosaly_logo_square" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

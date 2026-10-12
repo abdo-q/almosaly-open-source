@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_doaa_report_0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/doaa_popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/doaa_close" />
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="#ff0d0303" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/doaa_report_text_1" android:lineSpacingExtra="4.0dip" text_apply_fonts:textview_type="2" />
+        <RelativeLayout android:orientation="vertical" android:background="@drawable/rect_rounded_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <EditText android:textSize="14.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/editText" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_margin="15.0dip" android:hint="@string/report_reasons" android:maxLength="100" android:lineSpacingExtra="5.0dip" />
+        </RelativeLayout>
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/send" android:background="@drawable/notific_save_bg_blue" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="20.0dip" android:text="@string/doaa_report_text_3" text_apply_fonts:textview_type="2" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/features_layout_0" android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/ad_container_first" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.PrayersTimesView" android:id="@id/PrayersTimesView" android:tag="PrayersTimesView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/fawry_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/view_onboarding" android:tag="OnboardingView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.viewmodels.customview.mainscreen.featurecardsviews.CampaignBannerView" android:id="@id/campaignBannerView" android:tag="campaignBannerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.DashBoardView" android:id="@id/DashBoardCardView" android:tag="DashBoardCardView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/ad_container_after_PrayersTimesView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.ramadan_decoration.presentation.fragment.RamadanCardsContainerFragment" android:id="@id/ramadan_cards_view" android:tag="ramadanCardsView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.WhatsNewView" android:id="@id/whatsnew_view" android:tag="WhatsNewView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/RamadanCompCardView" android:tag="RamadanCompCardView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.compose.features.day_and_night_work.presentation.fragment.DayAndNightWorkMainScreenFragment" android:id="@id/dayNightVew" android:tag="DayAndNightWorkMainScreenFragment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.prayers_on_plane.presentation.fragment.FlightStatusHomeCardFragment" android:id="@id/flight_status_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.QdaaCardFragment" android:id="@id/qdaa_card" android:tag="qdaa_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mosaly_community.presentation.fragment.MosalyCommunityHomeCardFragment" android:id="@id/mosaly_community_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.challenges.fragments.ChallengesHomeCardFragment" android:id="@id/challenges_card" android:tag="challenges_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/ramadan_separator" android:background="@color/main_divider_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.AzkarView" android:id="@id/AzkarView" android:tag="AzkarView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip" />
+    <RelativeLayout android:id="@id/ad_container_after_AzkarView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.CampaignListPagerView" android:id="@id/campaignListPagerView" android:tag="campaignListPagerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/ad_container_after_campaignListPagerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.QuranWerdView" android:id="@id/rewardsByShareView" android:tag="rewardsByShareView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip" />
+    <RelativeLayout android:id="@id/ad_container_after_rewardsByShareView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.DoaaView" android:id="@id/doaaView" android:tag="doaaView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/ad_container_after_DoaaView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.LataefView" android:id="@id/lataefView" android:tag="LataefView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/ad_container_after_lataefView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.QuranWerdView" android:id="@id/QuranWerdView" android:tag="QuranWerdView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="200.0dip" />
+    <RelativeLayout android:id="@id/ad_container_after_QuranWerdView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.MohasbaWerdView" android:id="@id/MohasbaWerdView" android:tag="MohasbaWerdView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/ad_container_after_MohasbaWerdView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.SurveyCardView" android:id="@id/SurveyCardView" android:tag="SurveyCardView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/ad_container_after_SurveyCardView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.PostOfWeekView" android:id="@id/ArticleCardView" android:tag="ArticleCardView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/article_separator" android:background="@color/main_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/ad_container_after_ArticleCardView" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/article_divider" android:background="@color/main_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.049999952dip" />
+    <FrameLayout android:name="com.moslay.mvvm.view.customview.mainscreen.featurecardsviews.BenefitsView" android:id="@id/BenefitsView" android:tag="BenefitsView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/main_divider_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:id="@id/ad_container_after_BenefitsView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

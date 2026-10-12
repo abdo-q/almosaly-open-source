@@ -1,0 +1,19 @@
+.class interface abstract Lcom/moslay/view/smarteist/autoimageslider/IndicatorView/IndicatorManager$Listener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/moslay/view/smarteist/autoimageslider/IndicatorView/IndicatorManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Listener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onIndicatorUpdated()V
+.end method

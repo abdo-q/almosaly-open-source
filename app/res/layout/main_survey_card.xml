@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/card_layout" android:tag="layout/main_survey_card_0" android:background="#ffececec" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.NewFontTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/days_left_txt" android:background="@drawable/survey_dur_bg" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="15.0dip" android:text="تبقى يومان" android:layout_alignParentRight="true" android:paddingStart="@dimen/ten_dp" android:paddingEnd="@dimen/ten_dp" android:elevation="5.0dip" app:textview_type="2" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="15.0dip" app:cardElevation="2.0dip" app:cardMaxElevation="2.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/card_title_layout" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_menu_promotion" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/new_main_screen_card_title_size" android:textColor="@color/black" android:gravity="left" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/give_your_opinion" app:textview_type="2" />
+                    <com.moslay.view.NewFontTextView android:textSize="@dimen/main_screen_card_sub_title_big_size" android:textColor="#ff049acc" android:gravity="left" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/survey_sub_title" app:textview_type="2" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/frame_fragment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/frame_fragment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/youtube_thumbnail_RL" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.google.android.youtube.player.YouTubeThumbnailView android:id="@id/youtube_thumbnail" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerCrop" />
+                    <ImageView android:id="@id/video_play_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/survey_video_play" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/servey_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/servey_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/no_img_placeholder" android:adjustViewBounds="true" app:riv_border_color="@color/transparent" app:riv_corner_radius="@dimen/fifteen_dp" app:riv_mutate_background="true" />
+                    <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/document_txt" android:padding="@dimen/ten_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="@dimen/ten_dp" android:adjustViewBounds="true" android:text="hklhlk  lhhohpo ihohohpo ohohpoho pohpohpoh" android:lineSpacingExtra="5.0dip" app:textview_type="2" />
+                </RelativeLayout>
+                <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="@color/dark_blue2" android:layout_gravity="start" android:id="@id/title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="khhihihhohohohoihoihihihhoh" android:lineSpacingExtra="5.0dip" android:layout_marginStart="@dimen/ten_dp" android:layout_marginEnd="@dimen/ten_dp" app:textview_type="2" />
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view_votes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginStart="@dimen/ten_dp" android:layout_marginEnd="@dimen/ten_dp" />
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/main_color" android:layout_gravity="start" android:id="@id/des_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="xascsacas cascaca" android:lineSpacingExtra="5.0dip" android:layout_marginStart="@dimen/ten_dp" android:layout_marginEnd="@dimen/ten_dp" app:textview_type="2" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reacts_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ten_dp" android:layout_marginStart="@dimen/ten_dp" android:layout_marginEnd="@dimen/ten_dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/news_like" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="@dimen/thirteen_sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/vote_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200 صوت" app:textview_type="2" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/survey_comment" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0" android:layout_centerInParent="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/commeny_news" android:contentDescription="@string/commenters" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="left" android:id="@id/comment_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20 comments" app:textview_type="4" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/survey_share" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_weight="1.0" android:layout_alignParentRight="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_news" android:contentDescription="@string/share_it" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="left" android:id="@id/share_count_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="511" app:textview_type="4" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffececec" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/all_surveys" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/previous_survey" android:layout_weight="1.0" app:textview_type="3" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

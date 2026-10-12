@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/pob_background_white" />
+    <corners android:topLeftRadius="@dimen/pob_header_left_corner_radius" android:topRightRadius="@dimen/pob_header_right_corner_radius" android:bottomLeftRadius="@dimen/pob_header_left_corner_radius" android:bottomRightRadius="@dimen/pob_header_right_corner_radius" />
+</shape>

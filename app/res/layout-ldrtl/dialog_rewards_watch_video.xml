@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/edit_profile_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-40.0dip" android:layout_below="@id/main_layout">
+        <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="#ff0a0f2e" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:text="@string/watch_videos" text_apply_fonts:textview_type="3" />
+        <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="#ff029ccd" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/get_more_points" text_apply_fonts:textview_type="3" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/_33sdp" android:paddingRight="@dimen/_15sdp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/video_reward_first" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" text_apply_fonts:textview_type="3" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rewards_coin" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/video_reward_second" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" text_apply_fonts:textview_type="3" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/rewards_coin" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/video_reward_third" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" text_apply_fonts:textview_type="3" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/rewards_coin" />
+            </LinearLayout>
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/watch_video" android:background="@drawable/add_article_btn" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="10.0dip" android:text="@string/video_reward_btn_title" text_apply_fonts:textview_type="2" />
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/main_color" android:gravity="center" android:id="@id/back" android:background="@drawable/main_color_border" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="15.0dip" android:text="@string/back" text_apply_fonts:textview_type="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="231.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+            <View android:background="@drawable/rewards_dialogs_image_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="18.0dip" android:layout_weight="1.1" />
+        </LinearLayout>
+        <ImageView android:layout_width="318.0dip" android:layout_height="231.0dip" android:src="@drawable/rewards_pop_up_watch_video" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

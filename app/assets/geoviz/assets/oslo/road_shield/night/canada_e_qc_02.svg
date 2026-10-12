@@ -1,0 +1,17 @@
+<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="night / canada_e_QC_02">
+<g id="canada_e_base">
+<g id="stretchable-items">
+<path id="shape01" d="M15.5 1.5H1.5V11.3438C1.5 14.1562 2.56061 15.1356 3.83333 15.5834C5.10606 16.0312 5.67172 15.5834 6.94444 15.5834C7.58081 15.5834 8.5 16.5 8.5 16.5C8.5 16.5 9.41919 15.5834 10.0556 15.5834C11.3283 15.5834 11.8822 15.9078 13.1667 15.5834C14.4511 15.259 15.5 14.1562 15.5 11.3438V1.5Z" fill="#277567" stroke="#B0B5BF" stroke-linejoin="round"/>
+<rect id="shape02" x="1.5" y="1.5" width="14" height="4" fill="#277567" stroke="#B0B5BF" stroke-linejoin="round"/>
+</g>
+<g id="non-stretchable-items">
+<g id="shape01_2">
+<path d="M6 3.5L5 3L4.5 2L4 3L3 3.5L4 4L4.5 5L5 4L6 3.5Z" fill="#B0B5BF"/>
+<path d="M10 3.5L9 3L8.5 2L8 3L7 3.5L8 4L8.5 5L9 4L10 3.5Z" fill="#B0B5BF"/>
+<path d="M14 3.5L13 4L12.5 5L12 4L11 3.5L12 3L12.5 2L13 3L14 3.5Z" fill="#B0B5BF"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="289.0dip" android:width="375.0dip" android:viewportWidth="375.0" android:viewportHeight="289.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h375v289h-375z" />
+        <path android:fillColor="@drawable/$ic_light__0" android:pathData="M186.5,-147C288.95,-147 372,-54.55 372,59.5S288.95,266 186.5,266 1,173.55 1,59.5 84.05,-147 186.5,-147Z" android:strokeAlpha="0.47" android:fillAlpha="0.47" />
+    </group>
+</vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:tag="layout-ldrtl/add_zekr_successfully_dialog_0" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@color/white" android:padding="10.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="right" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/personal_azkar_added_successfully" android:layout_weight="1.0" android:lineSpacingExtra="5.0sp" app:textview_type="2" />
+        <pl.droidsonroids.gif.GifImageView android:id="@id/arrow_gif_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/succeeded_done_gif" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/ia_identifier_text_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@id/ia_fyber_identifier_text" android:background="@color/ia_fyber_identifier_bg_color" android:layout_width="@dimen/ia_identifier_text_width" android:layout_height="@dimen/ia_identifier_text_height" android:text="@string/ia_ad_identifier" />
+    <ImageView android:id="@id/ia_fyber_identifier_image" android:background="@color/ia_fyber_identifier_bg_color" android:layout_width="@dimen/ia_identifier_image_width" android:layout_height="@dimen/ia_identifier_image_height" android:src="@drawable/ia_fyber_info_button" android:tint="@color/ia_fyber_white" />
+</LinearLayout>

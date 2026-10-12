@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="224.0dip" android:width="375.0dip" android:viewportWidth="375.0" android:viewportHeight="224.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_golden_mosaly_bg__0" android:pathData="M0,0h375v224h-375z" />
+</vector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_ramadan_competition_cases_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/menu_iv" android:padding="@dimen/_3sdp" android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_8sdp" android:src="@drawable/dashboard_black" android:elevation="1.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewFlipper android:id="@id/view_flipper" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@android:anim/slide_in_left" android:outAnimation="@android:anim/slide_out_right">
+        <include android:id="@id/start_include" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ramadan_competition_start_screen" />
+        <include android:id="@id/intro_include" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ramadan_competition_intro_screen" />
+        <include android:id="@id/competition_ended_include" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ramadan_competition_ended_screen" />
+    </ViewFlipper>
+</androidx.constraintlayout.widget.ConstraintLayout>

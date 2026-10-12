@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:tag="layout/recycler_share_image_row_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.makeramen.roundedimageview.RoundedImageView android:layout_gravity="center" android:id="@id/share_image" android:layout_width="90.0dip" android:layout_height="90.0dip" android:scaleType="centerCrop" android:layout_marginStart="1.0dip" android:layout_marginEnd="1.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/share_image_border" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/border" />
+</FrameLayout>

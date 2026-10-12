@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout-ldrtl/item_doaa_notif_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/conrainer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="top" android:id="@id/arrow" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/doaa_request_active_back" android:scaleType="centerInside" />
+        <ImageView android:layout_gravity="top" android:id="@id/delete" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/doaa_delete" />
+        <LinearLayout android:orientation="vertical" android:id="@id/text_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="right" android:layout_gravity="right" android:id="@id/notif_text" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lineSpacingExtra="5.0dip" text_apply_fonts:textview_type="2" />
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="#ff858585" android:gravity="center" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9:30 AM" text_apply_fonts:textview_type="2" />
+                <View android:layout_gravity="center" android:background="@drawable/circle_blue_bg" android:layout_width="2.0dip" android:layout_height="2.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:backgroundTint="@color/black" />
+                <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="#ff858585" android:gravity="center" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="25 may" text_apply_fonts:textview_type="2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe5e5ea" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginRight="15.0dip" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/fragTextSearch_searchEmptyHintLo" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+            <com.moslay.view.NewFontTextView android:textStyle="bold" android:textColor="@color/light_rat" android:layout_gravity="center" android:id="@id/fragTextSearch_no_result_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searchTextHint" />
+            <com.moslay.view.NewFontTextView android:textStyle="bold" android:textColor="@color/light_rat" android:gravity="center" android:layout_gravity="center" android:id="@id/fragTextSearch_no_result_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/searchByTextHint" android:textAlignment="gravity" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fragTextSearch_sowaresultLo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/fragTextSearch_header1Lo" android:background="@color/almond" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/oxford_blue0" android:gravity="center" android:layout_gravity="center" android:id="@id/fragTextSearch_sowarResultTv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/al_sowar" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ListView android:layout_gravity="center|left|top" android:id="@id/fragTextSearch_sowarResultLv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fragTextSearch_textLo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/fragTextSearch_header2Lo" android:background="@color/almond" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/oxford_blue0" android:gravity="center" android:layout_gravity="center" android:id="@id/fragTextSearch_resultTv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/quran_text" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ListView android:layout_gravity="center|left|top" android:id="@id/fragTextSearch_textLv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

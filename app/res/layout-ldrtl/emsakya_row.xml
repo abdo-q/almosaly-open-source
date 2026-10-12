@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_row" android:layout_width="fill_parent" android:layout_height="38.0dip">
+        <com.moslay.view.FontTextView android:gravity="center" android:id="@id/tv_magrb" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.7" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.FontTextView android:gravity="center" android:id="@id/tv_fagr" android:background="@color/emsakya_col_transparent_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.7" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.FontTextView android:gravity="center" android:id="@id/tv_miladyday" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.3" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.FontTextView android:gravity="center" android:id="@id/tv_hegryday" android:background="@color/emsakya_col_transparent_background" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.3" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.FontTextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_dayname" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/saturday" android:layout_weight="1.5" text_apply_fonts:textview_type="2" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/emsakya_items_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/moshaf_screen" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/frame_hafs" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <com.moslay.control_2015.LoadingControl android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

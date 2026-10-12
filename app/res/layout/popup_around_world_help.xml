@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/white_curve" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/around_world_help_popup_icon" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/pop_around_help_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/around_world_close_black" />
+    </RelativeLayout>
+    <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/pop_around_world_help" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aroundWorldHelpText" />
+</LinearLayout>

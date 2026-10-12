@@ -1,0 +1,229 @@
+version: 2.10.0
+apkFileName: 17-0-9.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 24
+  targetSdkVersion: 36
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 10349
+  versionName: 17.0.9
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  ads-mobile-sdk.properties: 8
+  androidsupportmultidexversion.txt: 8
+  app-update-ktx.properties: 8
+  app-update.properties: 8
+  asset-delivery-ktx.properties: 8
+  asset-delivery.properties: 8
+  billing.properties: 8
+  client_analytics.proto: 8
+  core-common.properties: 8
+  feature-delivery-ktx.properties: 8
+  feature-delivery.properties: 8
+  firebase-analytics.properties: 8
+  firebase-auth-interop.properties: 8
+  firebase-core.properties: 8
+  firebase-encoders-proto.properties: 8
+  firebase-encoders.properties: 8
+  firebase-iid-interop.properties: 8
+  firebase-measurement-connector.properties: 8
+  hsdp.properties: 8
+  kotlin-tooling-metadata.json: 8
+  messaging_event.proto: 8
+  messaging_event_extension.proto: 8
+  places.properties: 8
+  play-services-ads-identifier.properties: 8
+  play-services-analytics-impl.properties: 8
+  play-services-analytics.properties: 8
+  play-services-appset.properties: 8
+  play-services-audience.properties: 8
+  play-services-auth-api-phone.properties: 8
+  play-services-auth-base.properties: 8
+  play-services-auth.properties: 8
+  play-services-base.properties: 8
+  play-services-basement.properties: 8
+  play-services-cloud-messaging.properties: 8
+  play-services-cronet.properties: 8
+  play-services-gcm.properties: 8
+  play-services-iid.properties: 8
+  play-services-location.properties: 8
+  play-services-maps.properties: 8
+  play-services-measurement-api.properties: 8
+  play-services-measurement-base.properties: 8
+  play-services-measurement-impl.properties: 8
+  play-services-measurement-sdk-api.properties: 8
+  play-services-measurement-sdk.properties: 8
+  play-services-measurement.properties: 8
+  play-services-plus.properties: 8
+  play-services-stats.properties: 8
+  play-services-tagmanager-v4-impl.properties: 8
+  play-services-tasks.properties: 8
+  review-ktx.properties: 8
+  review.properties: 8
+  user-messaging-platform.properties: 8
+  fabric/com.amazonaws.aws-android-sdk-core.properties: 8
+  firebase/perf/v1/perf_metric.proto: 8
+  google/api/annotations.proto: 8
+  google/api/auth.proto: 8
+  google/api/backend.proto: 8
+  google/api/billing.proto: 8
+  google/api/client.proto: 8
+  google/api/config_change.proto: 8
+  google/api/consumer.proto: 8
+  google/api/context.proto: 8
+  google/api/control.proto: 8
+  google/api/distribution.proto: 8
+  google/api/documentation.proto: 8
+  google/api/endpoint.proto: 8
+  google/api/field_behavior.proto: 8
+  google/api/http.proto: 8
+  google/api/httpbody.proto: 8
+  google/api/label.proto: 8
+  google/api/launch_stage.proto: 8
+  google/api/log.proto: 8
+  google/api/logging.proto: 8
+  google/api/metric.proto: 8
+  google/api/monitored_resource.proto: 8
+  google/api/monitoring.proto: 8
+  google/api/quota.proto: 8
+  google/api/resource.proto: 8
+  google/api/service.proto: 8
+  google/api/source_info.proto: 8
+  google/api/system_parameter.proto: 8
+  google/api/usage.proto: 8
+  google/cloud/audit/audit_log.proto: 8
+  google/geo/type/viewport.proto: 8
+  google/logging/type/http_request.proto: 8
+  google/logging/type/log_severity.proto: 8
+  google/longrunning/operations.proto: 8
+  google/protobuf/any.proto: 8
+  google/protobuf/api.proto: 8
+  google/protobuf/descriptor.proto: 8
+  google/protobuf/duration.proto: 8
+  google/protobuf/empty.proto: 8
+  google/protobuf/field_mask.proto: 8
+  google/protobuf/source_context.proto: 8
+  google/protobuf/struct.proto: 8
+  google/protobuf/timestamp.proto: 8
+  google/protobuf/type.proto: 8
+  google/protobuf/wrappers.proto: 8
+  google/rpc/code.proto: 8
+  google/rpc/error_details.proto: 8
+  google/rpc/status.proto: 8
+  google/rpc/context/attribute_context.proto: 8
+  google/type/calendar_period.proto: 8
+  google/type/color.proto: 8
+  google/type/date.proto: 8
+  google/type/datetime.proto: 8
+  google/type/dayofweek.proto: 8
+  google/type/expr.proto: 8
+  google/type/fraction.proto: 8
+  google/type/latlng.proto: 8
+  google/type/money.proto: 8
+  google/type/postal_address.proto: 8
+  google/type/quaternion.proto: 8
+  google/type/timeofday.proto: 8
+  okhttp3/internal/publicsuffix/NOTICE: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 8
+  org/threeten/bp/format/ChronologyText.properties: 8
+  src/google/protobuf/any.proto: 8
+  src/google/protobuf/api.proto: 8
+  src/google/protobuf/duration.proto: 8
+  src/google/protobuf/empty.proto: 8
+  src/google/protobuf/field_mask.proto: 8
+  src/google/protobuf/source_context.proto: 8
+  src/google/protobuf/struct.proto: 8
+  src/google/protobuf/timestamp.proto: 8
+  src/google/protobuf/type.proto: 8
+  src/google/protobuf/wrappers.proto: 8
+doNotCompress:
+- resources.arsc
+- mp4
+- png
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- lib/arm64-v8a/libandroidx.graphics.path.so
+- lib/arm64-v8a/libapminsighta.so
+- lib/arm64-v8a/libapminsightb.so
+- lib/arm64-v8a/libbuffer_pgl.so
+- lib/arm64-v8a/libdatastore_shared_counter.so
+- lib/arm64-v8a/libfile_lock_pgl.so
+- lib/arm64-v8a/libheresdk.so
+- lib/arm64-v8a/libimage_processing_util_jni.so
+- lib/arm64-v8a/libnms.so
+- lib/arm64-v8a/libpglarmor.so
+- lib/arm64-v8a/libpl_droidsonroids_gif.so
+- lib/arm64-v8a/libsigner.so
+- lib/arm64-v8a/libsqlcipher.so
+- lib/arm64-v8a/libsurface_util_jni.so
+- lib/arm64-v8a/libtt_ugen_layout.so
+- lib/arm64-v8a/libunitycoherencenative.so
+- lib/armeabi-v7a/libandroidx.graphics.path.so
+- lib/armeabi-v7a/libapminsighta.so
+- lib/armeabi-v7a/libapminsightb.so
+- lib/armeabi-v7a/libbuffer_pgl.so
+- lib/armeabi-v7a/libdatastore_shared_counter.so
+- lib/armeabi-v7a/libfile_lock_pgl.so
+- lib/armeabi-v7a/libheresdk.so
+- lib/armeabi-v7a/libimage_processing_util_jni.so
+- lib/armeabi-v7a/libnms.so
+- lib/armeabi-v7a/libpglarmor.so
+- lib/armeabi-v7a/libpl_droidsonroids_gif.so
+- lib/armeabi-v7a/libsigner.so
+- lib/armeabi-v7a/libsqlcipher.so
+- lib/armeabi-v7a/libsurface_util_jni.so
+- lib/armeabi-v7a/libtt_ugen_layout.so
+- lib/armeabi-v7a/libunitycoherencenative.so
+- lib/x86/libandroidx.graphics.path.so
+- lib/x86/libdatastore_shared_counter.so
+- lib/x86/libheresdk.so
+- lib/x86/libimage_processing_util_jni.so
+- lib/x86/libpl_droidsonroids_gif.so
+- lib/x86/libsigner.so
+- lib/x86/libsqlcipher.so
+- lib/x86/libsurface_util_jni.so
+- lib/x86/libunitycoherencenative.so
+- lib/x86_64/libandroidx.graphics.path.so
+- lib/x86_64/libdatastore_shared_counter.so
+- lib/x86_64/libheresdk.so
+- lib/x86_64/libimage_processing_util_jni.so
+- lib/x86_64/libpl_droidsonroids_gif.so
+- lib/x86_64/libsigner.so
+- lib/x86_64/libsqlcipher.so
+- lib/x86_64/libsurface_util_jni.so
+- lib/x86_64/libunitycoherencenative.so
+- webp
+- res/raw/ar_correct_qibla_direction_stars_animation.lottie
+- jpg
+- jpeg
+- gif
+- amr
+- mp3
+- res/raw/ar_correct_qibla_direction_bg_animation.lottie
+- ogg
+- res/raw/kaaba_detected_animation.lottie
+- res/raw/star_day_and_night.lottie
+- res/raw/celebrate_2.lottie
+- wav
+- res/raw/long_takbirat
+- mpeg
+- res/raw/fasil_laelah_ela_allah_al3ly_al7lem_v2.mp3
+- res/raw/com_android_billingclient_heterodyne_info
+- aac
+- res/raw/com_android_billingclient_registration_info.binarypb
+- res/raw/stars_day_night.lottie
+- res/raw/charity_bank_first_time_animation.lottie
+- res/raw/correct_qibla_direction_dark_animation.lottie
+- res/raw/correct_qibla_direction_light_animation.lottie
+- res/raw/takbirat_eleid
+- res/raw/calibration_animation.lottie

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <com.moslay.view.FontTextView android:textSize="16.699982sp" android:textColor="@color/black" android:gravity="center" android:id="@id/hadith_text" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="سبحان الله ولا قوة الا بالله" text_apply_fonts:textview_type="2" />
+    </ScrollView>
+    <com.moslay.view.ExpandableView android:gravity="center" android:id="@id/fadl_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ScrollView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.moslay.view.FontTextView android:textSize="16.699982sp" android:textColor="@color/black" android:gravity="center" android:id="@id/hadith_text_with_fadl" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="سبحان الله ولا قوة الا بالله" text_apply_fonts:textview_type="2" />
+                <com.moslay.view.FontTextView android:textSize="@dimen/sixteen_sp" android:textColor="@color/fadl_color" android:gravity="center" android:id="@id/fadl_text" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="وَعَنْ أَبي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُولُ الله صلى الله عليه وسلم: «مَا مِنْ قَوْمٍ يَقُومُونَ مِنْ مَجْلِسٍ لاَ يَذكُرُونَ اللهَ فِيهِ إِلاَّ قَامُوا عَنْ مِثلِ جِيفَةِ حِمَارٍ وَكَانَ لَهُمْ حَسْرَةً». أخرجه أبو داود والترمذي." text_apply_fonts:textview_type="2" />
+            </LinearLayout>
+        </ScrollView>
+    </com.moslay.view.ExpandableView>
+</RelativeLayout>

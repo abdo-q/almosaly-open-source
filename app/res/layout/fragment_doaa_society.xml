@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/fragment_doaa_society_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="10.0dip">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/doaa_society_recycle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/user_doaa_empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/doaa_user_empty_state" />
+                <com.moslay.view.NewFontTextView android:textSize="15.0dip" android:textColor="@color/doaa_society_grey" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/doaa_user_empty_state" text_apply_fonts:textview_type="2" />
+                <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/add_doaa" android:background="@drawable/notific_save_bg_blue" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="25.0dip" android:layout_marginTop="25.0dip" android:text="@string/doaa_add" android:backgroundTint="@color/azkar_light_theme_progress_2" text_apply_fonts:textview_type="2" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.moslay.control_2015.LoadingControl android:id="@id/bottom_loading" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.moslay.view.NoInternetView android:id="@id/noIntenert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.moslay.control_2015.LoadingControl android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

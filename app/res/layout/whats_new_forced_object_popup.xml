@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/whats_new_forced_object_popup_0" android:background="@color/BlackTransparent40" android:padding="@dimen/ten_dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/twenty_five_dp" android:layout_marginTop="@dimen/sixty_dp" android:layout_marginRight="@dimen/twenty_five_dp" android:layout_marginBottom="@dimen/fourty_dp" app:cardCornerRadius="@dimen/ten_dp">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/banner_container">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <androidx.viewpager.widget.ViewPager android:id="@id/whats_new_details_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip" android:layout_alignParentBottom="true" />
+                <com.moslay.view.DotsIndicator android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/pager_indicator" android:layout_width="wrap_content" android:layout_height="10.0dip" android:layout_margin="@dimen/twenty_sp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:dotsColor="@color/werd_mohasba_yes_main_text_color" app:dotsCornerRadius="7.0dip" app:dotsSize="7.0dip" app:dotsSpacing="4.0dip" app:dotsStrokeColor="@color/black" app:dotsWidthFactor="2.5" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close" android:scaleType="centerInside" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/hsdp_service_prism_with_loading_indicator" android:visibility="gone" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:filterTouchesWhenObscured="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/play_prism" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <Space android:id="@id/spacer_above_loading_spinner" android:layout_width="fill_parent" android:layout_height="32.0dip" />
+    <ProgressBar android:id="@id/global_loading_spinner" android:layout_width="180.0dip" android:layout_height="6.0dip" android:indeterminate="true" style="?android:progressBarStyleHorizontal" />
+</LinearLayout>

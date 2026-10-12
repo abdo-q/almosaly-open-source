@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:gravity="center" android:orientation="horizontal" android:id="@id/khatma_progress_layout" android:tag="layout/khatma_progress_view_0" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" app:cardBackgroundColor="@color/khatma_card_background_color" app:cardCornerRadius="7.0dip" app:cardElevation="@dimen/ten_sp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp">
+            <com.moslay.view.NewFontTextView android:textSize="7.0sp" android:gravity="center" android:id="@id/khatma_progress_persentage_text" android:tag="binding_1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:text="" android:layout_centerInParent="true" app:textview_type="1" />
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar android:id="@id/khatma_progress" android:layout_width="28.0dip" android:layout_height="28.0dip" android:progress="40" android:layout_centerInParent="true" app:cpb_background_progressbar_color="@color/white" app:cpb_background_progressbar_width="2.0dip" app:cpb_progress="40" app:cpb_progress_direction="to_right" app:cpb_progress_max="100" app:cpb_progressbar_color="@color/blue_gray" app:cpb_progressbar_width="2.0dip" app:cpb_round_border="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="vertical" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.moslay.view.NewFontTextView android:textSize="10.0sp" android:gravity="left" android:id="@id/khatma_name" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:textview_type="2" />
+            <LinearLayout android:gravity="center|left" android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.moslay.view.NewFontTextView android:textSize="9.0sp" android:gravity="center|left" android:id="@id/khatma_progress_text" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  " app:textview_type="1" />
+                <ImageView android:gravity="center|left" android:id="@id/khatma_progress_indicator" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="@dimen/five_dp" android:layout_marginRight="@dimen/five_dp" android:src="@drawable/khatma_normal_rate_progress_indicator" android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/more_khatamat_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_khatamat" android:scaleType="fitCenter" android:rotation="180.0" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

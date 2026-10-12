@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_hesn_elmuslim_sub_cat_0" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/default_header_color" android:layout_width="fill_parent" android:layout_height="@dimen/header_height">
+        <ImageView android:id="@id/back" android:padding="@dimen/dashboard_icon_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/back_arrow" android:scaleType="fitCenter" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_centerVertical="true" android:contentDescription="@string/back" />
+        <com.moslay.view.FontTextView android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="20.0dip" android:text="XAXAX" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" app:textview_type="1" style="@style/header_textview" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/menu_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:gravity="center" android:id="@id/banner_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ad_hight_banner" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/inmobi_in_app_browser_webview_container" android:background="@color/im_browser_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/inmobi_in_app_browser_bottom_bar" android:background="@android:drawable/bottom_bar" android:layout_width="fill_parent" android:layout_height="48.0dip" android:weightSum="100.0" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/inmobi_in_app_browser_close_slot" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="25.0" />
+            <FrameLayout android:id="@id/inmobi_in_app_browser_refresh_slot" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="25.0" />
+            <FrameLayout android:id="@id/inmobi_in_app_browser_back_slot" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="25.0" />
+            <FrameLayout android:id="@id/inmobi_in_app_browser_forward_slot" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="25.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/inmobi_in_app_browser_loader_overlay" android:background="@color/im_browser_loader_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" style="?android:progressBarStyleSmall" />
+    </FrameLayout>
+</FrameLayout>

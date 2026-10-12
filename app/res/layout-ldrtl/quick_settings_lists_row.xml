@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <com.moslay.view.FontTextView android:textSize="12.0sp" android:textColor="@color/grey_dark_black" android:gravity="center" android:id="@id/txt_type" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/hanbly" text_apply_fonts:textview_type="3" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_check" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/check_quick_settings" android:scaleType="centerInside" />
+    </LinearLayout>
+</LinearLayout>

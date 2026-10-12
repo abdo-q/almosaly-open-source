@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logo_new_feature" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.moslay.view.NewFontTextView android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/feature_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_from_maleka" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/img_logo" app:layout_constraintTop_toTopOf="parent" app:textview_type="3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

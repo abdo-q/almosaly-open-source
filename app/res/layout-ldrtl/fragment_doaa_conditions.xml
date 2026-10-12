@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout-ldrtl/fragment_doaa_conditions_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/mainLayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_anchor="@id/mainLayout" app:layout_anchorGravity="center">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/doaa_popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-80.0dip" android:layout_below="@id/main_layout">
+            <View android:background="@drawable/doaa_requests_login_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/secondary_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="30.0dip" android:text="@string/doaa_conditions_text_1" android:lineSpacingExtra="4.0dip" app:textview_type="3" />
+            <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/doaa_conditions_text_2" android:lineSpacingExtra="3.0dip" app:textview_type="2" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/doaa_conditions_text_3" android:layout_weight="1.0" android:lineSpacingExtra="3.0dip" app:textview_type="2" />
+                <View android:background="@drawable/doaa_notif_num" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_margin="6.0dip" android:backgroundTint="@color/default_header_color" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/doaa_conditions_text_4" android:layout_weight="1.0" android:lineSpacingExtra="3.0dip" app:textview_type="2" />
+                <View android:background="@drawable/doaa_notif_num" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_margin="6.0dip" android:backgroundTint="@color/default_header_color" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/doaa_conditions_text_5" android:layout_weight="1.0" android:lineSpacingExtra="3.0dip" app:textview_type="2" />
+                <View android:background="@drawable/doaa_notif_num" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_margin="6.0dip" android:backgroundTint="@color/default_header_color" />
+            </LinearLayout>
+            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/agree" android:background="@drawable/notific_save_bg_blue" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="20.0dip" android:text="@string/doaa_anonymous_text_4" app:textview_type="2" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentTop="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/doaa_conditions" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

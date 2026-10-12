@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/parent" android:tag="layout/prayer_time_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.NewFontTextView android:textSize="@dimen/thirteen_sp" android:gravity="center" android:id="@id/prayer_name" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/_5sdp" android:maxLines="1" android:layout_weight="1.0" />
+    <ImageView android:id="@id/prayer_icon" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:maxWidth="35.0dip" android:maxHeight="35.0dip" />
+    <com.moslay.view.NewFontTextView android:textSize="@dimen/fourteen_sp" android:gravity="center" android:id="@id/prayer_time" android:tag="binding_3" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/_3sdp" android:layout_weight="1.0" />
+</LinearLayout>

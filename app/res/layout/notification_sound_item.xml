@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rl_phone_contact_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="75.0dip">
+        <RelativeLayout android:id="@id/deleteLayout" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/notific_sound_delete" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/downloadLayout" android:layout_width="70.0dip" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:id="@id/download" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/notif_sound_pause_download" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/lock" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="38.0dip" android:src="@drawable/notif_sound_lock" android:layout_alignBottom="@id/download" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/progressLayout" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/progressBar" android:background="@drawable/notific_sound_background_bar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:max="100" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/notific_sound_progress" style="?android:progressBarStyleHorizontal" />
+                <ImageView android:id="@id/progressPause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notif_sound_pause" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/progress_perc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/selectedLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="7.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:layout_gravity="center" android:id="@id/filesSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="11M" />
+                    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_gravity="right" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="hbjhjkhjkh" text_apply_fonts:textview_type="2" />
+                </LinearLayout>
+                <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/grey_dark" android:gravity="right" android:layout_gravity="right" android:id="@id/subName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="hbjhjkhjkh" text_apply_fonts:textview_type="1" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/selected" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/notif_sound_check" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/clr_bg_localization" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</LinearLayout>

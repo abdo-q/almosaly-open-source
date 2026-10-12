@@ -1,0 +1,23 @@
+.class public interface abstract Lcom/facebook/ads/internal/dynamicloading/RemoteRenderingApi;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Landroidx/annotation/Keep;
+.end annotation
+
+.annotation build Lcom/facebook/infer/annotation/Nullsafe;
+    value = .enum Lcom/facebook/infer/annotation/Nullsafe$Mode;->LOCAL:Lcom/facebook/infer/annotation/Nullsafe$Mode;
+.end annotation
+
+.annotation build Lcom/facebook/proguard/annotations/DoNotStripAny;
+.end annotation
+
+
+# virtual methods
+.method public abstract createAudienceNetworkExportedActivityApi(Landroid/app/Activity;)Lcom/facebook/ads/internal/api/AudienceNetworkExportedActivityApi;
+.end method
+
+.method public abstract createAudienceNetworkRemoteService(Landroid/app/Service;)Lcom/facebook/ads/internal/api/AudienceNetworkRemoteServiceApi;
+.end method

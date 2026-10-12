@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="21.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="bottom" android:layout_gravity="bottom|center" android:id="@id/item_page_view" android:layout_width="7.0dip" android:layout_height="15.0dip" android:src="@drawable/page_item_background" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+.class public interface abstract Landroidx/work/ProgressUpdater;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract updateProgress(Landroid/content/Context;Ljava/util/UUID;Landroidx/work/Data;)Lcom/google/common/util/concurrent/ListenableFuture;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Ljava/util/UUID;",
+            "Landroidx/work/Data;",
+            ")",
+            "Lcom/google/common/util/concurrent/ListenableFuture;"
+        }
+    .end annotation
+.end method

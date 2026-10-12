@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/popup_rounded_white_border" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/relativeLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/cutom_progress_cancel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_internet_vector" android:scaleType="centerInside" />
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/oldMushafWillBeDisplayed" android:singleLine="false" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/cutom_try_again" android:background="@drawable/orange_rounded_btn" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/try_again" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textSize="14.0dip" android:textColor="@color/cerulean" android:gravity="center" android:layout_gravity="center" android:id="@id/cutom_mushaf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/goToMushafWithoutUpdate" text_apply_fonts:textview_type="2" />
+    </LinearLayout>
+</RelativeLayout>

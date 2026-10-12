@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/khatma_progress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center|left" android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="8.0dip">
+        <ImageView android:gravity="center|left" android:id="@id/khatma_select_indicator" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/khatma_select_indicator" android:scaleType="fitCenter" />
+        <ImageView android:gravity="center|left" android:id="@id/khatma_progress_indicator2" android:layout_width="5.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/five_dp" android:layout_marginRight="@dimen/five_dp" android:src="@drawable/khatma_default_indicator2" android:scaleType="fitCenter" android:rotation="180.0" />
+        <LinearLayout android:gravity="center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.moslay.view.NewFontTextView android:textSize="11.0sp" android:gravity="center|left" android:id="@id/khatma_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ختمة جديدة" text_apply_fonts:textview_type="2" />
+            <LinearLayout android:gravity="center|left" android:layout_gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.moslay.view.NewFontTextView android:textSize="9.0sp" android:gravity="center|left" android:id="@id/khatma_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" معدل طبيعي " text_apply_fonts:textview_type="1" />
+                <ImageView android:gravity="center|left" android:id="@id/khatma_progress_indicator" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/khatma_normal_rate_progress_indicator" android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/more_khatamat_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/more_khatamat" android:scaleType="fitCenter" android:rotation="180.0" />
+    </LinearLayout>
+</LinearLayout>

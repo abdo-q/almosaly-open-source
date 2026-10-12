@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:tag="layout/no_azkar_dialog_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" text_apply_fonts:cardBackgroundColor="@color/white" text_apply_fonts:cardCornerRadius="15.0dip" text_apply_fonts:cardElevation="2.0dip" text_apply_fonts:cardMaxElevation="2.0dip" text_apply_fonts:cardPreventCornerOverlap="true" text_apply_fonts:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/mosaly_app_name" text_apply_fonts:textview_type="2" />
+        <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/mosaly_no_azkar_txt" android:lineSpacingExtra="5.0dip" text_apply_fonts:textview_type="2" />
+        <View android:background="@color/gray_white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="#ff049acc" android:gravity="center" android:layout_gravity="center" android:id="@id/done" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/done" android:layout_weight="1.0" text_apply_fonts:textview_type="3" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

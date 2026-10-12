@@ -1,0 +1,17 @@
+<svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="day / canada_d_SK_03">
+<g id="canada_d_base">
+<g id="stretchable-items">
+<path id="shape01" d="M1.5 1.5H15.5V16.5938L8.5 19.5L1.5 16.5938V1.5Z" fill="white" stroke="#5397F0" stroke-linejoin="round"/>
+<rect id="shape02" x="1.5" y="1.5" width="14" height="5" fill="#5397F0" stroke="#5397F0" stroke-linejoin="round"/>
+</g>
+<g id="non-stretchable-items">
+<g id="symbol01">
+<path d="M4.5 3C3.67157 3 3 3.67157 3 4.5V5H4V6H5V5H6V4.5C6 3.67157 5.32843 3 4.5 3Z" fill="white"/>
+<path d="M8 5V6H9V5H10V4.5C10 3.67157 9.32843 3 8.5 3C7.67157 3 7 3.67157 7 4.5V5H8Z" fill="white"/>
+<path d="M12 6V5H11V4.5C11 3.67157 11.6716 3 12.5 3C13.3284 3 14 3.67157 14 4.5V5H13V6H12Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

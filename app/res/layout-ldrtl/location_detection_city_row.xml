@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="5.0dip">
+        <com.moslay.view.FontTextView android:gravity="center" android:id="@id/txt_name" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/img_true" android:visibility="invisible" android:layout_width="45.0dip" android:layout_height="fill_parent" android:src="@drawable/orange_right" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/img_delete" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/delete_city" android:adjustViewBounds="true" />
+</RelativeLayout>

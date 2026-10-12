@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:tag="layout/doaa_society_menu_layout_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="230.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" card_view:cardBackgroundColor="@color/stored_data_cancel_button_background" card_view:cardCornerRadius="16.0dip" card_view:cardElevation="6.0dip" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/text1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/report_txt" android:maxLines="1" android:layout_weight="1.0" card_view:textview_type="2" />
+                <ImageView android:id="@id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/doaa_report" />
+            </LinearLayout>
+            <View android:background="#ff858585" android:layout_width="fill_parent" android:layout_height="0.6dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+                <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/text2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/doaa_society_hide" android:maxLines="1" android:layout_weight="1.0" card_view:textview_type="2" />
+                <ImageView android:id="@id/icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/doaa_hide" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

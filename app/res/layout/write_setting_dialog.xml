@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/rounded_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/relativeLayout1" android:background="@drawable/rounded_brown" android:layout_width="fill_parent" android:layout_height="220.0dip" android:minHeight="220.0dip">
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" text_apply_fonts:cardBackgroundColor="@color/transparent" text_apply_fonts:cardCornerRadius="10.0dip" text_apply_fonts:cardElevation="0.0dip" text_apply_fonts:cardUseCompatPadding="false">
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/za5rafa__onboarding" android:scaleType="centerCrop" android:layout_centerInParent="true" android:contentDescription="@null" />
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <ImageView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/warning_cancel" android:padding="@dimen/ten_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/close_onboarding" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_weight="1.0" android:contentDescription="@string/close" text_apply_fonts:textview_type="3" />
+                <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/makeMobileSilentAtSala" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ScrollView android:orientation="vertical" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/relativeLayout1">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/warning_text" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/mobile_silent_feature_settings" android:layout_centerInParent="true" android:layout_centerHorizontal="true" text_apply_fonts:textview_type="3" />
+                <com.moslay.view.FontTextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/warning_ok" android:background="@drawable/orange_curved_add_contact" android:layout_width="250.0dip" android:layout_height="48.0dip" android:layout_margin="10.0dip" android:text="@string/settings" android:layout_weight="1.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" text_apply_fonts:textview_type="3" />
+                <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="horizontal" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <CheckBox android:id="@id/checkbox" android:padding="@dimen/fifteen_dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:minWidth="48.0dip" android:minHeight="48.0dip" android:drawableRight="@drawable/optimizer_selector" />
+                    <com.moslay.view.FontTextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/dont_show_again" android:layout_centerHorizontal="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="200.0dip" android:layout_marginTop="50.0dip" android:src="@drawable/silent_onboarding" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+</RelativeLayout>

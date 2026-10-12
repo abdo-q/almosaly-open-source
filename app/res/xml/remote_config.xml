@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>Almosaly_icon</key>
+        <value>no_experiment</value>
+    </entry>
+    <entry>
+        <key>notification_note_experiment_variant </key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>will_show_general_khatmat</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>versionCodeToShowRateAndroid</key>
+        <value>0</value>
+    </entry>
+</defaultsMap>

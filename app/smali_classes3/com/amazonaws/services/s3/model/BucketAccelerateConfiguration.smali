@@ -1,0 +1,121 @@
+.class public Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private status:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;)V
+    .locals 0
+
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    invoke-virtual {p0, p1}, Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;->setStatus(Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;->setStatus(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getStatus()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;->status:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public isAccelerateEnabled()Z
+    .locals 2
+
+    .line 1
+    sget-object v0, Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;->Enabled:Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;->toString()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {p0}, Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;->getStatus()Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    return v0
+.end method
+
+.method public setStatus(Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;)V
+    .locals 0
+
+    .line 2
+    invoke-virtual {p1}, Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;->setStatus(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public setStatus(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;->status:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public withStatus(Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;)Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;->setStatus(Lcom/amazonaws/services/s3/model/BucketAccelerateStatus;)V
+
+    return-object p0
+.end method
+
+.method public withStatus(Ljava/lang/String;)Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lcom/amazonaws/services/s3/model/BucketAccelerateConfiguration;->setStatus(Ljava/lang/String;)V
+
+    return-object p0
+.end method

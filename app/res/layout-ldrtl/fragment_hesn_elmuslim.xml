@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout-ldrtl/fragment_hesn_elmuslim_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:background="@drawable/hesn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:background="@color/transparent_100" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <ImageView android:id="@id/back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:scaleType="fitCenter" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_centerVertical="true" android:contentDescription="@string/back" android:layout_marginStart="@dimen/twenty_dp" />
+                    <com.moslay.view.FontTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/azkar_menu_allAzkar" android:layout_centerInParent="true" app:textview_type="1" style="@style/header_textview" />
+                </RelativeLayout>
+                <com.moslay.view.FontTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/azkarFromSuna" app:textview_type="2" />
+                <com.moslay.view.FontTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/animatedAyah" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:minHeight="60.0dip" android:text="@string/hesnAnimationText1" app:textview_type="2" />
+                <ImageView android:layout_gravity="center" android:id="@id/animation_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/hesn_elmuslim_animation_5" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_container_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="-40.0dip" android:layout_marginRight="12.0dip">
+            <com.moslay.view.smarteist.autoimageslider.SliderView android:id="@id/image_slider" android:layout_width="fill_parent" android:layout_height="75.0dip" app:sliderAnimationDuration="600" app:sliderAutoCycleDirection="back_and_forth" app:sliderAutoCycleEnabled="true" app:sliderIndicatorAnimationDuration="600" app:sliderIndicatorGravity="bottom|center" app:sliderIndicatorMargin="15.0dip" app:sliderIndicatorOrientation="horizontal" app:sliderIndicatorPadding="3.0dip" app:sliderIndicatorRadius="2.0dip" app:sliderIndicatorSelectedColor="#ff5a5a5a" app:sliderIndicatorUnselectedColor="#ffffffff" app:sliderScrollTimeInSec="1" app:sliderStartAutoCycle="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/knoz_menu_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="3.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/banner_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ad_hight_banner" />
+</LinearLayout>

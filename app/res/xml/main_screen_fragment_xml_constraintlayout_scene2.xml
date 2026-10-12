@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition motion:constraintSetEnd="@id/end" motion:constraintSetStart="@id/start" motion:duration="2000">
+        <KeyFrameSet />
+    </Transition>
+    <ConstraintSet android:id="@id/start" />
+    <ConstraintSet android:id="@id/end">
+        <Constraint android:id="@id/imgview_eid_mubarak_text" android:layout_width="120.0dip" android:layout_height="60.0dip" android:layout_marginTop="25.0dip" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/txtview_first_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintLeft_toLeftOf="parent" motion:layout_constraintRight_toRightOf="parent" motion:layout_constraintTop_toBottomOf="@id/imgview_eid_mubarak_text" />
+        <Constraint android:id="@id/txtview_first_subtitle" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintLeft_toLeftOf="parent" motion:layout_constraintRight_toRightOf="parent" motion:layout_constraintTop_toBottomOf="@id/imgview_eid_mubarak_text" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/text_animation1">
+        <Constraint android:id="@id/imgview_eid_mubarak_text" android:layout_width="120.0dip" android:layout_height="60.0dip" android:layout_marginTop="12.0dip" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/layout_textview_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:alpha="1.0" motion:layout_constraintLeft_toLeftOf="parent" motion:layout_constraintRight_toRightOf="parent" motion:layout_constraintTop_toBottomOf="@id/imgview_eid_mubarak_text" />
+    </ConstraintSet>
+    <Transition android:id="@id/transition_text" motion:constraintSetEnd="@id/text_animation1" motion:constraintSetStart="@id/end" motion:duration="1000" />
+</MotionScene>

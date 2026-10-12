@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="71.0dip" android:width="71.0dip" android:viewportWidth="71.0" android:viewportHeight="71.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$prayers_on_plane_animation_right_mark_icon__0" android:pathData="M27.986,53.639L16.181,39.512L16.342,37.647L22.217,34.409L28.401,41.811L49.055,20.334L54.88,23.976L54.718,25.841L27.986,53.639Z" />
+    <path android:fillColor="#ffffffff" android:pathData="M29.542,52.289L17.313,38.527L23.19,33.244L29.598,40.454L49.588,18.359L55.417,23.691L29.542,52.289Z" />
+</vector>

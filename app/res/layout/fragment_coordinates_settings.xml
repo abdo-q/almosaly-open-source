@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="right" android:id="@id/txt_long" android:background="@drawable/rounded_border" android:padding="5.0dip" android:layout_width="250.0dip" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:hint="@string/khat_ttol" />
+            <com.moslay.view.FontTextView android:textSize="22.0dip" android:textColor="@color/black" android:gravity="center" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/khat_ttol" text_apply_fonts:textview_type="2" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="right" android:id="@id/txt_lat" android:background="@drawable/rounded_border" android:padding="5.0dip" android:layout_width="250.0dip" android:layout_height="33.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:hint="@string/daert_el3rd" />
+            <com.moslay.view.FontTextView android:textSize="22.0dip" android:textColor="@color/black" android:gravity="center" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/daert_el3rd" text_apply_fonts:textview_type="2" />
+        </LinearLayout>
+        <com.moslay.view.FontTextView android:textSize="22.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/click_here" android:background="@drawable/orange_background_button" android:paddingLeft="25.0dip" android:paddingTop="5.0dip" android:paddingRight="25.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip" android:text="تطبيق الإعدادات" text_apply_fonts:textview_type="2" />
+    </LinearLayout>
+</ScrollView>

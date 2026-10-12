@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mbridge.msdk.config.dynamic.baseview.cusview.XMLView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.mbridge.msdk.config.dynamic.baseview.webview.ComponentWebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:tag="webview" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="backward"
+            android:src="@drawable/mbridge_cm_backward"
+            android:tag="webBackButton"
+            app:mbridge_data="clickable=true" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="forward"
+            android:src="@drawable/mbridge_cm_forward"
+            android:tag="webForwardBtn"
+            app:mbridge_data="clickable=true" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="refresh"
+            android:src="@drawable/mbridge_cm_refresh"
+            android:tag="webRefreshBtn"
+            app:mbridge_data="clickable=true" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="exit"
+            android:src="@drawable/mbridge_cm_exits"
+            android:tag="webCloseBtn"
+            app:mbridge_data="clickable=true" />
+
+    </LinearLayout>
+
+</com.mbridge.msdk.config.dynamic.baseview.cusview.XMLView>

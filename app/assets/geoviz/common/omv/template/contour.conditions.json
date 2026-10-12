@@ -1,0 +1,1 @@
+{"definitions": {"Is.Contour.Layer": ["==", ["get", "$layer"], "contours"], "Is.Contour": ["all", ["==", ["get", "kind"], "contour"], ["none", ["==", ["get", "index"], 0], ["==", ["get", "index"], 5]]], "Is.Contour.Counting": ["all", ["==", ["get", "kind"], "contour"], ["any", ["==", ["get", "index"], 0], ["==", ["get", "index"], 5]]]}}

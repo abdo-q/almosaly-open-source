@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="ring" android:innerRadiusRatio="3.0" android:thicknessRatio="6.0" android:useLevel="false">
+            <solid android:color="@color/pob_spinner_background" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <shape android:shape="ring" android:innerRadiusRatio="3.0" android:thicknessRatio="6.0" android:useLevel="true">
+            <solid android:color="@color/pob_forward_arrow_blue" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/quran_page_item_localized_recycler_item_arabic_0" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.moslay.view.QuranTextView android:gravity="right" android:id="@id/arabic_quran_page_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" />
+    <TextView android:textSize="@dimen/_13ssp" android:textColor="#ff1d2449" android:id="@id/txtview_localized_share_aya" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="-2.0dip" android:text="@string/share_tafseer" android:drawablePadding="5.0dip" app:drawableRightCompat="@drawable/share_tafseer" />
+    <TextView android:id="@id/txtview_localized_aya" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="8.0dip" />
+</LinearLayout>

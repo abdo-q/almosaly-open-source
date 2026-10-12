@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.NewFontTextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/txtview_reply" android:background="@drawable/ic_bg_reply" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/reply_txt" android:layout_centerHorizontal="true" android:textAlignment="gravity" text_apply_fonts:textview_type="2" />
+</RelativeLayout>

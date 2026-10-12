@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.moslay.view.SurahHeaderView android:id="@id/sorah_header_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+    <LinearLayout android:gravity="center|right|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="21.0dip">
+        <TextView android:textColor="@color/black" android:gravity="center|right|top" android:id="@id/meaning_item_meaning_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:includeFontPadding="true" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/meanings_color" android:gravity="center|top" android:id="@id/meaning_item_word_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:includeFontPadding="false" />
+        <TextView android:textColor="@color/black" android:gravity="center|top" android:id="@id/meaning_item_ayah_no_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

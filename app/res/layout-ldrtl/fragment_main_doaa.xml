@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout-ldrtl/fragment_main_doaa_0" android:background="@color/white" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+        <ImageView android:id="@id/back" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/onboarding_back_icon" />
+        <com.moslay.view.NewFontTextView android:textSize="18.0sp" android:textColor="@color/onboarding_header_color" android:gravity="center" android:layout_gravity="center" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/duaa_title" android:includeFontPadding="false" android:layout_marginEnd="30.0dip" app:textview_type="2" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="18.0dip">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.moslay.view.NewFontTextView android:textSize="15.0sp" android:textColor="@color/onboarding_header_color" android:gravity="center" android:layout_gravity="center" android:id="@id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/doaa_types_title_label" android:includeFontPadding="false" app:textview_type="2" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/doaa" android:background="@drawable/doaa_card_bg" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="18.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/doaa_card_image" />
+                <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip">
+                    <RelativeLayout android:layout_gravity="right" android:background="@drawable/new_doaa_title_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" android:text="@string/doaa_werd" android:includeFontPadding="false" app:textview_type="2" />
+                    </RelativeLayout>
+                    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doaa_werd_sen" android:includeFontPadding="false" android:lineSpacingExtra="5.0dip" app:textview_type="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/rokia" android:background="@drawable/rokya_card_bg" android:padding="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="18.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/rokya_card_image" />
+                <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip">
+                    <RelativeLayout android:layout_gravity="right" android:background="@drawable/new_doaa_title_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:backgroundTint="#ff74ae27">
+                        <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" android:text="@string/doaa_rokya" android:includeFontPadding="false" app:textview_type="2" />
+                    </RelativeLayout>
+                    <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doaa_rokya_sen" android:includeFontPadding="false" android:lineSpacingExtra="5.0dip" app:textview_type="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/doaa_society" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                <View android:id="@id/view_data" android:background="@drawable/bg_rounded_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/layout_content_data" android:layout_alignTop="@id/layout_content_data" android:layout_alignRight="@id/layout_content_data" android:layout_alignBottom="@id/layout_content_data" />
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/layout_content_data" android:background="@drawable/doaa_society_card_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/doaa_socie_card_image" />
+                    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip">
+                        <RelativeLayout android:layout_gravity="right" android:background="@drawable/new_doaa_title_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:backgroundTint="@color/secondary_color">
+                            <com.moslay.view.NewFontTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" android:text="@string/doaa_society" android:includeFontPadding="false" app:textview_type="2" />
+                        </RelativeLayout>
+                        <com.moslay.view.NewFontTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doaa_society_sen" android:includeFontPadding="false" android:lineSpacingExtra="5.0dip" app:textview_type="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:gravity="center" android:id="@id/banner_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/ad_hight_banner" />
+</LinearLayout>

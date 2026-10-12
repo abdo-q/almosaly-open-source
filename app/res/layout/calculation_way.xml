@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/txt_note">
+        <ListView android:id="@id/lv_calway_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector" android:cacheColorHint="#00000000" android:divider="#00000000" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.moslay.view.FontTextView android:gravity="center" android:id="@id/txt_note" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" android:layout_alignParentBottom="true" text_apply_fonts:textview_type="3" />
+    <com.moslay.view.ExpandableView android:orientation="vertical" android:id="@id/expand_custom" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <com.moslay.view.FontTextView android:textSize="20.0sp" android:textColor="#ff44cac1" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mo5asas" text_apply_fonts:textview_type="3" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:weightSum="2.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.moslay.view.FontTextView android:textColor="#ff44cac1" android:gravity="center" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/fajr_angle" text_apply_fonts:textview_type="3" />
+                <com.moslay.view.FloatNumberPicker android:layout_gravity="center_horizontal" android:id="@id/floatpiker_fajr_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" />
+            </LinearLayout>
+            <View android:background="@color/gray_light_hint" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.moslay.view.FontTextView android:textColor="#ff44cac1" android:gravity="center" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/eshaa_angle" text_apply_fonts:textview_type="3" />
+                <com.moslay.view.FloatNumberPicker android:layout_gravity="center_horizontal" android:id="@id/floatpiker_eshaa_angle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.moslay.view.FontTextView android:gravity="center" android:id="@id/txt_custom_note" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/calculation_method_custom_hint_string" text_apply_fonts:textview_type="3" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:weightSum="2.0">
+            <com.moslay.view.FontTextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_save" android:background="@drawable/labany_curved_save" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="25.0dip" android:text="@string/save" android:layout_weight="1.0" text_apply_fonts:textview_type="3" />
+            <com.moslay.view.FontTextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_cancel" android:background="@drawable/orange_curved_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/Cancel" android:layout_weight="1.0" text_apply_fonts:textview_type="3" />
+        </LinearLayout>
+    </com.moslay.view.ExpandableView>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+.class Lcom/here/sdk/mapview/MapScene$GetLayersInfoCallbackImpl;
+.super Lcom/here/NativeBase;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/here/sdk/mapview/MapScene$GetLayersInfoCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/here/sdk/mapview/MapScene;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "GetLayersInfoCallbackImpl"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(JLjava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    new-instance p3, Lcom/here/sdk/mapview/MapScene$GetLayersInfoCallbackImpl$1;
+
+    .line 2
+    .line 3
+    invoke-direct {p3}, Lcom/here/sdk/mapview/MapScene$GetLayersInfoCallbackImpl$1;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0, p1, p2, p3}, Lcom/here/NativeBase;-><init>(JLcom/here/NativeBase$Disposer;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public static synthetic access$200(J)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lcom/here/sdk/mapview/MapScene$GetLayersInfoCallbackImpl;->disposeNativeHandle(J)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private static native disposeNativeHandle(J)V
+.end method
+
+
+# virtual methods
+.method public native onMapSceneLayersInfoResult(Ljava/util/Map;)V
+    .param p1    # Ljava/util/Map;
+        .annotation build Landroidx/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Lcom/here/sdk/mapview/VisibilityState;",
+            ">;)V"
+        }
+    .end annotation
+.end method

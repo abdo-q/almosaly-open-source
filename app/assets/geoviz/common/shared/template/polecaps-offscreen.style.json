@@ -1,0 +1,1 @@
+{"styles": [{"id": "northpole_offscreen_depth", "layer": "northpole", "technique": "polygon", "attr": {"category": "offscreen-depth", "enforce-ztest": true}}, {"id": "southpole_offscreen_depth", "layer": "southpole", "technique": "polygon", "attr": {"category": "offscreen-depth", "enforce-ztest": true}}]}

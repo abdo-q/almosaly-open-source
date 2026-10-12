@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text_apply_fonts="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/azkar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/five_dp" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/azkar_layout1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/five_dp" android:layout_weight="1.0" android:layout_centerVertical="true">
+            <com.moslay.view.FontTextView android:textSize="18.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/azkar_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="@string/fagr_list_help_hadeth2" android:maxLines="2" android:layout_weight="1.0" text_apply_fonts:textview_type="2" />
+            <com.moslay.view.FontTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/default_header_color" android:ellipsize="end" android:id="@id/azkar_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fagr_list_help_hadeth2" android:maxLines="2" android:layout_weight="1.0" text_apply_fonts:textview_type="2" />
+        </LinearLayout>
+        <ImageView android:id="@id/azkar_chosen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/azkar_type_checked" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <View android:background="@drawable/light_gray_cur" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/azkar_layout" />
+</LinearLayout>

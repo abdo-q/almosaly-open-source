@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sowarSimpleListPopup_popup_parent" android:background="@drawable/ayat_list_background" android:layout_width="wrap_content" android:layout_height="@dimen/_150sdp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.moslay.view.NewFontTextView android:textSize="13.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/sowarSimpleListPopup_titleNameTv" android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:text="@string/ayah_number" />
+    <View android:id="@id/sowarSimpleListPopup_divider" android:background="@color/desert_sand2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp" />
+    <ListView android:id="@id/sowarSimpleListPopup_sowarListPopupLv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

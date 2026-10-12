@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/image_list_container" android:tag="layout-ldrtl/share_image_options_layout_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_image_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:isScrollContainer="false" android:rotationY="180.0" android:nestedScrollingEnabled="false" />
+</FrameLayout>
